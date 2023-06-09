@@ -68,6 +68,7 @@
   "devDependencies": {
     "@babel/core": "7.0.0",
     "@babel/register": "7.0.0",
+    "@vue/babel-preset-app": "^5.0.8",
     "@vue/cli-plugin-babel": "4.4.4",
     "@vue/cli-plugin-eslint": "4.4.4",
     "@vue/cli-plugin-unit-jest": "4.4.4",
