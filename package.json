@@ -1,8 +1,12 @@
 {
-  "name": "litemall-admin",
+  "name": "nidemall-admin",
   "version": "1.0.0",
-  "description": "litemall-admin basing on vue-element-admin 4.3.0",
-  "author": "linlinjava <linlinjava@163.com>",
+  "description": "nidemall-admin",
+  "author": "Charly Lersteau",
+  "contributors": [
+    "linlinjava <linlinjava@163.com>",
+    "tumobi <tumobi@163.com>"
+  ],
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -37,10 +41,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linlinjava/litemall.git"
+    "url": "git+https://github.com/charlyisidore/nidemall-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/linlinjava/litemall/issues"
+    "url": "https://github.com/charlyisidore/nidemall-admin/issues"
   },
   "dependencies": {
     "@tinymce/tinymce-vue": "3.0.1",
