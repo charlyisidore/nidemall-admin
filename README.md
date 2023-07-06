@@ -14,6 +14,22 @@ yarn install
 yarn run dev
 ```
 
+## Deployment
+
+Create `.env.production.local` (or edit `.env.production`):
+
+```
+VUE_APP_BASE_API = 'https://example.com/admin'
+```
+
+Build:
+
+```bash
+yarn run build
+```
+
+The output is located in `dist/`.
+
 ## License
 
 [MIT](./LICENSE)
