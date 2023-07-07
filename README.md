@@ -36,6 +36,16 @@ Copy NGINX configuration:
 sudo cp nginx.conf /etc/nginx/conf.d/nidemall-admin.conf
 ```
 
+Optional: Add the following to `/etc/nginx/conf.d/nidemall-server.conf` to redirect HTTP to HTTPS on the same port:
+
+```
+server {
+    # ...
+    error_page 497 https://$host:$server_port$request_uri;
+    # ...
+}
+```
+
 Reload NGINX configuration:
 
 ```bash
