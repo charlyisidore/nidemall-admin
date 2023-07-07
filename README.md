@@ -30,6 +30,18 @@ yarn run build
 
 The output is located in `dist/`.
 
+Copy NGINX configuration:
+
+```bash
+sudo cp nginx.conf /etc/nginx/conf.d/nidemall-admin.conf
+```
+
+Reload NGINX configuration:
+
+```bash
+sudo nginx -t && sudo nginx -s reload
+```
+
 ## License
 
 [MIT](./LICENSE)
