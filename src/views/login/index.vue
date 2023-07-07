@@ -30,7 +30,7 @@
 
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
 
-      <div style="position:relative">
+      <div v-if="isDev" style="position:relative">
         <div class="tips">
           <span> 超级管理员用户名: admin123</span>
           <span> 超级管理员用户名：admin123</span>
@@ -47,13 +47,15 @@
     </el-form>
 
     <div class="copyright">
-      Copyright © 2022 xxx.com 版权所有 <a href="https://github.com/linlinjava/litemall">沪ICP备xxx号</a>
+      Copyright © 2023 xxx.com 版权所有 <a href="https://github.com/charlyisidore/nidemall-admin">沪ICP备xxx号</a>
     </div>
   </div>
 </template>
 
 <script>
 import { getKaptcha } from '@/api/login'
+
+const isDev = (process.env.NODE_ENV === 'development')
 
 export default {
   name: 'Login',
@@ -67,8 +69,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin123',
-        password: 'admin123',
+        username: isDev ? 'admin123' : '',
+        password: isDev ? 'admin123' : '',
         code: ''
       },
       codeImg: '',
@@ -80,7 +82,8 @@ export default {
         ]
       },
       passwordType: 'password',
-      loading: false
+      loading: false,
+      isDev
     }
   },
   watch: {
