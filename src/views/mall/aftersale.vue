@@ -37,7 +37,7 @@
 
       <el-table-column align="center" label="操作" min-width="120" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button v-permission="['POST /admin/aftersale/detail']" type="primary" size="mini" @click="handleRead(scope.row)">详情</el-button>
+          <el-button v-permission="['POST /admin/aftersale/detail']" type="primary" size="mini" @click="handleRead(scope.row)">{{ $t('button.details.label') }}</el-button>
           <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/recept']" type="success" size="mini" @click="handleRecept(scope.row)">通过</el-button>
           <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/reject']" type="danger" size="mini" @click="handleReject(scope.row)">拒绝</el-button>
           <el-button v-if="scope.row.status === 2" v-permission="['POST /admin/aftersale/refund']" type="warning" size="mini" @click="handleRefund(scope.row)">退款</el-button>

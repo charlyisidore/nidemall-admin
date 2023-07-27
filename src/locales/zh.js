@@ -198,6 +198,9 @@ export default {
     }
   },
   button: {
+    details: {
+      label: '详情'
+    },
     export: {
       label: '导出'
     },

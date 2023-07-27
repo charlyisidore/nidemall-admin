@@ -198,6 +198,9 @@ export default {
     }
   },
   button: {
+    details: {
+      label: 'Details'
+    },
     export: {
       label: 'Export'
     },
