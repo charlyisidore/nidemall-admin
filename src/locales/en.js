@@ -88,6 +88,23 @@ export default {
           title: 'Keywords'
         }
       }
+    },
+    goods: {
+      title: 'Products',
+      children: {
+        list: {
+          title: 'List products'
+        },
+        create: {
+          title: 'Add product'
+        },
+        edit: {
+          title: 'Edit product'
+        },
+        comment: {
+          title: 'Comments'
+        }
+      }
     }
   },
   message: {

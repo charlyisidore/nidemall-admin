@@ -88,6 +88,23 @@ export default {
           title: '关键词'
         }
       }
+    },
+    goods: {
+      title: '商品管理',
+      children: {
+        list: {
+          title: '商品列表'
+        },
+        create: {
+          title: '商品上架'
+        },
+        edit: {
+          title: '商品编辑'
+        },
+        comment: {
+          title: '商品评论'
+        }
+      }
     }
   },
   message: {

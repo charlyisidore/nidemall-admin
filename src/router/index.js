@@ -236,7 +236,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'goodsManage',
     meta: {
-      title: '商品管理',
+      title: 'sidebar.goods.title',
       icon: 'chart'
     },
     children: [
@@ -246,7 +246,7 @@ export const asyncRoutes = [
         name: 'goodsList',
         meta: {
           perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
-          title: '商品列表',
+          title: 'sidebar.goods.children.list.title',
           noCache: true
         }
       },
@@ -256,7 +256,7 @@ export const asyncRoutes = [
         name: 'goodsCreate',
         meta: {
           perms: ['POST /admin/goods/create'],
-          title: '商品上架',
+          title: 'sidebar.goods.children.create.title',
           noCache: true
         }
       },
@@ -266,7 +266,7 @@ export const asyncRoutes = [
         name: 'goodsEdit',
         meta: {
           perms: ['GET /admin/goods/detail', 'POST /admin/goods/update', 'POST /admin/goods/catAndBrand'],
-          title: '商品编辑',
+          title: 'sidebar.goods.children.edit.title',
           noCache: true
         },
         hidden: true
@@ -277,7 +277,7 @@ export const asyncRoutes = [
         name: 'goodsComment',
         meta: {
           perms: ['GET /admin/comment/list', 'POST /admin/comment/delete'],
-          title: '商品评论',
+          title: 'sidebar.goods.children.comment.title',
           noCache: true
         }
       }
