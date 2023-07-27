@@ -225,6 +225,9 @@ export default {
     export: {
       label: 'Export'
     },
+    reply: {
+      label: 'Reply'
+    },
     search: {
       label: 'Search'
     },

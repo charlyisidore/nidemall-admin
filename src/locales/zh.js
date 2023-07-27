@@ -225,6 +225,9 @@ export default {
     export: {
       label: '导出'
     },
+    reply: {
+      label: '回复'
+    },
     search: {
       label: '查找'
     },
