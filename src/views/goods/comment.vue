@@ -46,7 +46,7 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="replyFormVisible = false">取消</el-button>
+        <el-button @click="replyFormVisible = false">{{ $t('button.cancel.label') }}</el-button>
         <el-button type="primary" @click="reply">确定</el-button>
       </div>
     </el-dialog>

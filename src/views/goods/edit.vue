@@ -146,7 +146,7 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="specVisiable = false">取消</el-button>
+          <el-button @click="specVisiable = false">{{ $t('button.cancel.label') }}</el-button>
           <el-button type="primary" @click="handleSpecificationEdit">确定</el-button>
         </div>
       </el-dialog>
@@ -204,7 +204,7 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="productVisiable = false">取消</el-button>
+          <el-button @click="productVisiable = false">{{ $t('button.cancel.label') }}</el-button>
           <el-button type="primary" @click="handleProductEdit">确定</el-button>
         </div>
       </el-dialog>
@@ -234,7 +234,7 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="attributeVisiable = false">取消</el-button>
+          <el-button @click="attributeVisiable = false">{{ $t('button.cancel.label') }}</el-button>
           <el-button v-if="attributeAdd" type="primary" @click="handleAttributeAdd">确定</el-button>
           <el-button v-else type="primary" @click="handleAttributeEdit">确定</el-button>
         </div>
@@ -242,7 +242,7 @@
     </el-card>
 
     <div class="op-container">
-      <el-button @click="handleCancel">取消</el-button>
+      <el-button @click="handleCancel">{{ $t('button.cancel.label') }}</el-button>
       <el-button type="primary" @click="handleEdit">更新商品</el-button>
     </div>
 

@@ -36,7 +36,7 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">取消</el-button>
+        <el-button @click="dialogFormVisible = false">{{ $t('button.cancel.label') }}</el-button>
         <el-button v-if="dialogStatus=='create'" type="primary" @click="createData">确定</el-button>
         <el-button v-else type="primary" @click="updateData">确定</el-button>
       </div>
@@ -58,7 +58,7 @@
         </span>
       </el-tree>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="permissionDialogFormVisible = false">取消</el-button>
+        <el-button @click="permissionDialogFormVisible = false">{{ $t('button.cancel.label') }}</el-button>
         <el-button type="primary" @click="updatePermission">确定</el-button>
       </div>
     </el-dialog>
