@@ -222,6 +222,9 @@ export default {
     search: {
       label: '查找'
     },
+    settings: {
+      label: '设置'
+    },
     view: {
       label: '查看'
     }

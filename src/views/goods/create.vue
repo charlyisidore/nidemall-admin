@@ -201,7 +201,7 @@
         </el-table-column>
         <el-table-column align="center" label="操作" width="100" class-name="small-padding fixed-width">
           <template slot-scope="scope">
-            <el-button type="primary" size="mini" @click="handleProductShow(scope.row)">设置</el-button>
+            <el-button type="primary" size="mini" @click="handleProductShow(scope.row)">{{ $t('button.settings.label') }}</el-button>
           </template>
         </el-table-column>
       </el-table>

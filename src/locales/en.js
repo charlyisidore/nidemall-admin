@@ -222,6 +222,9 @@ export default {
     search: {
       label: 'Search'
     },
+    settings: {
+      label: 'Settings'
+    },
     view: {
       label: 'View'
     }
