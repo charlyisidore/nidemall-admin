@@ -390,5 +390,18 @@ export default {
         label: '时间'
       }
     }
+  },
+  mall_region: {
+    table: {
+      name: {
+        label: '区域名称'
+      },
+      type: {
+        label: '区域类型'
+      },
+      code: {
+        label: '区域编码'
+      }
+    }
   }
 }

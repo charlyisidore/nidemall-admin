@@ -390,5 +390,18 @@ export default {
         label: 'Time added'
       }
     }
+  },
+  mall_region: {
+    table: {
+      name: {
+        label: 'Name'
+      },
+      type: {
+        label: 'Type'
+      },
+      code: {
+        label: 'Code'
+      }
+    }
   }
 }
