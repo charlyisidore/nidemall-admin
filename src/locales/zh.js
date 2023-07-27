@@ -439,5 +439,60 @@ export default {
         label: '底价'
       }
     }
+  },
+  mall_category: {
+    table: {
+      id: {
+        label: '类目ID'
+      },
+      name: {
+        label: '类目名'
+      },
+      icon_url: {
+        label: '类目图标'
+      },
+      pic_url: {
+        label: '类目图片'
+      },
+      keywords: {
+        label: '关键字'
+      },
+      desc: {
+        label: '简介'
+      },
+      level: {
+        label: '级别'
+      },
+      actions: {
+        label: '操作'
+      }
+    },
+    form: {
+      name: {
+        label: '类目名称'
+      },
+      keywords: {
+        label: '关键字'
+      },
+      level: {
+        label: '级别',
+        value: {
+          L1: '一级类目',
+          L2: '二级类目'
+        }
+      },
+      pid: {
+        label: '父类目'
+      },
+      icon_url: {
+        label: '类目图标'
+      },
+      pic_url: {
+        label: '类目图片'
+      },
+      desc: {
+        label: '类目简介'
+      }
+    }
   }
 }

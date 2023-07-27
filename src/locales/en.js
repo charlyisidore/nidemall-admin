@@ -439,5 +439,60 @@ export default {
         label: 'Floor price'
       }
     }
+  },
+  mall_category: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      name: {
+        label: 'Name'
+      },
+      icon_url: {
+        label: 'Icon'
+      },
+      pic_url: {
+        label: 'Picture'
+      },
+      keywords: {
+        label: 'Keywords'
+      },
+      desc: {
+        label: 'Description'
+      },
+      level: {
+        label: 'Level'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    },
+    form: {
+      name: {
+        label: 'Name'
+      },
+      keywords: {
+        label: 'Keywords'
+      },
+      level: {
+        label: 'Level',
+        value: {
+          L1: 'Level 1',
+          L2: 'Level 2'
+        }
+      },
+      pid: {
+        label: 'Parent'
+      },
+      icon_url: {
+        label: 'Icon'
+      },
+      pic_url: {
+        label: 'Picture'
+      },
+      desc: {
+        label: 'Description'
+      }
+    }
   }
 }
