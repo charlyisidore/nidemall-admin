@@ -365,5 +365,30 @@ export default {
         label: 'Time added'
       }
     }
+  },
+  user_feedback: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      username: {
+        label: 'Username'
+      },
+      mobile: {
+        label: 'Mobile'
+      },
+      feed_type: {
+        label: 'Type'
+      },
+      content: {
+        label: 'Content'
+      },
+      pic_urls: {
+        label: 'Pictures'
+      },
+      add_time: {
+        label: 'Time added'
+      }
+    }
   }
 }

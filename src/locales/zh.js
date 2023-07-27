@@ -365,5 +365,30 @@ export default {
         label: '添加时间'
       }
     }
+  },
+  user_feedback: {
+    table: {
+      id: {
+        label: '反馈ID'
+      },
+      username: {
+        label: '用户名'
+      },
+      mobile: {
+        label: '手机号码'
+      },
+      feed_type: {
+        label: '反馈类型'
+      },
+      content: {
+        label: '反馈内容'
+      },
+      pic_urls: {
+        label: '反馈图片'
+      },
+      add_time: {
+        label: '时间'
+      }
+    }
   }
 }

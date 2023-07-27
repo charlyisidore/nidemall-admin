@@ -12,23 +12,23 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" label="反馈ID" prop="id" />
+      <el-table-column align="center" :label="$t('user_feedback.table.id.label')" prop="id" />
 
-      <el-table-column align="center" label="用户名" prop="username" />
+      <el-table-column align="center" :label="$t('user_feedback.table.username.label')" prop="username" />
 
-      <el-table-column align="center" label="手机号码" prop="mobile" />
+      <el-table-column align="center" :label="$t('user_feedback.table.mobile.label')" prop="mobile" />
 
-      <el-table-column align="center" label="反馈类型" prop="feedType" />
+      <el-table-column align="center" :label="$t('user_feedback.table.feed_type.label')" prop="feedType" />
 
-      <el-table-column align="center" label="反馈内容" prop="content" />
+      <el-table-column align="center" :label="$t('user_feedback.table.content.label')" prop="content" />
 
-      <el-table-column align="center" label="反馈图片" prop="picUrls">
+      <el-table-column align="center" :label="$t('user_feedback.table.pic_urls.label')" prop="picUrls">
         <template slot-scope="scope">
           <el-image v-for="item in scope.row.picUrls" :key="item" :src="item" :preview-src-list="scope.row.picUrls" :lazy="true" style="width: 40px; height: 40px; margin-right: 5px;" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="时间" prop="addTime" />
+      <el-table-column align="center" :label="$t('user_feedback.table.add_time.label')" prop="addTime" />
 
     </el-table>
 
