@@ -6,6 +6,9 @@
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
+        <el-tooltip content="Language" effect="dark" placement="bottom">
+          <locale-changer class="right-menu-item" />
+        </el-tooltip>
 
         <el-tooltip content="全屏" effect="dark" placement="bottom">
           <screenfull class="right-menu-item" />
@@ -54,6 +57,7 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
+import LocaleChanger from '@/components/LocaleChanger'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
 import Notice from '@/components/Notice'
@@ -62,6 +66,7 @@ export default {
   components: {
     Breadcrumb,
     Hamburger,
+    LocaleChanger,
     Screenfull,
     SizeSelect,
     Notice
