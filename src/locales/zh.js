@@ -196,8 +196,5 @@ export default {
     external_link_kdniao_api: {
       title: '快递鸟'
     }
-  },
-  message: {
-    hello: '你好世界'
   }
 }

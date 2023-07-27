@@ -197,8 +197,5 @@ export default {
     external_link_kdniao_api: {
       title: 'Kdniao API'
     }
-  },
-  message: {
-    hello: 'hello world'
   }
 }
