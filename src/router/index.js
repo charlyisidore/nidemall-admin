@@ -65,7 +65,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: '首页', icon: 'dashboard', affix: true }
+        meta: { title: 'sidebar.dashboard.title', icon: 'dashboard', affix: true }
       }
     ]
   }
@@ -79,7 +79,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'userManage',
     meta: {
-      title: '用户管理',
+      title: 'sidebar.user.title',
       icon: 'chart'
     },
     children: [
@@ -89,7 +89,7 @@ export const asyncRoutes = [
         name: 'user',
         meta: {
           perms: ['GET /admin/user/list'],
-          title: '会员管理',
+          title: 'sidebar.user.children.user.title',
           noCache: true
         }
       },
@@ -99,7 +99,7 @@ export const asyncRoutes = [
         name: 'address',
         meta: {
           perms: ['GET /admin/address/list'],
-          title: '收货地址',
+          title: 'sidebar.user.children.address.title',
           noCache: true
         }
       },
@@ -109,7 +109,7 @@ export const asyncRoutes = [
         name: 'collect',
         meta: {
           perms: ['GET /admin/collect/list'],
-          title: '会员收藏',
+          title: 'sidebar.user.children.collect.title',
           noCache: true
         }
       },
@@ -119,7 +119,7 @@ export const asyncRoutes = [
         name: 'footprint',
         meta: {
           perms: ['GET /admin/footprint/list'],
-          title: '会员足迹',
+          title: 'sidebar.user.children.footprint.title',
           noCache: true
         }
       },
@@ -129,7 +129,7 @@ export const asyncRoutes = [
         name: 'history',
         meta: {
           perms: ['GET /admin/history/list'],
-          title: '搜索历史',
+          title: 'sidebar.user.children.history.title',
           noCache: true
         }
       },
@@ -139,7 +139,7 @@ export const asyncRoutes = [
         name: 'feedback',
         meta: {
           perms: ['GET /admin/feedback/list'],
-          title: '意见反馈',
+          title: 'sidebar.user.children.feedback.title',
           noCache: true
         }
       }

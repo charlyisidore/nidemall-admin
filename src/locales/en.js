@@ -36,6 +36,34 @@ export default {
       logout: 'Logout'
     }
   },
+  sidebar: {
+    dashboard: {
+      title: 'Dashboard'
+    },
+    user: {
+      title: 'Users',
+      children: {
+        user: {
+          title: 'Members'
+        },
+        address: {
+          title: 'Addresses'
+        },
+        collect: {
+          title: 'Favorites'
+        },
+        footprint: {
+          title: 'Footprints'
+        },
+        history: {
+          title: 'Search history'
+        },
+        feedback: {
+          title: 'Feedbacks'
+        }
+      }
+    }
+  },
   message: {
     hello: 'hello world'
   }

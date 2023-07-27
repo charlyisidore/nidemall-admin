@@ -36,6 +36,34 @@ export default {
       logout: '退出'
     }
   },
+  sidebar: {
+    dashboard: {
+      title: '首页'
+    },
+    user: {
+      title: '用户管理',
+      children: {
+        user: {
+          title: '会员管理'
+        },
+        address: {
+          title: '收货地址'
+        },
+        collect: {
+          title: '会员收藏'
+        },
+        footprint: {
+          title: '会员足迹'
+        },
+        history: {
+          title: '搜索历史'
+        },
+        feedback: {
+          title: '意见反馈'
+        }
+      }
+    }
+  },
   message: {
     hello: '你好世界'
   }
