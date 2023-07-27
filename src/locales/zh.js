@@ -171,6 +171,30 @@ export default {
     },
     stat_goods: {
       title: '商品统计'
+    },
+    external_link: {
+      title: '外链'
+    },
+    external_link_tencent_cos: {
+      title: '腾讯云存储'
+    },
+    external_link_tencent_sms: {
+      title: '腾讯云短信'
+    },
+    external_link_weixin_pay: {
+      title: '微信支付'
+    },
+    external_link_weixin_mpkf: {
+      title: '小程序客服'
+    },
+    external_link_alibaba_oss: {
+      title: '阿里云存储'
+    },
+    external_link_qiniu_kodo: {
+      title: '七牛云存储'
+    },
+    external_link_kdniao_api: {
+      title: '快递鸟'
     }
   },
   message: {

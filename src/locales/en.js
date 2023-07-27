@@ -172,6 +172,30 @@ export default {
     },
     stat_goods: {
       title: 'Product stats'
+    },
+    external_link: {
+      title: 'External links'
+    },
+    external_link_tencent_cos: {
+      title: 'Tencent cloud storage'
+    },
+    external_link_tencent_sms: {
+      title: 'Tencent cloud SMS'
+    },
+    external_link_weixin_pay: {
+      title: 'WeChat Pay'
+    },
+    external_link_weixin_mpkf: {
+      title: 'WeChat mini-program'
+    },
+    external_link_alibaba_oss: {
+      title: 'Ali cloud storage'
+    },
+    external_link_qiniu_kodo: {
+      title: 'Qiniu cloud storage'
+    },
+    external_link_kdniao_api: {
+      title: 'Kdniao API'
     }
   },
   message: {

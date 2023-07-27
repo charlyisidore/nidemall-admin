@@ -548,37 +548,37 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'externalLink',
     meta: {
-      title: '外链',
+      title: 'sidebar.external_link.title',
       icon: 'link'
     },
     children: [
       {
         path: 'https://cloud.tencent.com/product/cos',
-        meta: { title: '腾讯云存储', icon: 'link' }
+        meta: { title: 'sidebar.external_link_tencent_cos.title', icon: 'link' }
       },
       {
         path: 'https://cloud.tencent.com/product/sms',
-        meta: { title: '腾讯云短信', icon: 'link' }
+        meta: { title: 'sidebar.external_link_tencent_sms.title', icon: 'link' }
       },
       {
         path: 'https://pay.weixin.qq.com/index.php/core/home/login',
-        meta: { title: '微信支付', icon: 'link' }
+        meta: { title: 'sidebar.external_link_weixin_pay.title', icon: 'link' }
       },
       {
         path: 'https://mpkf.weixin.qq.com/',
-        meta: { title: '小程序客服', icon: 'link' }
+        meta: { title: 'sidebar.external_link_weixin_mpkf.title', icon: 'link' }
       },
       {
         path: 'https://www.alibabacloud.com/zh/product/oss',
-        meta: { title: '阿里云存储', icon: 'link' }
+        meta: { title: 'sidebar.external_link_alibaba_oss.title', icon: 'link' }
       },
       {
         path: 'https://www.qiniu.com/products/kodo',
-        meta: { title: '七牛云存储', icon: 'link' }
+        meta: { title: 'sidebar.external_link_qiniu_kodo.title', icon: 'link' }
       },
       {
         path: 'http://www.kdniao.com/api-track',
-        meta: { title: '快递鸟', icon: 'link' }
+        meta: { title: 'sidebar.external_link_kdniao_api.title', icon: 'link' }
       }
     ]
   },
