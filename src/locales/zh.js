@@ -144,6 +144,21 @@ export default {
     },
     sys_os: {
       title: '对象存储'
+    },
+    config: {
+      title: '配置管理'
+    },
+    config_mall: {
+      title: '商场配置'
+    },
+    config_express: {
+      title: '运费配置'
+    },
+    config_order: {
+      title: '订单配置'
+    },
+    config_wx: {
+      title: '小程序配置'
     }
   },
   message: {

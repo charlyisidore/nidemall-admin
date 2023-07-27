@@ -451,7 +451,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'configManage',
     meta: {
-      title: '配置管理',
+      title: 'sidebar.config.title',
       icon: 'chart'
     },
     children: [
@@ -461,7 +461,7 @@ export const asyncRoutes = [
         name: 'configMall',
         meta: {
           perms: ['GET /admin/config/mall', 'POST /admin/config/mall'],
-          title: '商场配置',
+          title: 'sidebar.config_mall.title',
           noCache: true
         }
       },
@@ -471,7 +471,7 @@ export const asyncRoutes = [
         name: 'configExpress',
         meta: {
           perms: ['GET /admin/config/express', 'POST /admin/config/express'],
-          title: '运费配置',
+          title: 'sidebar.config_express.title',
           noCache: true
         }
       },
@@ -481,7 +481,7 @@ export const asyncRoutes = [
         name: 'configOrder',
         meta: {
           perms: ['GET /admin/config/order', 'POST /admin/config/order'],
-          title: '订单配置',
+          title: 'sidebar.config_order.title',
           noCache: true
         }
       },
@@ -491,7 +491,7 @@ export const asyncRoutes = [
         name: 'configWx',
         meta: {
           perms: ['GET /admin/config/wx', 'POST /admin/config/wx'],
-          title: '小程序配置',
+          title: 'sidebar.config_wx.title',
           noCache: true
         }
       }

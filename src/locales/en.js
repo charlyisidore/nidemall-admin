@@ -145,6 +145,21 @@ export default {
     },
     sys_os: {
       title: 'Storage'
+    },
+    config: {
+      title: 'Configuration'
+    },
+    config_mall: {
+      title: 'Mall config'
+    },
+    config_express: {
+      title: 'Freight config'
+    },
+    config_order: {
+      title: 'Order config'
+    },
+    config_wx: {
+      title: 'Mini-program config'
     }
   },
   message: {
