@@ -13,21 +13,21 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" label="品牌商ID" prop="id" />
+      <el-table-column align="center" :label="$t('mall_brand.table.id.label')" prop="id" />
 
-      <el-table-column align="center" label="品牌商名称" prop="name" />
+      <el-table-column align="center" :label="$t('mall_brand.table.name.label')" prop="name" />
 
-      <el-table-column align="center" property="picUrl" label="品牌商图片">
+      <el-table-column align="center" property="picUrl" :label="$t('mall_brand.table.pic_url.label')">
         <template slot-scope="scope">
           <el-image :src="thumbnail(scope.row.picUrl)" :preview-src-list="toPreview(scope.row, scope.row.picUrl)" style="width: 40px; height: 40px" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="400px" label="介绍" prop="desc" />
+      <el-table-column align="center" min-width="400px" :label="$t('mall_brand.table.desc.label')" prop="desc" />
 
-      <el-table-column align="center" label="底价" prop="floorPrice" />
+      <el-table-column align="center" :label="$t('mall_brand.table.floor_price.label')" prop="floorPrice" />
 
-      <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('mall_brand.table.actions.label')" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/brand/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
           <el-button v-permission="['POST /admin/brand/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
@@ -40,13 +40,13 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="品牌商名称" prop="name">
+        <el-form-item :label="$t('mall_brand.form.name.label')" prop="name">
           <el-input v-model="dataForm.name" />
         </el-form-item>
-        <el-form-item label="介绍" prop="simpleDesc">
+        <el-form-item :label="$t('mall_brand.form.simple_desc.label')" prop="simpleDesc">
           <el-input v-model="dataForm.desc" />
         </el-form-item>
-        <el-form-item label="品牌商图片" prop="picUrl">
+        <el-form-item :label="$t('mall_brand.form.pic_url.label')" prop="picUrl">
           <el-upload
             :headers="headers"
             :action="uploadPath"
@@ -59,7 +59,7 @@
             <i v-else class="el-icon-plus avatar-uploader-icon" />
           </el-upload>
         </el-form-item>
-        <el-form-item label="底价" prop="floorPrice">
+        <el-form-item :label="$t('mall_brand.form.floor_price.label')" prop="floorPrice">
           <el-input v-model="dataForm.floorPrice" />
         </el-form-item>
       </el-form>

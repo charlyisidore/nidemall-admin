@@ -403,5 +403,41 @@ export default {
         label: 'Code'
       }
     }
+  },
+  mall_brand: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      name: {
+        label: 'Name'
+      },
+      pic_url: {
+        label: 'Picture'
+      },
+      desc: {
+        label: 'Description'
+      },
+      floor_price: {
+        label: 'Floor price'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    },
+    form: {
+      name: {
+        label: 'Name'
+      },
+      simple_desc: {
+        label: 'Description'
+      },
+      pic_url: {
+        label: 'Picture'
+      },
+      floor_price: {
+        label: 'Floor price'
+      }
+    }
   }
 }

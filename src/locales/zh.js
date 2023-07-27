@@ -403,5 +403,41 @@ export default {
         label: '区域编码'
       }
     }
+  },
+  mall_brand: {
+    table: {
+      id: {
+        label: '品牌商ID'
+      },
+      name: {
+        label: '品牌商名称'
+      },
+      pic_url: {
+        label: '品牌商图片'
+      },
+      desc: {
+        label: '介绍'
+      },
+      floor_price: {
+        label: '底价'
+      },
+      actions: {
+        label: '操作'
+      }
+    },
+    form: {
+      name: {
+        label: '品牌商名称'
+      },
+      simple_desc: {
+        label: '介绍'
+      },
+      pic_url: {
+        label: '品牌商图片'
+      },
+      floor_price: {
+        label: '底价'
+      }
+    }
   }
 }
