@@ -333,5 +333,21 @@ export default {
         label: 'Time added'
       }
     }
+  },
+  user_footprint: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      user_id: {
+        label: 'User ID'
+      },
+      goods_id: {
+        label: 'Product ID'
+      },
+      add_time: {
+        label: 'Time added'
+      }
+    }
   }
 }

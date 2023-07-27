@@ -333,5 +333,21 @@ export default {
         label: '添加时间'
       }
     }
+  },
+  user_footprint: {
+    table: {
+      id: {
+        label: '足迹ID'
+      },
+      user_id: {
+        label: '用户ID'
+      },
+      goods_id: {
+        label: '商品ID'
+      },
+      add_time: {
+        label: '添加时间'
+      }
+    }
   }
 }

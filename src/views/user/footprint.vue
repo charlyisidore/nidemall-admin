@@ -11,13 +11,13 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" label="足迹ID" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('user_footprint.table.id.label')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="100px" label="用户ID" prop="userId" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_footprint.table.user_id.label')" prop="userId" />
 
-      <el-table-column align="center" min-width="100px" label="商品ID" prop="goodsId" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_footprint.table.goods_id.label')" prop="goodsId" />
 
-      <el-table-column align="center" min-width="100px" label="添加时间" prop="addTime" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_footprint.table.add_time.label')" prop="addTime" />
 
     </el-table>
 
