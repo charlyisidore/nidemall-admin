@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueI18n from 'vue-i18n' // translations
 
 import Cookies from 'js-cookie'
 
@@ -22,6 +23,17 @@ import permission from '@/directive/permission/index.js' // 权限判断指令
 
 import Print from '@/utils/print' // 打印
 
+Vue.use(VueI18n)
+
+import en from './locales/en.js'
+import zh from './locales/zh.js'
+
+// VueI18n instance
+const i18n = new VueI18n({
+  locale: 'zh',
+  messages: { en, zh }
+})
+
 Vue.use(Print)
 
 Vue.use(Element, {
@@ -41,5 +53,15 @@ new Vue({
   el: '#app',
   router,
   store,
+  i18n,
   render: h => h(App)
 })
+
+// Hot updates
+// https://kazupon.github.io/vue-i18n/guide/hot-reload.html#basic-example
+if (module.hot) {
+  module.hot.accept(['./locales/en.js', './locales/zh.js'], function() {
+    i18n.setLocaleMessage('en', require('./locales/en.js').default)
+    i18n.setLocaleMessage('zh', require('./locales/zh.js').default)
+  })
+}
