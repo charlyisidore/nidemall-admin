@@ -11053,6 +11053,7 @@ __metadata:
     v-charts: 1.19.0
     vue: 2.6.10
     vue-count-to: 1.0.13
+    vue-i18n: 8
     vue-router: 3.0.2
     vue-template-compiler: 2.6.10
     vuex: 3.1.0
@@ -15875,6 +15876,13 @@ __metadata:
   version: 2.3.4
   resolution: "vue-hot-reload-api@npm:2.3.4"
   checksum: 9befc0b3d6c1cc69430813fb7cfd2125c6a228730a36fad0653e4ddb60c8d4cf3ddc9649d2c9105c3d6044b42e8c8dce62b3c245bc65a6f187c1e2ca82a79252
+  languageName: node
+  linkType: hard
+
+"vue-i18n@npm:8":
+  version: 8.28.2
+  resolution: "vue-i18n@npm:8.28.2"
+  checksum: e0721cc79b6539afa821edb9ce1028c7a661d7db9232888fe6beda7c4cd731c0f72875202046535ea7283715414625f456ea2da78676cb8097fdca7b6f4630c1
   languageName: node
   linkType: hard
 
