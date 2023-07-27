@@ -565,5 +565,29 @@ export default {
         label: 'Actions'
       }
     }
+  },
+  mall_issue: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      question: {
+        label: 'Question'
+      },
+      answer: {
+        label: 'Answer'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    },
+    form: {
+      question: {
+        label: 'Question'
+      },
+      answer: {
+        label: 'Answer'
+      }
+    }
   }
 }

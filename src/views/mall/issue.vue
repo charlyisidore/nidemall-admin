@@ -11,13 +11,13 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" label="问题ID" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('mall_issue.table.id.label')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="200px" label="问题内容" prop="question" />
+      <el-table-column align="center" min-width="200px" :label="$t('mall_issue.table.question.label')" prop="question" />
 
-      <el-table-column align="center" min-width="400px" label="问题回复" prop="answer" />
+      <el-table-column align="center" min-width="400px" :label="$t('mall_issue.table.answer.label')" prop="answer" />
 
-      <el-table-column align="center" label="操作" width="250" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('mall_issue.table.actions.label')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/issue/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
           <el-button v-permission="['POST /admin/issue/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
@@ -30,10 +30,10 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="问题" prop="question">
+        <el-form-item :label="$t('mall_issue.form.question.label')" prop="question">
           <el-input v-model="dataForm.question" />
         </el-form-item>
-        <el-form-item label="回复" prop="answer">
+        <el-form-item :label="$t('mall_issue.form.answer.label')" prop="answer">
           <el-input v-model="dataForm.answer" :rows="8" type="textarea" placeholder="请输入内容" />
         </el-form-item>
       </el-form>

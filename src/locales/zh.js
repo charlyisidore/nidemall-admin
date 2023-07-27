@@ -565,5 +565,29 @@ export default {
         label: '操作'
       }
     }
+  },
+  mall_issue: {
+    table: {
+      id: {
+        label: '问题ID'
+      },
+      question: {
+        label: '问题内容'
+      },
+      answer: {
+        label: '问题回复'
+      },
+      actions: {
+        label: '操作'
+      }
+    },
+    form: {
+      question: {
+        label: '问题'
+      },
+      answer: {
+        label: '回复'
+      }
+    }
   }
 }
