@@ -153,7 +153,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'mallManage',
     meta: {
-      title: '商场管理',
+      title: 'sidebar.mall.title',
       icon: 'chart'
     },
     children: [
@@ -162,7 +162,7 @@ export const asyncRoutes = [
         component: () => import('@/views/mall/region'),
         name: 'region',
         meta: {
-          title: '行政区域',
+          title: 'sidebar.mall.children.region.title',
           noCache: true
         }
       },
@@ -172,7 +172,7 @@ export const asyncRoutes = [
         name: 'brand',
         meta: {
           perms: ['GET /admin/brand/list', 'POST /admin/brand/create', 'GET /admin/brand/read', 'POST /admin/brand/update', 'POST /admin/brand/delete'],
-          title: '品牌制造商',
+          title: 'sidebar.mall.children.brand.title',
           noCache: true
         }
       },
@@ -182,7 +182,7 @@ export const asyncRoutes = [
         name: 'category',
         meta: {
           perms: ['GET /admin/category/list', 'POST /admin/category/create', 'GET /admin/category/read', 'POST /admin/category/update', 'POST /admin/category/delete'],
-          title: '商品类目',
+          title: 'sidebar.mall.children.category.title',
           noCache: true
         }
       },
@@ -192,7 +192,7 @@ export const asyncRoutes = [
         name: 'order',
         meta: {
           perms: ['GET /admin/order/list', 'GET /admin/order/detail', 'POST /admin/order/ship', 'POST /admin/order/refund', 'POST /admin/order/delete', 'POST /admin/order/reply'],
-          title: '订单管理',
+          title: 'sidebar.mall.children.order.title',
           noCache: true
         }
       },
@@ -202,7 +202,7 @@ export const asyncRoutes = [
         name: 'aftersale',
         meta: {
           perms: ['GET /admin/aftersale/list', 'GET /admin/aftersale/detail', 'POST /admin/order/receive', 'POST /admin/aftersale/complete', 'POST /admin/aftersale/reject'],
-          title: '售后管理',
+          title: 'sidebar.mall.children.aftersale.title',
           noCache: true
         }
       },
@@ -212,7 +212,7 @@ export const asyncRoutes = [
         name: 'issue',
         meta: {
           perms: ['GET /admin/issue/list', 'POST /admin/issue/create', 'GET /admin/issue/read', 'POST /admin/issue/update', 'POST /admin/issue/delete'],
-          title: '通用问题',
+          title: 'sidebar.mall.children.issue.title',
           noCache: true
         }
       },
@@ -222,7 +222,7 @@ export const asyncRoutes = [
         name: 'keyword',
         meta: {
           perms: ['GET /admin/keyword/list', 'POST /admin/keyword/create', 'GET /admin/keyword/read', 'POST /admin/keyword/update', 'POST /admin/keyword/delete'],
-          title: '关键词',
+          title: 'sidebar.mall.children.keyword.title',
           noCache: true
         }
       }

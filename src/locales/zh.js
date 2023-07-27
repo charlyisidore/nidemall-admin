@@ -62,6 +62,32 @@ export default {
           title: '意见反馈'
         }
       }
+    },
+    mall: {
+      title: '商场管理',
+      children: {
+        region: {
+          title: '行政区域'
+        },
+        brand: {
+          title: '品牌制造商'
+        },
+        category: {
+          title: '商品类目'
+        },
+        order: {
+          title: '订单管理'
+        },
+        aftersale: {
+          title: '售后管理'
+        },
+        issue: {
+          title: '通用问题'
+        },
+        keyword: {
+          title: '关键词'
+        }
+      }
     }
   },
   message: {

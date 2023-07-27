@@ -62,6 +62,32 @@ export default {
           title: 'Feedbacks'
         }
       }
+    },
+    mall: {
+      title: 'Mall',
+      children: {
+        region: {
+          title: 'Regions'
+        },
+        brand: {
+          title: 'Brands'
+        },
+        category: {
+          title: 'Categories'
+        },
+        order: {
+          title: 'Orders'
+        },
+        aftersale: {
+          title: 'After-sales'
+        },
+        issue: {
+          title: 'Issues'
+        },
+        keyword: {
+          title: 'Keywords'
+        }
+      }
     }
   },
   message: {
