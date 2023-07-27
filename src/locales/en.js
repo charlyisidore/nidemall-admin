@@ -317,5 +317,21 @@ export default {
         label: 'Default'
       }
     }
+  },
+  user_collect: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      user_id: {
+        label: 'User ID'
+      },
+      value_id: {
+        label: 'Item ID'
+      },
+      add_time: {
+        label: 'Time added'
+      }
+    }
   }
 }

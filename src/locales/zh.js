@@ -317,5 +317,21 @@ export default {
         label: '默认'
       }
     }
+  },
+  user_collect: {
+    table: {
+      id: {
+        label: '收藏ID'
+      },
+      user_id: {
+        label: '用户ID'
+      },
+      value_id: {
+        label: '商品ID'
+      },
+      add_time: {
+        label: '添加时间'
+      }
+    }
   }
 }
