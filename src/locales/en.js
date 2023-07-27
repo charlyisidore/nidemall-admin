@@ -349,5 +349,21 @@ export default {
         label: 'Time added'
       }
     }
+  },
+  user_history: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      user_id: {
+        label: 'User ID'
+      },
+      keyword: {
+        label: 'Keyword'
+      },
+      add_time: {
+        label: 'Time added'
+      }
+    }
   }
 }

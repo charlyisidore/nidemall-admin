@@ -349,5 +349,21 @@ export default {
         label: '添加时间'
       }
     }
+  },
+  user_history: {
+    table: {
+      id: {
+        label: '搜索ID'
+      },
+      user_id: {
+        label: '用户ID'
+      },
+      keyword: {
+        label: '关键字'
+      },
+      add_time: {
+        label: '添加时间'
+      }
+    }
   }
 }
