@@ -100,6 +100,33 @@ export default {
     },
     goods_comment: {
       title: 'Comments'
+    },
+    promotion: {
+      title: 'Promotions'
+    },
+    promotion_ad: {
+      title: 'Ads'
+    },
+    promotion_coupon: {
+      title: 'Coupons'
+    },
+    promotion_coupon_detail: {
+      title: 'Coupon details'
+    },
+    promotion_topic: {
+      title: 'Topics'
+    },
+    promotion_topic_create: {
+      title: 'Create topic'
+    },
+    promotion_topic_edit: {
+      title: 'Edit topic'
+    },
+    promotion_groupon_rule: {
+      title: 'Groupon rules'
+    },
+    promotion_groupon_activity: {
+      title: 'Groupon activity'
     }
   },
   message: {

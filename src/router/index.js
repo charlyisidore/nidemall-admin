@@ -290,7 +290,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'promotionManage',
     meta: {
-      title: '推广管理',
+      title: 'sidebar.promotion.title',
       icon: 'chart'
     },
     children: [
@@ -300,7 +300,7 @@ export const asyncRoutes = [
         name: 'ad',
         meta: {
           perms: ['GET /admin/ad/list', 'POST /admin/ad/create', 'GET /admin/ad/read', 'POST /admin/ad/update', 'POST /admin/ad/delete'],
-          title: '广告管理',
+          title: 'sidebar.promotion_ad.title',
           noCache: true
         }
       },
@@ -310,7 +310,7 @@ export const asyncRoutes = [
         name: 'coupon',
         meta: {
           perms: ['GET /admin/coupon/list', 'POST /admin/coupon/create', 'POST /admin/coupon/update', 'POST /admin/coupon/delete'],
-          title: '优惠券管理',
+          title: 'sidebar.promotion_coupon.title',
           noCache: true
         }
       },
@@ -320,7 +320,7 @@ export const asyncRoutes = [
         name: 'couponDetail',
         meta: {
           perms: ['GET /admin/coupon/list', 'GET /admin/coupon/listuser'],
-          title: '优惠券详情',
+          title: 'sidebar.promotion_coupon_detail.title',
           noCache: true
         },
         hidden: true
@@ -331,7 +331,7 @@ export const asyncRoutes = [
         name: 'topic',
         meta: {
           perms: ['GET /admin/topic/list', 'POST /admin/topic/create', 'GET /admin/topic/read', 'POST /admin/topic/update', 'POST /admin/topic/delete'],
-          title: '专题管理',
+          title: 'sidebar.promotion_topic.title',
           noCache: true
         }
       },
@@ -341,7 +341,7 @@ export const asyncRoutes = [
         name: 'topicCreate',
         meta: {
           perms: ['POST /admin/topic/create'],
-          title: '专题创建',
+          title: 'sidebar.promotion_topic_create.title',
           noCache: true
         },
         hidden: true
@@ -352,7 +352,7 @@ export const asyncRoutes = [
         name: 'topicEdit',
         meta: {
           perms: ['GET /admin/topic/read', 'POST /admin/topic/update'],
-          title: '专题编辑',
+          title: 'sidebar.promotion_topic_edit.title',
           noCache: true
         },
         hidden: true
@@ -363,7 +363,7 @@ export const asyncRoutes = [
         name: 'grouponRule',
         meta: {
           perms: ['GET /admin/groupon/list', 'POST /admin/groupon/create', 'POST /admin/groupon/update', 'POST /admin/groupon/delete'],
-          title: '团购规则',
+          title: 'sidebar.promotion_groupon_rule.title',
           noCache: true
         }
       },
@@ -373,7 +373,7 @@ export const asyncRoutes = [
         name: 'grouponActivity',
         meta: {
           perms: ['GET /admin/groupon/listRecord'],
-          title: '团购活动',
+          title: 'sidebar.promotion_groupon_activity.title',
           noCache: true
         }
       }

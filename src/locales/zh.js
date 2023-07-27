@@ -99,6 +99,33 @@ export default {
     },
     goods_comment: {
       title: '商品评论'
+    },
+    promotion: {
+      title: '推广管理'
+    },
+    promotion_ad: {
+      title: '广告管理'
+    },
+    promotion_coupon: {
+      title: '优惠券管理'
+    },
+    promotion_coupon_detail: {
+      title: '优惠券详情'
+    },
+    promotion_topic: {
+      title: '专题管理'
+    },
+    promotion_topic_create: {
+      title: '专题创建'
+    },
+    promotion_topic_edit: {
+      title: '专题编辑'
+    },
+    promotion_groupon_rule: {
+      title: '团购规则'
+    },
+    promotion_groupon_activity: {
+      title: '团购活动'
     }
   },
   message: {
