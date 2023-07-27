@@ -219,11 +219,11 @@ export default {
     details: {
       label: 'Details'
     },
+    download: {
+      label: 'Download'
+    },
     edit: {
       label: 'Edit'
-    },
-    export: {
-      label: 'Export'
     },
     permission: {
       label: 'Permissions'

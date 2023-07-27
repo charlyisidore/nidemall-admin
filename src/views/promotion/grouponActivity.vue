@@ -11,7 +11,7 @@
         type="primary"
         icon="el-icon-download"
         @click="handleDownload"
-      >{{ $t('button.export.label') }}
+      >{{ $t('button.download.label') }}
       </el-button>
     </div>
 

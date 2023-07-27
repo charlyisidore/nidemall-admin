@@ -6,7 +6,7 @@
       <el-input v-model="listQuery.question" clearable class="filter-item" style="width: 200px;" placeholder="请输入问题" />
       <el-button v-permission="['GET /admin/issue/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
       <el-button v-permission="['POST /admin/issue/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.export.label') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
     </div>
 
     <!-- 查询结果 -->

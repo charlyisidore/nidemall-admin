@@ -219,11 +219,11 @@ export default {
     details: {
       label: '详情'
     },
+    download: {
+      label: '导出'
+    },
     edit: {
       label: '编辑'
-    },
-    export: {
-      label: '导出'
     },
     permission: {
       label: '授权'
