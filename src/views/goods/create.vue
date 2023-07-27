@@ -140,7 +140,7 @@
           class-name="small-padding fixed-width"
         >
           <template slot-scope="scope">
-            <el-button type="danger" size="mini" @click="handleSpecificationDelete(scope.row)">删除</el-button>
+            <el-button type="danger" size="mini" @click="handleSpecificationDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -255,7 +255,7 @@
         <el-table-column property="value" label="商品参数值" />
         <el-table-column align="center" label="操作" width="100" class-name="small-padding fixed-width">
           <template slot-scope="scope">
-            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">删除</el-button>
+            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
           </template>
         </el-table-column>
       </el-table>

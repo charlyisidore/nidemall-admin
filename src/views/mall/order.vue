@@ -92,7 +92,7 @@
       <el-table-column align="center" label="操作" width="250" class-name="oper">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('button.details.label') }}</el-button>
-          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">删除</el-button>
+          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
           <el-button type="warning" size="mini" @click="handlePay(scope.row)">收款</el-button>
           <el-button type="primary" size="mini" @click="handleShip(scope.row)">发货</el-button>
           <el-button type="danger" size="mini" @click="handleRefund(scope.row)">退款</el-button>

@@ -198,8 +198,14 @@ export default {
     }
   },
   button: {
+    delete: {
+      label: '删除'
+    },
     details: {
       label: '详情'
+    },
+    edit: {
+      label: '编辑'
     },
     export: {
       label: '导出'

@@ -198,8 +198,14 @@ export default {
     }
   },
   button: {
+    delete: {
+      label: 'Delete'
+    },
     details: {
       label: 'Details'
+    },
+    edit: {
+      label: 'Edit'
     },
     export: {
       label: 'Export'

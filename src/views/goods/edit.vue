@@ -219,7 +219,7 @@
         <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
           <template slot-scope="scope">
             <el-button type="primary" size="mini" @click="handleAttributeShow(scope.row)">设置</el-button>
-            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">删除</el-button>
+            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
           </template>
         </el-table-column>
       </el-table>
