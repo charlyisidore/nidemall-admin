@@ -620,6 +620,7 @@ export default {
       },
       is_hot: {
         label: 'Hot',
+        placeholder: 'Please choose',
         value: {
           true: 'Recommended',
           false: 'Common'
@@ -627,6 +628,7 @@ export default {
       },
       is_default: {
         label: 'Default',
+        placeholder: 'Please choose',
         value: {
           true: 'Default',
           false: 'Non default'
