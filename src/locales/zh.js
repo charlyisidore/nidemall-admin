@@ -41,70 +41,64 @@ export default {
       title: '首页'
     },
     user: {
-      title: '用户管理',
-      children: {
-        user: {
-          title: '会员管理'
-        },
-        address: {
-          title: '收货地址'
-        },
-        collect: {
-          title: '会员收藏'
-        },
-        footprint: {
-          title: '会员足迹'
-        },
-        history: {
-          title: '搜索历史'
-        },
-        feedback: {
-          title: '意见反馈'
-        }
-      }
+      title: '用户管理'
+    },
+    user_user: {
+      title: '会员管理'
+    },
+    user_address: {
+      title: '收货地址'
+    },
+    user_collect: {
+      title: '会员收藏'
+    },
+    user_footprint: {
+      title: '会员足迹'
+    },
+    user_history: {
+      title: '搜索历史'
+    },
+    user_feedback: {
+      title: '意见反馈'
     },
     mall: {
-      title: '商场管理',
-      children: {
-        region: {
-          title: '行政区域'
-        },
-        brand: {
-          title: '品牌制造商'
-        },
-        category: {
-          title: '商品类目'
-        },
-        order: {
-          title: '订单管理'
-        },
-        aftersale: {
-          title: '售后管理'
-        },
-        issue: {
-          title: '通用问题'
-        },
-        keyword: {
-          title: '关键词'
-        }
-      }
+      title: '商场管理'
+    },
+    mall_region: {
+      title: '行政区域'
+    },
+    mall_brand: {
+      title: '品牌制造商'
+    },
+    mall_category: {
+      title: '商品类目'
+    },
+    mall_order: {
+      title: '订单管理'
+    },
+    mall_aftersale: {
+      title: '售后管理'
+    },
+    mall_issue: {
+      title: '通用问题'
+    },
+    mall_keyword: {
+      title: '关键词'
     },
     goods: {
-      title: '商品管理',
-      children: {
-        list: {
-          title: '商品列表'
-        },
-        create: {
-          title: '商品上架'
-        },
-        edit: {
-          title: '商品编辑'
-        },
-        comment: {
-          title: '商品评论'
-        }
-      }
+      title: '商品管理'
+    },
+    goods_list: {
+      title: '商品列表'
+    },
+    goods_create: {
+      title: '商品上架'
+    },
+    goods_edit: {
+      title: '商品编辑'
+    },
+    goods_comment: {
+      title: '商品评论'
     }
   },
   message: {

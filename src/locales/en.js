@@ -41,70 +41,65 @@ export default {
       title: 'Dashboard'
     },
     user: {
-      title: 'Users',
-      children: {
-        user: {
-          title: 'Members'
-        },
-        address: {
-          title: 'Addresses'
-        },
-        collect: {
-          title: 'Favorites'
-        },
-        footprint: {
-          title: 'Footprints'
-        },
-        history: {
-          title: 'Search history'
-        },
-        feedback: {
-          title: 'Feedbacks'
-        }
-      }
+      title: 'Users'
+    },
+    user_user: {
+      title: 'Customers'
+    },
+    user_address: {
+      title: 'Addresses'
+    },
+    user_collect: {
+      title: 'Favorites'
+    },
+    user_footprint: {
+      title: 'Footprints'
+    },
+    user_history: {
+      title: 'Search history'
+    },
+    user_feedback: {
+      title: 'Feedbacks'
     },
     mall: {
-      title: 'Mall',
-      children: {
-        region: {
-          title: 'Regions'
-        },
-        brand: {
-          title: 'Brands'
-        },
-        category: {
-          title: 'Categories'
-        },
-        order: {
-          title: 'Orders'
-        },
-        aftersale: {
-          title: 'After-sales'
-        },
-        issue: {
-          title: 'Issues'
-        },
-        keyword: {
-          title: 'Keywords'
-        }
-      }
+      title: 'Mall'
+    },
+
+    mall_region: {
+      title: 'Regions'
+    },
+    mall_brand: {
+      title: 'Brands'
+    },
+    mall_category: {
+      title: 'Categories'
+    },
+    mall_order: {
+      title: 'Orders'
+    },
+    mall_aftersale: {
+      title: 'After-sales'
+    },
+    mall_issue: {
+      title: 'Issues'
+    },
+    mall_keyword: {
+      title: 'Keywords'
     },
     goods: {
-      title: 'Products',
-      children: {
-        list: {
-          title: 'List products'
-        },
-        create: {
-          title: 'Add product'
-        },
-        edit: {
-          title: 'Edit product'
-        },
-        comment: {
-          title: 'Comments'
-        }
-      }
+      title: 'Products'
+    },
+    goods_list: {
+      title: 'List products'
+    },
+    goods_create: {
+      title: 'Add product'
+    },
+    goods_edit: {
+      title: 'Edit product'
+    },
+    goods_comment: {
+      title: 'Comments'
     }
   },
   message: {
