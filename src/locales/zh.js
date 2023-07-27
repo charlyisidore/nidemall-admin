@@ -240,5 +240,57 @@ export default {
     view: {
       label: '查看'
     }
+  },
+  user_user: {
+    table: {
+      id: {
+        label: '用户ID'
+      },
+      nickname: {
+        label: '用户昵称'
+      },
+      avatar: {
+        label: '用户头像'
+      },
+      mobile: {
+        label: '手机号码'
+      },
+      gender: {
+        label: '性别'
+      },
+      birthday: {
+        label: '生日'
+      },
+      user_level: {
+        label: '用户等级'
+      },
+      status: {
+        label: '状态'
+      },
+      actions: {
+        label: '操作'
+      }
+    },
+    form_title: '用户编辑',
+    form: {
+      username: {
+        label: '用户名'
+      },
+      nickname: {
+        label: '用户昵称'
+      },
+      mobile: {
+        label: '用户手机'
+      },
+      gender: {
+        label: '用户性别'
+      },
+      user_level: {
+        label: '用户等级'
+      },
+      status: {
+        label: '状态'
+      }
+    }
   }
 }

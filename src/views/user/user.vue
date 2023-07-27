@@ -12,38 +12,38 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" label="用户ID" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('user_user.table.id.label')" prop="id" sortable />
 
-      <el-table-column align="center" label="用户昵称" prop="nickname" />
+      <el-table-column align="center" :label="$t('user_user.table.nickname.label')" prop="nickname" />
 
-      <el-table-column align="center" label="用户头像" width="80">
+      <el-table-column align="center" :label="$t('user_user.table.avatar.label')" width="80">
         <template slot-scope="scope">
           <el-avatar :src="scope.row.avatar" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="手机号码" prop="mobile" />
+      <el-table-column align="center" :label="$t('user_user.table.mobile.label')" prop="mobile" />
 
-      <el-table-column align="center" label="性别" prop="gender">
+      <el-table-column align="center" :label="$t('user_user.table.gender.label')" prop="gender">
         <template slot-scope="scope">
           <el-tag>{{ genderDic[scope.row.gender] }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="生日" prop="birthday" />
+      <el-table-column align="center" :label="$t('user_user.table.birthday.label')" prop="birthday" />
 
-      <el-table-column align="center" label="用户等级" prop="userLevel">
+      <el-table-column align="center" :label="$t('user_user.table.user_level.label')" prop="userLevel">
         <template slot-scope="scope">
           <el-tag>{{ levelDic[scope.row.userLevel] }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="状态" prop="status">
+      <el-table-column align="center" :label="$t('user_user.table.status.label')" prop="status">
         <template slot-scope="scope">
           <el-tag>{{ statusDic[scope.row.status] }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column align="center" label="操作" width="250" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('user_user.table.actions.label')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('button.details.label') }}</el-button>
         </template>
@@ -52,24 +52,24 @@
 
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
     <!-- 用户编辑对话框 -->
-    <el-dialog :visible.sync="userDialogVisible" title="用户编辑">
+    <el-dialog :visible.sync="userDialogVisible" :title="$t('user_user.form_title')">
       <el-form ref="userDetail" :model="userDetail" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="用户名" prop="username">
+        <el-form-item :label="$t('user_user.form.username.label')" prop="username">
           <el-input v-model="userDetail.username" :disabled="true" />
         </el-form-item>
-        <el-form-item label="用户昵称" prop="nickname">
+        <el-form-item :label="$t('user_user.form.nickname.label')" prop="nickname">
           <el-input v-model="userDetail.nickname" />
         </el-form-item>
-        <el-form-item label="用户手机" prop="mobile">
+        <el-form-item :label="$t('user_user.form.mobile.label')" prop="mobile">
           <el-input v-model="userDetail.mobile" />
         </el-form-item>
-        <el-form-item label="用户性别" prop="gender">
+        <el-form-item :label="$t('user_user.form.gender.label')" prop="gender">
           <el-select v-model="userDetail.gender" placeholder="请选择"><el-option v-for="(item, index) in genderDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
-        <el-form-item label="用户等级" prop="userLevel">
+        <el-form-item :label="$t('user_user.form.user_level.label')" prop="userLevel">
           <el-select v-model="userDetail.userLevel" placeholder="请选择"><el-option v-for="(item, index) in levelDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
-        <el-form-item label="状态" prop="status">
+        <el-form-item :label="$t('user_user.form.status.label')" prop="status">
           <el-select v-model="userDetail.status" placeholder="请选择"><el-option v-for="(item, index) in statusDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
       </el-form>

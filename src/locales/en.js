@@ -240,5 +240,57 @@ export default {
     view: {
       label: 'View'
     }
+  },
+  user_user: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      nickname: {
+        label: 'Nickname'
+      },
+      avatar: {
+        label: 'Avatar'
+      },
+      mobile: {
+        label: 'Mobile'
+      },
+      gender: {
+        label: 'Gender'
+      },
+      birthday: {
+        label: 'Birthday'
+      },
+      user_level: {
+        label: 'Level'
+      },
+      status: {
+        label: 'Status'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    },
+    form_title: 'Edit user',
+    form: {
+      username: {
+        label: 'Username'
+      },
+      nickname: {
+        label: 'Nickname'
+      },
+      mobile: {
+        label: 'Mobile'
+      },
+      gender: {
+        label: 'Gender'
+      },
+      user_level: {
+        label: 'Level'
+      },
+      status: {
+        label: 'Status'
+      }
+    }
   }
 }
