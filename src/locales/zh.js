@@ -198,6 +198,9 @@ export default {
     }
   },
   button: {
+    batch_delete: {
+      label: '批量删除'
+    },
     delete: {
       label: '删除'
     },

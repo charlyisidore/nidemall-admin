@@ -9,7 +9,7 @@
 
     <div class="operator-container">
       <el-button class="filter-item" type="primary" icon="el-icon-edit" @click="handleBatchRead">批量已读</el-button>
-      <el-button class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">批量删除</el-button>
+      <el-button class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('button.batch_delete.label') }}</el-button>
     </div>
 
     <el-tabs v-model="listQuery.type" @tab-click="handleFilter">

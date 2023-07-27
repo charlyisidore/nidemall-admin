@@ -198,6 +198,9 @@ export default {
     }
   },
   button: {
+    batch_delete: {
+      label: 'Batch delete'
+    },
     delete: {
       label: 'Delete'
     },

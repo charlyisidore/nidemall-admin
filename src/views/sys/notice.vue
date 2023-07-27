@@ -11,7 +11,7 @@
 
     <div class="operator-container">
       <el-button v-permission="['POST /admin/notice/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">添加</el-button>
-      <el-button v-permission="['GET /admin/notice/batch-delete']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">批量删除</el-button>
+      <el-button v-permission="['GET /admin/notice/batch-delete']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('button.batch_delete.label') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
