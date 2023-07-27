@@ -494,5 +494,48 @@ export default {
         label: '类目简介'
       }
     }
+  },
+  mall_order: {
+    table: {
+      order_sn: {
+        label: '订单编号'
+      },
+      avatar: {
+        label: '用户头像'
+      },
+      user_name: {
+        label: '下单用户'
+      },
+      add_time: {
+        label: '下单时间'
+      },
+      order_status: {
+        label: '订单状态'
+      },
+      order_price: {
+        label: '订单金额'
+      },
+      actual_price: {
+        label: '实付金额'
+      },
+      pay_time: {
+        label: '支付时间'
+      },
+      consignee: {
+        label: '收货人'
+      },
+      mobile: {
+        label: '收货电话'
+      },
+      ship_sn: {
+        label: '物流单号'
+      },
+      ship_channel: {
+        label: '物流渠道'
+      },
+      actions: {
+        label: '操作'
+      }
+    }
   }
 }

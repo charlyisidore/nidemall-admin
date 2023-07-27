@@ -42,54 +42,54 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="120" label="订单编号" prop="orderSn" />
+      <el-table-column align="center" min-width="120" :label="$t('mall_order.table.order_sn.label')" prop="orderSn" />
 
-      <el-table-column align="center" label="用户头像" width="80">
+      <el-table-column align="center" :label="$t('mall_order.table.avatar.label')" width="80">
         <template slot-scope="scope">
           <el-avatar :src="scope.row.avatar" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="下单用户" prop="userName" />
+      <el-table-column align="center" :label="$t('mall_order.table.user_name.label')" prop="userName" />
 
-      <el-table-column align="center" label="下单时间" prop="addTime" min-width="100">
+      <el-table-column align="center" :label="$t('mall_order.table.add_time.label')" prop="addTime" min-width="100">
         <template slot-scope="scope">
           {{ (scope.row.addTime || '').substring(0, 10) }}
         </template>
       </el-table-column>
-      <el-table-column align="center" label="订单状态" prop="orderStatus">
+      <el-table-column align="center" :label="$t('mall_order.table.order_status.label')" prop="orderStatus">
         <template slot-scope="scope">
           <el-tag>{{ scope.row.orderStatus | orderStatusFilter }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="订单金额" prop="orderPrice">
+      <el-table-column align="center" :label="$t('mall_order.table.order_price.label')" prop="orderPrice">
         <template slot-scope="scope">
           {{ scope.row.orderPrice }} 元
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="实付金额" prop="actualPrice">
+      <el-table-column align="center" :label="$t('mall_order.table.actual_price.label')" prop="actualPrice">
         <template slot-scope="scope">
           {{ scope.row.actualPrice }} 元
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="支付时间" prop="payTime" />
+      <el-table-column align="center" :label="$t('mall_order.table.pay_time.label')" prop="payTime" />
 
-      <el-table-column align="center" label="收货人" prop="consignee">
+      <el-table-column align="center" :label="$t('mall_order.table.consignee.label')" prop="consignee">
         <template slot-scope="scope">
           <span style="color:red; font-weight:bold;">{{ scope.row.consignee }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="收货电话" prop="mobile" min-width="100" />
+      <el-table-column align="center" :label="$t('mall_order.table.mobile.label')" prop="mobile" min-width="100" />
 
-      <el-table-column align="center" label="物流单号" prop="shipSn" />
+      <el-table-column align="center" :label="$t('mall_order.table.ship_sn.label')" prop="shipSn" />
 
-      <el-table-column align="center" label="物流渠道" prop="shipChannel" />
+      <el-table-column align="center" :label="$t('mall_order.table.ship_channel.label')" prop="shipChannel" />
 
-      <el-table-column align="center" label="操作" width="250" class-name="oper">
+      <el-table-column align="center" :label="$t('mall_order.table.actions.label')" width="250" class-name="oper">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('button.details.label') }}</el-button>
           <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>

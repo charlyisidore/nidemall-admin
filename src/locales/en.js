@@ -494,5 +494,48 @@ export default {
         label: 'Description'
       }
     }
+  },
+  mall_order: {
+    table: {
+      order_sn: {
+        label: 'Order SN'
+      },
+      avatar: {
+        label: 'Avatar'
+      },
+      user_name: {
+        label: 'User name'
+      },
+      add_time: {
+        label: 'Time added'
+      },
+      order_status: {
+        label: 'Status'
+      },
+      order_price: {
+        label: 'Order price'
+      },
+      actual_price: {
+        label: 'Actual price'
+      },
+      pay_time: {
+        label: 'Time paid'
+      },
+      consignee: {
+        label: 'Consignee'
+      },
+      mobile: {
+        label: 'Mobile'
+      },
+      ship_sn: {
+        label: 'Ship SN'
+      },
+      ship_channel: {
+        label: 'Ship channel'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    }
   }
 }
