@@ -77,7 +77,7 @@
             {{ tag }}
           </el-tag>
           <el-input v-if="newKeywordVisible" ref="newKeywordInput" v-model="newKeyword" class="input-new-keyword" @keyup.enter.native="handleInputConfirm" @blur="handleInputConfirm" />
-          <el-button v-else class="button-new-keyword" type="primary" @click="showInput">+ 增加</el-button>
+          <el-button v-else class="button-new-keyword" type="primary" @click="showInput">{{ $t('button.add.label') }}</el-button>
         </el-form-item>
 
         <el-form-item label="所属分类">
