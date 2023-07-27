@@ -13,25 +13,25 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" width="150px" label="关键词ID" prop="id" sortable />
+      <el-table-column align="center" width="150px" :label="$t('mall_keyword.table.id.label')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="100px" label="关键词" prop="keyword" />
+      <el-table-column align="center" min-width="100px" :label="$t('mall_keyword.table.keyword.label')" prop="keyword" />
 
-      <el-table-column align="center" min-width="300px" label="跳转链接" prop="url" />
+      <el-table-column align="center" min-width="300px" :label="$t('mall_keyword.table.url.label')" prop="url" />
 
-      <el-table-column align="center" min-width="100px" label="是否推荐" prop="isHot">
+      <el-table-column align="center" min-width="100px" :label="$t('mall_keyword.table.is_hot.label')" prop="isHot">
         <template slot-scope="scope">
           <el-tag :type="scope.row.isHot ? 'success' : 'error' ">{{ scope.row.isHot ? '是' : '否' }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="100px" label="是否默认" prop="isDefault">
+      <el-table-column align="center" min-width="100px" :label="$t('mall_keyword.table.is_default.label')" prop="isDefault">
         <template slot-scope="scope">
           <el-tag :type="scope.row.isDefault ? 'success' : 'error' ">{{ scope.row.isDefault ? '是' : '否' }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="操作" width="250" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('mall_keyword.table.actions.label')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/keyword/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
           <el-button v-permission="['POST /admin/keyword/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
@@ -44,22 +44,22 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="关键词" prop="keyword">
+        <el-form-item :label="$t('mall_keyword.form.keyword.label')" prop="keyword">
           <el-input v-model="dataForm.keyword" />
         </el-form-item>
-        <el-form-item label="跳转链接" prop="url">
+        <el-form-item :label="$t('mall_keyword.form.url.label')" prop="url">
           <el-input v-model="dataForm.url" />
         </el-form-item>
-        <el-form-item label="是否推荐" prop="isHot">
-          <el-select v-model="dataForm.isHot" placeholder="请选择">
-            <el-option :value="true" label="推荐" />
-            <el-option :value="false" label="普通" />
+        <el-form-item :label="$t('mall_keyword.form.is_hot.label')" prop="isHot">
+          <el-select v-model="dataForm.isHot" :placeholder="$t('mall_keyword.form.is_hot.placeholder')">
+            <el-option :value="true" :label="$t('mall_keyword.form.is_hot.value.true')" />
+            <el-option :value="false" :label="$t('mall_keyword.form.is_hot.value.false')" />
           </el-select>
         </el-form-item>
-        <el-form-item label="是否默认" prop="isDefault">
-          <el-select v-model="dataForm.isDefault" placeholder="请选择">
-            <el-option :value="true" label="默认" />
-            <el-option :value="false" label="非默认" />
+        <el-form-item :label="$t('mall_keyword.form.is_default.label')" prop="isDefault">
+          <el-select v-model="dataForm.isDefault" :placeholder="$t('mall_keyword.form.is_default.placeholder')">
+            <el-option :value="true" :label="$t('mall_keyword.form.is_default.value.true')" />
+            <el-option :value="false" :label="$t('mall_keyword.form.is_default.value.false')" />
           </el-select>
         </el-form-item>
       </el-form>

@@ -589,5 +589,51 @@ export default {
         label: '回复'
       }
     }
+  },
+  mall_keyword: {
+    table: {
+      id: {
+        label: '关键词ID'
+      },
+      keyword: {
+        label: '关键词'
+      },
+      url: {
+        label: '跳转链接'
+      },
+      is_hot: {
+        label: '是否推荐'
+      },
+      is_default: {
+        label: '是否默认'
+      },
+      actions: {
+        label: '操作'
+      }
+    },
+    form: {
+      keyword: {
+        label: '关键词'
+      },
+      url: {
+        label: '跳转链接'
+      },
+      is_hot: {
+        label: '是否推荐',
+        placeholder: '请选择',
+        value: {
+          true: '推荐',
+          false: '普通'
+        }
+      },
+      is_default: {
+        label: '是否默认',
+        placeholder: '请选择',
+        value: {
+          true: '默认',
+          false: '非默认'
+        }
+      }
+    }
   }
 }

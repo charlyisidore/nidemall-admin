@@ -589,5 +589,49 @@ export default {
         label: 'Answer'
       }
     }
+  },
+  mall_keyword: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      keyword: {
+        label: 'Keyword'
+      },
+      url: {
+        label: 'URL'
+      },
+      is_hot: {
+        label: 'Hot'
+      },
+      is_default: {
+        label: 'Default'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    },
+    form: {
+      keyword: {
+        label: 'Keyword'
+      },
+      url: {
+        label: 'URL'
+      },
+      is_hot: {
+        label: 'Hot',
+        value: {
+          true: 'Recommended',
+          false: 'Common'
+        }
+      },
+      is_default: {
+        label: 'Default',
+        value: {
+          true: 'Default',
+          false: 'Non default'
+        }
+      }
+    }
   }
 }
