@@ -16,6 +16,26 @@ export default {
       }
     }
   },
+  navbar: {
+    locale_changer: {
+      tooltip: 'Language'
+    },
+    full_screen: {
+      tooltip: 'Full screen'
+    },
+    size_select: {
+      tooltip: 'Select size'
+    },
+    notice: {
+      tooltip: 'Notifications'
+    },
+    avatar_dropdown: {
+      home: 'Home',
+      github: 'Github',
+      change_password: 'Change password',
+      logout: 'Logout'
+    }
+  },
   message: {
     hello: 'hello world'
   }

@@ -16,6 +16,26 @@ export default {
       }
     }
   },
+  navbar: {
+    locale_changer: {
+      tooltip: '语言'
+    },
+    full_screen: {
+      tooltip: '全屏'
+    },
+    size_select: {
+      tooltip: '布局大小'
+    },
+    notice: {
+      tooltip: '通知中心'
+    },
+    avatar_dropdown: {
+      home: '首页',
+      github: 'Github',
+      change_password: '密码修改',
+      logout: '退出'
+    }
+  },
   message: {
     hello: '你好世界'
   }
