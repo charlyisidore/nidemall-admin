@@ -114,7 +114,7 @@
           </el-radio-group>
         </el-col>
         <el-col v-if="multipleSpec" :span="10">
-          <el-button :plain="true" type="primary" @click="handleSpecificationShow">添加</el-button>
+          <el-button :plain="true" type="primary" @click="handleSpecificationShow">{{ $t('button.create.label') }}</el-button>
         </el-col>
       </el-row>
 
@@ -249,7 +249,7 @@
 
     <el-card class="box-card">
       <h3>商品参数</h3>
-      <el-button type="primary" @click="handleAttributeShow">添加</el-button>
+      <el-button type="primary" @click="handleAttributeShow">{{ $t('button.create.label') }}</el-button>
       <el-table :data="attributes">
         <el-table-column property="attribute" label="商品参数名称" />
         <el-table-column property="value" label="商品参数值" />

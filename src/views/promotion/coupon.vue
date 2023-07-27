@@ -11,7 +11,7 @@
         <el-option v-for="type in statusOptions" :key="type.value" :label="type.label" :value="type.value" />
       </el-select>
       <el-button v-permission="['GET /admin/coupon/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button v-permission="['POST /admin/coupon/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">添加</el-button>
+      <el-button v-permission="['POST /admin/coupon/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.export.label') }}</el-button>
     </div>
 
@@ -141,7 +141,7 @@
             placeholder="请选择分类名称"
             :options="goodsCategoryOptions"
           />
-          <el-button @click="handleAddGoodsCategory()">添加</el-button>
+          <el-button @click="handleAddGoodsCategory()">{{ $t('button.create.label') }}</el-button>
           <el-table
             ref="goodsCateRelationTable"
             :data="couponCategoryList"
@@ -181,7 +181,7 @@
               <span style="float: right; color: #8492a6; font-size: 13px">NO.{{ item.goodsSn }}</span>
             </el-option>
           </el-select>
-          <el-button @click="handleAddGoods()">添加</el-button>
+          <el-button @click="handleAddGoods()">{{ $t('button.create.label') }}</el-button>
           <el-table
             ref="goodsRelationTable"
             :data="couponGoodsList"

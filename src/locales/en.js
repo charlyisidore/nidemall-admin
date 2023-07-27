@@ -201,6 +201,9 @@ export default {
     batch_delete: {
       label: 'Batch delete'
     },
+    create: {
+      label: 'Create'
+    },
     delete: {
       label: 'Delete'
     },

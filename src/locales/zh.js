@@ -201,6 +201,9 @@ export default {
     batch_delete: {
       label: '批量删除'
     },
+    create: {
+      label: '添加'
+    },
     delete: {
       label: '删除'
     },

@@ -212,7 +212,7 @@
 
     <el-card class="box-card">
       <h3>商品参数</h3>
-      <el-button type="primary" @click="handleAttributeShow">添加</el-button>
+      <el-button type="primary" @click="handleAttributeShow">{{ $t('button.create.label') }}</el-button>
       <el-table :data="attributesData">
         <el-table-column property="attribute" label="商品参数名称" />
         <el-table-column property="value" label="商品参数值" />
