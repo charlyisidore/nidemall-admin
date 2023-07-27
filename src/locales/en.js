@@ -64,7 +64,6 @@ export default {
     mall: {
       title: 'Mall'
     },
-
     mall_region: {
       title: 'Regions'
     },
@@ -196,6 +195,14 @@ export default {
     },
     external_link_kdniao_api: {
       title: 'Kdniao API'
+    }
+  },
+  button: {
+    export: {
+      label: 'Export'
+    },
+    search: {
+      label: 'Search'
     }
   }
 }

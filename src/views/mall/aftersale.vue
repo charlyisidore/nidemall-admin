@@ -5,8 +5,8 @@
     <div class="filter-container">
       <el-input v-model="listQuery.aftersaleSn" clearable class="filter-item" style="width: 200px;" placeholder="请输入售后编号" />
       <el-input v-model="listQuery.orderId" clearable class="filter-item" style="width: 200px;" placeholder="请输入订单ID" />
-      <el-button v-permission="['GET /admin/aftersale/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">查找</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">导出</el-button>
+      <el-button v-permission="['GET /admin/aftersale/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.export.label') }}</el-button>
     </div>
 
     <div class="operator-container">
@@ -150,8 +150,8 @@ export default {
       contentDetail: '',
       contentDialogVisible: false,
       downloadLoading: false,
-      aftersaleDialogVisible:false,
-      aftersaleDetail:{}
+      aftersaleDialogVisible: false,
+      aftersaleDetail: {}
     }
   },
   created() {
@@ -311,10 +311,10 @@ export default {
       })
     },
     handleRead(row) {
-      this.aftersaleDetail = row;
-      console.log(this.aftersaleDetail);
+      this.aftersaleDetail = row
+      console.log(this.aftersaleDetail)
       this.aftersaleDialogVisible = true
-    },
+    }
   }
 }
 </script>

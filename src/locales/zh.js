@@ -196,5 +196,13 @@ export default {
     external_link_kdniao_api: {
       title: '快递鸟'
     }
+  },
+  button: {
+    export: {
+      label: '导出'
+    },
+    search: {
+      label: '查找'
+    }
   }
 }
