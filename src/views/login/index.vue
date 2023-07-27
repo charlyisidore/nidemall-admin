@@ -11,14 +11,14 @@
         <span class="svg-container">
           <svg-icon icon-class="user" />
         </span>
-        <el-input v-model="loginForm.username" name="username" type="text" tabindex="1" auto-complete="on" placeholder="管理员账户" />
+        <el-input v-model="loginForm.username" name="username" type="text" tabindex="1" auto-complete="on" :placeholder="$t('login.form.username.placeholder')" />
       </el-form-item>
 
       <el-form-item prop="password">
         <span class="svg-container">
           <svg-icon icon-class="password" />
         </span>
-        <el-input v-model="loginForm.password" :type="passwordType" name="password" auto-complete="on" tabindex="2" show-password placeholder="管理员密码" @keyup.enter.native="handleLogin" />
+        <el-input v-model="loginForm.password" :type="passwordType" name="password" auto-complete="on" tabindex="2" show-password :placeholder="$t('login.form.password.placeholder')" @keyup.enter.native="handleLogin" />
       </el-form-item>
 
       <!-- <el-form-item prop="code">
@@ -31,7 +31,7 @@
         </div>
       </el-form-item> -->
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">{{ $t('login.form.login.label') }}</el-button>
 
       <div v-if="isDev" style="position:relative">
         <div class="tips">
@@ -67,7 +67,7 @@ export default {
   data() {
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error('管理员密码长度应大于6'))
+        callback(new Error(this.$t('login.form.password.message_min_length')))
       } else {
         callback()
       }
@@ -80,9 +80,9 @@ export default {
       },
       codeImg: '',
       loginRules: {
-        username: [{ required: true, message: '管理员账户不允许为空', trigger: 'blur' }],
+        username: [{ required: true, message: this.$t('login.form.username.message_required'), trigger: 'blur' }],
         password: [
-          { required: true, message: '管理员密码不允许为空', trigger: 'blur' },
+          { required: true, message: this.$t('login.form.password.message_required'), trigger: 'blur' },
           { validator: validatePassword, trigger: 'blur' }
         ]
       },
