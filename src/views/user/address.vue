@@ -11,23 +11,23 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" label="地址ID" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('user_address.table.id.label')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="100px" label="用户ID" prop="userId" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.user_id.label')" prop="userId" />
 
-      <el-table-column align="center" min-width="100px" label="收货人名称" prop="name" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.name.label')" prop="name" />
 
-      <el-table-column align="center" min-width="100px" label="手机号码" prop="tel" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.tel.label')" prop="tel" />
 
-      <el-table-column align="center" min-width="300px" label="区域地址">
+      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_region.label')">
         <template slot-scope="scope">
           {{ scope.row.province + scope.row.city + scope.row.county }}
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="300px" label="详细地址" prop="addressDetail" />
+      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_detail.label')" prop="addressDetail" />
 
-      <el-table-column align="center" min-width="80px" label="默认" prop="isDefault">
+      <el-table-column align="center" min-width="80px" :label="$t('user_address.table.is_default.label')" prop="isDefault">
         <template slot-scope="scope">
           {{ scope.row.isDefault ? '是' : '否' }}
         </template>

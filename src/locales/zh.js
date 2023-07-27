@@ -292,5 +292,30 @@ export default {
         label: '状态'
       }
     }
+  },
+  user_address: {
+    table: {
+      id: {
+        label: '地址ID'
+      },
+      user_id: {
+        label: '用户ID'
+      },
+      name: {
+        label: '收货人名称'
+      },
+      tel: {
+        label: '手机号码'
+      },
+      address_region: {
+        label: '区域地址'
+      },
+      address_detail: {
+        label: '区域地址'
+      },
+      is_default: {
+        label: '默认'
+      }
+    }
   }
 }

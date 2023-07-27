@@ -292,5 +292,30 @@ export default {
         label: 'Status'
       }
     }
+  },
+  user_address: {
+    table: {
+      id: {
+        label: 'ID'
+      },
+      user_id: {
+        label: 'User ID'
+      },
+      name: {
+        label: 'Name'
+      },
+      tel: {
+        label: 'Mobile'
+      },
+      address_region: {
+        label: 'Region'
+      },
+      address_detail: {
+        label: 'Detail'
+      },
+      is_default: {
+        label: 'Default'
+      }
+    }
   }
 }
