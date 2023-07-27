@@ -24,7 +24,7 @@
       </el-form-item>
       <el-form-item>
         <el-button @click="cancel">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="update">确定</el-button>
+        <el-button type="primary" @click="update">{{ $t('button.confirm.label') }}</el-button>
       </el-form-item>
     </el-form>
   </div>

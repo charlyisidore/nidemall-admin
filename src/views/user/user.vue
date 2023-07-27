@@ -75,7 +75,7 @@
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="userDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="handleUserUpdate">确定</el-button>
+        <el-button type="primary" @click="handleUserUpdate">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
   </div>

@@ -201,7 +201,7 @@
       </el-table>
       <div slot="footer" class="dialog-footer">
         <el-button @click="payDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmPay">确定</el-button>
+        <el-button type="primary" @click="confirmPay">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
 
@@ -219,7 +219,7 @@
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="shipDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmShip">确定</el-button>
+        <el-button type="primary" @click="confirmShip">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
 
@@ -232,7 +232,7 @@
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button @click="refundDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmRefund">确定</el-button>
+        <el-button type="primary" @click="confirmRefund">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
 

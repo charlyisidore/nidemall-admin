@@ -46,7 +46,7 @@
       <el-divider content-position="left">{{ notice.admin }} 于 {{ notice.time }} 通知如下内容：</el-divider>
       <div v-html="notice.content" />
       <div slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="afterRead">确定</el-button>
+        <el-button type="primary" @click="afterRead">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
   </div>

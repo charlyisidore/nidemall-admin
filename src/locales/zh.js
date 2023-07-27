@@ -207,6 +207,9 @@ export default {
     cancel: {
       label: '取消'
     },
+    confirm: {
+      label: '确定'
+    },
     create: {
       label: '添加'
     },

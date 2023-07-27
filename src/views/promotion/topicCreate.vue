@@ -55,7 +55,7 @@
     </el-form>
     <div slot="footer" class="dialog-footer">
       <el-button @click="handleCancel">{{ $t('button.cancel.label') }}</el-button>
-      <el-button type="primary" @click="handleConfirm">确定</el-button>
+      <el-button type="primary" @click="handleConfirm">{{ $t('button.confirm.label') }}</el-button>
     </div>
 
     <el-dialog :visible.sync="addVisiable" title="添加商品">
@@ -78,7 +78,7 @@
       </div>
       <div slot="footer" class="dialog-footer">
         <el-button @click="addVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmAdd">确定</el-button>
+        <el-button type="primary" @click="confirmAdd">{{ $t('button.confirm.label') }}</el-button>
       </div>
     </el-dialog>
 

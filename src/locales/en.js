@@ -207,6 +207,9 @@ export default {
     cancel: {
       label: 'Cancel'
     },
+    confirm: {
+      label: 'Confirm'
+    },
     create: {
       label: 'Create'
     },

@@ -13,7 +13,7 @@
     </el-form>
     <div style="margin-left:100px;">
       <el-button @click="cancel">{{ $t('button.cancel.label') }}</el-button>
-      <el-button type="primary" @click="change">确定</el-button>
+      <el-button type="primary" @click="change">{{ $t('button.confirm.label') }}</el-button>
     </div>
   </div>
 </template>

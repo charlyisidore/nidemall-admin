@@ -147,7 +147,7 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="specVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button type="primary" @click="handleSpecificationEdit">确定</el-button>
+          <el-button type="primary" @click="handleSpecificationEdit">{{ $t('button.confirm.label') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
@@ -205,7 +205,7 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="productVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button type="primary" @click="handleProductEdit">确定</el-button>
+          <el-button type="primary" @click="handleProductEdit">{{ $t('button.confirm.label') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
@@ -235,8 +235,8 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="attributeVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button v-if="attributeAdd" type="primary" @click="handleAttributeAdd">确定</el-button>
-          <el-button v-else type="primary" @click="handleAttributeEdit">确定</el-button>
+          <el-button v-if="attributeAdd" type="primary" @click="handleAttributeAdd">{{ $t('button.confirm.label') }}</el-button>
+          <el-button v-else type="primary" @click="handleAttributeEdit">{{ $t('button.confirm.label') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
