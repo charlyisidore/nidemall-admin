@@ -537,5 +537,33 @@ export default {
         label: '操作'
       }
     }
+  },
+  mall_aftersale: {
+    table: {
+      aftersale_sn: {
+        label: '售后编号'
+      },
+      order_id: {
+        label: '订单ID'
+      },
+      user_id: {
+        label: '用户ID'
+      },
+      type: {
+        label: '售后类型'
+      },
+      reason: {
+        label: '退款原因'
+      },
+      amount: {
+        label: '退款价格'
+      },
+      add_time: {
+        label: '申请时间'
+      },
+      actions: {
+        label: '操作'
+      }
+    }
   }
 }

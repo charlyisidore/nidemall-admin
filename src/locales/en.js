@@ -537,5 +537,33 @@ export default {
         label: 'Actions'
       }
     }
+  },
+  mall_aftersale: {
+    table: {
+      aftersale_sn: {
+        label: 'Aftersale SN'
+      },
+      order_id: {
+        label: 'Order ID'
+      },
+      user_id: {
+        label: 'User ID'
+      },
+      type: {
+        label: 'Type'
+      },
+      reason: {
+        label: 'Reason'
+      },
+      amount: {
+        label: 'Amount'
+      },
+      add_time: {
+        label: 'Time added'
+      },
+      actions: {
+        label: 'Actions'
+      }
+    }
   }
 }

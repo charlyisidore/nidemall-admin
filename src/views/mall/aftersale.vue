@@ -23,19 +23,19 @@
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" fit highlight-current-row @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" />
 
-      <el-table-column align="center" label="售后编号" prop="aftersaleSn" />
-      <el-table-column align="center" label="订单ID" prop="orderId" />
-      <el-table-column align="center" label="用户ID" prop="userId" />
-      <el-table-column align="center" label="售后类型" prop="type">
+      <el-table-column align="center" :label="$t('mall_aftersale.table.aftersale_sn.label')" prop="aftersaleSn" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.order_id.label')" prop="orderId" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.user_id.label')" prop="userId" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.type.label')" prop="type">
         <template slot-scope="scope">
           <el-tag :type="typeTag[scope.row.type]">{{ typeDesc[scope.row.type] }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column align="center" label="退款原因" prop="reason" />
-      <el-table-column align="center" label="退款价格" prop="amount" />
-      <el-table-column align="center" label="申请时间" prop="addTime" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.reason.label')" prop="reason" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.amount.label')" prop="amount" />
+      <el-table-column align="center" :label="$t('mall_aftersale.table.add_time.label')" prop="addTime" />
 
-      <el-table-column align="center" label="操作" min-width="120" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('mall_aftersale.table.actions.label')" min-width="120" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/aftersale/detail']" type="primary" size="mini" @click="handleRead(scope.row)">{{ $t('button.details.label') }}</el-button>
           <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/recept']" type="success" size="mini" @click="handleRecept(scope.row)">通过</el-button>
