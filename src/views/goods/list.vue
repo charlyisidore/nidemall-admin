@@ -64,7 +64,7 @@
           <el-dialog :visible.sync="detailDialogVisible" title="商品详情">
             <div class="goods-detail-box" v-html="goodsDetail" />
           </el-dialog>
-          <el-button type="primary" size="mini" @click="showDetail(scope.row.detail)">查看</el-button>
+          <el-button type="primary" size="mini" @click="showDetail(scope.row.detail)">{{ $t('button.view.label') }}</el-button>
         </template>
       </el-table-column>
 

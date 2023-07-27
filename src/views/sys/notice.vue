@@ -25,7 +25,7 @@
           <el-dialog :visible.sync="contentDialogVisible" title="通知详情">
             <div v-html="contentDetail" />
           </el-dialog>
-          <el-button type="primary" size="mini" @click="showContent(scope.row.content)">查看</el-button>
+          <el-button type="primary" size="mini" @click="showContent(scope.row.content)">{{ $t('button.view.label') }}</el-button>
         </template>
       </el-table-column>
 

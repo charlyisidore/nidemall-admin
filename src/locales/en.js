@@ -218,6 +218,9 @@ export default {
     },
     search: {
       label: 'Search'
+    },
+    view: {
+      label: 'View'
     }
   }
 }

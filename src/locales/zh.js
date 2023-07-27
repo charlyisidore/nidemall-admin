@@ -218,6 +218,9 @@ export default {
     },
     search: {
       label: '查找'
+    },
+    view: {
+      label: '查看'
     }
   }
 }
