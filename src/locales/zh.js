@@ -159,6 +159,18 @@ export default {
     },
     config_wx: {
       title: '小程序配置'
+    },
+    stat: {
+      title: '统计报表'
+    },
+    stat_user: {
+      title: '用户统计'
+    },
+    stat_order: {
+      title: '订单统计'
+    },
+    stat_goods: {
+      title: '商品统计'
     }
   },
   message: {

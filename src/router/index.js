@@ -505,7 +505,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'statManage',
     meta: {
-      title: '统计报表',
+      title: 'sidebar.stat.title',
       icon: 'chart'
     },
     children: [
@@ -515,7 +515,7 @@ export const asyncRoutes = [
         name: 'statUser',
         meta: {
           perms: ['GET /admin/stat/user'],
-          title: '用户统计',
+          title: 'sidebar.stat_user.title',
           noCache: true
         }
       },
@@ -525,7 +525,7 @@ export const asyncRoutes = [
         name: 'statOrder',
         meta: {
           perms: ['GET /admin/stat/order'],
-          title: '订单统计',
+          title: 'sidebar.stat_order.title',
           noCache: true
         }
       },
@@ -535,7 +535,7 @@ export const asyncRoutes = [
         name: 'statGoods',
         meta: {
           perms: ['GET /admin/stat/goods'],
-          title: '商品统计',
+          title: 'sidebar.stat_goods.title',
           noCache: true
         }
       }

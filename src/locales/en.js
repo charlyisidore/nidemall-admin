@@ -160,6 +160,18 @@ export default {
     },
     config_wx: {
       title: 'Mini-program config'
+    },
+    stat: {
+      title: 'Statistics'
+    },
+    stat_user: {
+      title: 'User stats'
+    },
+    stat_order: {
+      title: 'Order stats'
+    },
+    stat_goods: {
+      title: 'Product stats'
     }
   },
   message: {
