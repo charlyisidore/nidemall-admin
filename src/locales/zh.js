@@ -225,6 +225,9 @@ export default {
     export: {
       label: '导出'
     },
+    permission: {
+      label: '授权'
+    },
     reply: {
       label: '回复'
     },

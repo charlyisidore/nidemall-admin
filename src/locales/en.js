@@ -225,6 +225,9 @@ export default {
     export: {
       label: 'Export'
     },
+    permission: {
+      label: 'Permissions'
+    },
     reply: {
       label: 'Reply'
     },
