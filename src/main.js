@@ -31,6 +31,10 @@ import zh from './locales/zh.js'
 // VueI18n instance
 const i18n = new VueI18n({
   locale: 'zh',
+  fallbackLocale: {
+    'en': ['zh'],
+    'zh': ['en']
+  },
   messages: { en, zh }
 })
 
