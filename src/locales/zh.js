@@ -126,6 +126,24 @@ export default {
     },
     promotion_groupon_activity: {
       title: '团购活动'
+    },
+    sys: {
+      title: '系统管理'
+    },
+    sys_admin: {
+      title: '管理员'
+    },
+    sys_notice: {
+      title: '通知管理'
+    },
+    sys_log: {
+      title: '操作日志'
+    },
+    sys_role: {
+      title: '角色管理'
+    },
+    sys_os: {
+      title: '对象存储'
     }
   },
   message: {

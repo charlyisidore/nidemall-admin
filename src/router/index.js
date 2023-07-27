@@ -387,7 +387,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'sysManage',
     meta: {
-      title: '系统管理',
+      title: 'sidebar.sys.title',
       icon: 'chart'
     },
     children: [
@@ -397,7 +397,7 @@ export const asyncRoutes = [
         name: 'admin',
         meta: {
           perms: ['GET /admin/admin/list', 'POST /admin/admin/create', 'POST /admin/admin/update', 'POST /admin/admin/delete'],
-          title: '管理员',
+          title: 'sidebar.sys_admin.title',
           noCache: true
         }
       },
@@ -407,7 +407,7 @@ export const asyncRoutes = [
         name: 'sysNotice',
         meta: {
           perms: ['GET /admin/notice/list', 'POST /admin/notice/create', 'POST /admin/notice/update', 'POST /admin/notice/delete'],
-          title: '通知管理',
+          title: 'sidebar.sys_notice.title',
           noCache: true
         }
       },
@@ -417,7 +417,7 @@ export const asyncRoutes = [
         name: 'log',
         meta: {
           perms: ['GET /admin/log/list'],
-          title: '操作日志',
+          title: 'sidebar.sys_log.title',
           noCache: true
         }
       },
@@ -427,7 +427,7 @@ export const asyncRoutes = [
         name: 'role',
         meta: {
           perms: ['GET /admin/role/list', 'POST /admin/role/create', 'POST /admin/role/update', 'POST /admin/role/delete', 'GET /admin/role/permissions', 'POST /admin/role/permissions'],
-          title: '角色管理',
+          title: 'sidebar.sys_role.title',
           noCache: true
         }
       },
@@ -437,7 +437,7 @@ export const asyncRoutes = [
         name: 'os',
         meta: {
           perms: ['GET /admin/storage/list', 'POST /admin/storage/create', 'POST /admin/storage/update', 'POST /admin/storage/delete'],
-          title: '对象存储',
+          title: 'sidebar.sys_os.title',
           noCache: true
         }
       }

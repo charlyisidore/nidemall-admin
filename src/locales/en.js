@@ -127,6 +127,24 @@ export default {
     },
     promotion_groupon_activity: {
       title: 'Groupon activity'
+    },
+    sys: {
+      title: 'System'
+    },
+    sys_admin: {
+      title: 'Admins'
+    },
+    sys_notice: {
+      title: 'Notifications'
+    },
+    sys_log: {
+      title: 'Logs'
+    },
+    sys_role: {
+      title: 'Roles'
+    },
+    sys_os: {
+      title: 'Storage'
     }
   },
   message: {
