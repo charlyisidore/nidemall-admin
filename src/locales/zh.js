@@ -414,5 +414,45 @@ export default {
       enabled_true: '启用',
       enabled_false: '不启用'
     }
+  },
+  promotion_coupon: {
+    table: {
+      id: '优惠券ID',
+      name: '优惠券名称',
+      desc: '介绍',
+      tag: '标签',
+      min: '最低消费',
+      discount: '满减金额',
+      limit: '每人限领',
+      goods_type: '商品使用范围',
+      type: '优惠券类型',
+      total: '优惠券数量',
+      status: '状态',
+      actions: '操作',
+      category_name: '分类名称',
+      category_actions: '操作',
+      goods_name: '商品名称',
+      goods_sn: '商品编号',
+      goods_actions: '操作'
+    },
+    form: {
+      name: '优惠券名称',
+      desc: '介绍',
+      tag: '标签',
+      min: '最低消费',
+      discount: '满减金额',
+      limit: '每人限领',
+      type: '分发类型',
+      total: '优惠券数量',
+      time_type: '有效期',
+      goods_type: '商品限制范围'
+    },
+    value: {
+      time_type_0: '领券相对天数',
+      time_type_1: '指定绝对时间',
+      goods_type_0: '全场通用',
+      goods_type_1: '指定分类',
+      goods_type_2: '指定商品'
+    }
   }
 }

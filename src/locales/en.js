@@ -414,5 +414,45 @@ export default {
       enabled_true: 'On',
       enabled_false: 'Off'
     }
+  },
+  promotion_coupon: {
+    table: {
+      id: 'ID',
+      name: 'Name',
+      desc: 'Description',
+      tag: 'Tag',
+      min: 'Min spend',
+      discount: 'Discount',
+      limit: 'Limit/pers.',
+      goods_type: 'Goods type',
+      type: 'Coupon type',
+      total: 'Quantity',
+      status: 'Status',
+      actions: 'Actions',
+      category_name: 'Name',
+      category_actions: 'Actions',
+      goods_name: 'Name',
+      goods_sn: 'Goods SN',
+      goods_actions: 'Actions'
+    },
+    form: {
+      name: 'Name',
+      desc: 'Description',
+      tag: 'Tag',
+      min: 'Min spend',
+      discount: 'Discount',
+      limit: 'Limit/pers.',
+      type: 'Coupon type',
+      total: 'Quantity',
+      time_type: 'Validity period',
+      goods_type: 'Goods type'
+    },
+    value: {
+      time_type_0: 'Relative time',
+      time_type_1: 'Absolute time',
+      goods_type_0: 'All',
+      goods_type_1: 'By category',
+      goods_type_2: 'By product'
+    }
   }
 }
