@@ -5,20 +5,20 @@
     </div>
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
       <div class="title-container">
-        <h3 class="title">{{ $t('login.title') }}</h3>
+        <h3 class="title">{{ $t('login.page.title') }}</h3>
       </div>
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
         </span>
-        <el-input v-model="loginForm.username" name="username" type="text" tabindex="1" auto-complete="on" :placeholder="$t('login.form.username.placeholder')" />
+        <el-input v-model="loginForm.username" name="username" type="text" tabindex="1" auto-complete="on" :placeholder="$t('login.placeholder.username')" />
       </el-form-item>
 
       <el-form-item prop="password">
         <span class="svg-container">
           <svg-icon icon-class="password" />
         </span>
-        <el-input v-model="loginForm.password" :type="passwordType" name="password" auto-complete="on" tabindex="2" show-password :placeholder="$t('login.form.password.placeholder')" @keyup.enter.native="handleLogin" />
+        <el-input v-model="loginForm.password" :type="passwordType" name="password" auto-complete="on" tabindex="2" show-password :placeholder="$t('login.placeholder.password')" @keyup.enter.native="handleLogin" />
       </el-form-item>
 
       <!-- <el-form-item prop="code">
@@ -31,7 +31,7 @@
         </div>
       </el-form-item> -->
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">{{ $t('login.form.login.label') }}</el-button>
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">{{ $t('login.button.login') }}</el-button>
 
       <div v-if="isDev" style="position:relative">
         <div class="tips">
@@ -67,7 +67,7 @@ export default {
   data() {
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error(this.$t('login.form.password.message_min_length')))
+        callback(new Error(this.$t('login.message.password_min_length')))
       } else {
         callback()
       }
@@ -80,9 +80,9 @@ export default {
       },
       codeImg: '',
       loginRules: {
-        username: [{ required: true, message: this.$t('login.form.username.message_required'), trigger: 'blur' }],
+        username: [{ required: true, message: this.$t('login.message.username_required'), trigger: 'blur' }],
         password: [
-          { required: true, message: this.$t('login.form.password.message_required'), trigger: 'blur' },
+          { required: true, message: this.$t('login.message.password_required'), trigger: 'blur' },
           { validator: validatePassword, trigger: 'blur' }
         ]
       },

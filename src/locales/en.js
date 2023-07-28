@@ -1,19 +1,19 @@
 export default {
   login: {
-    title: 'Admin login',
-    form: {
-      username: {
-        placeholder: 'Admin account',
-        message_required: 'Username is required'
-      },
-      password: {
-        placeholder: 'Admin password',
-        message_required: 'Password is required',
-        message_min_length: 'Password should contain at least 6 characters'
-      },
-      login: {
-        label: 'Login'
-      }
+    page: {
+      title: 'Admin login'
+    },
+    placeholder: {
+      username: 'Admin account',
+      password: 'Admin password'
+    },
+    message: {
+      username_required: 'Username is required',
+      password_required: 'Password is required',
+      password_min_length: 'Password should contain at least 6 characters'
+    },
+    button: {
+      login: 'Login'
     }
   },
   navbar: {

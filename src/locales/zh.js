@@ -1,19 +1,19 @@
 export default {
   login: {
-    title: '管理员登录',
-    form: {
-      username: {
-        placeholder: '管理员账户',
-        message_required: '管理员账户不允许为空'
-      },
-      password: {
-        placeholder: '管理员密码',
-        message_required: '管理员密码不允许为空',
-        message_min_length: '管理员密码长度应大于6'
-      },
-      login: {
-        label: '登录'
-      }
+    page: {
+      title: '管理员登录'
+    },
+    placeholder: {
+      username: '管理员账户',
+      password: '管理员密码'
+    },
+    message: {
+      username_required: '管理员账户不允许为空',
+      password_required: '管理员密码不允许为空',
+      password_min_length: '管理员密码长度应大于6'
+    },
+    button: {
+      login: '登录'
     }
   },
   navbar: {
