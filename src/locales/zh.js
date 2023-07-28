@@ -211,6 +211,10 @@ export default {
       simple_desc: '介绍',
       pic_url: '品牌商图片',
       floor_price: '底价'
+    },
+    placeholder: {
+      filter_id: '请输入品牌商ID',
+      filter_name: '请输入品牌商名称'
     }
   },
   mall_category: {
@@ -265,6 +269,10 @@ export default {
       amount: '退款价格',
       add_time: '申请时间',
       actions: '操作'
+    },
+    placeholder: {
+      filter_aftersale_sn: '请输入售后编号',
+      filter_order_id: '请输入订单ID'
     }
   },
   mall_issue: {
@@ -325,6 +333,11 @@ export default {
       keywords: '关键字',
       category_id: '类目ID',
       brand_id: '品牌商ID'
+    },
+    placeholder: {
+      filter_goods_id: '请输入商品ID',
+      filter_goods_sn: '请输入商品编号',
+      filter_name: '请输入商品名称'
     }
   },
   goods_edit: {
@@ -384,6 +397,9 @@ export default {
       multiple_spec_true: '多规格支持',
       multiple_spec_false: '默认标准规格'
     },
+    placeholder: {
+      unit: '件 / 个 / 盒'
+    },
     button: {
       publish: '上架',
       edit: '更新商品'
@@ -404,6 +420,10 @@ export default {
     },
     form: {
       content: '回复内容'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_value_id: '请输入商品ID'
     }
   },
   promotion_ad: {

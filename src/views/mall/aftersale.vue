@@ -3,8 +3,8 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.aftersaleSn" clearable class="filter-item" style="width: 200px;" placeholder="请输入售后编号" />
-      <el-input v-model="listQuery.orderId" clearable class="filter-item" style="width: 200px;" placeholder="请输入订单ID" />
+      <el-input v-model="listQuery.aftersaleSn" clearable class="filter-item" style="width: 200px;" :placeholder="$t('mall_aftersale.placeholder.filter_aftersale_sn')" />
+      <el-input v-model="listQuery.orderId" clearable class="filter-item" style="width: 200px;" :placeholder="$t('mall_aftersale.placeholder.filter_order_id')" />
       <el-button v-permission="['GET /admin/aftersale/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>

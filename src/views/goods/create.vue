@@ -65,7 +65,7 @@
         </el-form-item>
 
         <el-form-item :label="$t('goods_edit.form.unit')">
-          <el-input v-model="goods.unit" placeholder="件 / 个 / 盒" />
+          <el-input v-model="goods.unit" :placeholder="$t('goods_edit.placeholder.unit')" />
         </el-form-item>
 
         <el-form-item :label="$t('goods_edit.form.keywords')">

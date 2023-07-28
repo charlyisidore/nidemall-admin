@@ -211,6 +211,10 @@ export default {
       simple_desc: 'Description',
       pic_url: 'Picture',
       floor_price: 'Floor price'
+    },
+    placeholder: {
+      filter_id: 'ID',
+      filter_name: 'Name'
     }
   },
   mall_category: {
@@ -265,6 +269,10 @@ export default {
       amount: 'Amount',
       add_time: 'Time added',
       actions: 'Actions'
+    },
+    placeholder: {
+      filter_aftersale_sn: 'Aftersale SN',
+      filter_order_id: 'Order ID'
     }
   },
   mall_issue: {
@@ -325,6 +333,11 @@ export default {
       keywords: 'Keywords',
       category_id: 'Category',
       brand_id: 'Brand'
+    },
+    placeholder: {
+      filter_goods_id: 'Goods ID',
+      filter_goods_sn: 'Goods SN',
+      filter_name: 'Goods name'
     }
   },
   goods_edit: {
@@ -384,6 +397,9 @@ export default {
       multiple_spec_true: 'Multiple',
       multiple_spec_false: 'Single'
     },
+    placeholder: {
+      unit: '件 / 个 / 盒'
+    },
     button: {
       publish: 'Publish',
       edit: 'Edit'
@@ -404,6 +420,10 @@ export default {
     },
     form: {
       content: 'Content'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_value_id: 'Item ID'
     }
   },
   promotion_ad: {
