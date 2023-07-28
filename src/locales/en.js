@@ -632,5 +632,17 @@ export default {
       freight_min: 'Min spend for free delivery',
       freight_value: 'Delivery fee'
     }
+  },
+  config_order: {
+    form: {
+      unpaid: 'Timeout after order creation',
+      unconfirm: 'Overdue after shipment',
+      comment: 'Overdue after confirming receipt'
+    },
+    help: {
+      unpaid: 'The order is automatically canceled if the user does not pay',
+      unconfirm: 'No confirmation of receipt, then the order is automatically confirmed for receipt',
+      comment: 'If the product is not evaluated, it will be disqualified'
+    }
   }
 }

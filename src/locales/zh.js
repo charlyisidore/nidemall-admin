@@ -632,5 +632,17 @@ export default {
       freight_min: '运费满减所需最低消费',
       freight_value: '运费满减不足所需运费'
     }
+  },
+  config_order: {
+    form: {
+      unpaid: '用户下单后超时',
+      unconfirm: '订单发货后超期',
+      comment: '确认收货后超期'
+    },
+    help: {
+      unpaid: '用户未付款，则订单自动取消',
+      unconfirm: '未确认收货，则订单自动确认收货',
+      comment: '未评价商品，则取消评价资格'
+    }
   }
 }
