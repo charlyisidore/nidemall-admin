@@ -260,6 +260,11 @@ export default {
     }
   },
   mall_aftersale: {
+    section: {
+      all: '全部',
+      uncheck: '待审核',
+      unrefund: '待退款'
+    },
     table: {
       aftersale_sn: '售后编号',
       order_id: '订单ID',

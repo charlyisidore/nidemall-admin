@@ -260,6 +260,11 @@ export default {
     }
   },
   mall_aftersale: {
+    section: {
+      all: 'All',
+      uncheck: 'Awaiting approval',
+      unrefund: 'To refund'
+    },
     table: {
       aftersale_sn: 'Aftersale SN',
       order_id: 'Order ID',

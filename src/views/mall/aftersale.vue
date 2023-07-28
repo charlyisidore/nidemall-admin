@@ -15,9 +15,9 @@
     </div>
 
     <el-tabs v-model="tab" @tab-click="handleClick">
-      <el-tab-pane label="全部" name="all" />
-      <el-tab-pane label="待审核" name="uncheck" />
-      <el-tab-pane label="待退款" name="unrefund" />
+      <el-tab-pane :label="$t('mall_aftersale.section.all')" name="all" />
+      <el-tab-pane :label="$t('mall_aftersale.section.uncheck')" name="uncheck" />
+      <el-tab-pane :label="$t('mall_aftersale.section.unrefund')" name="unrefund" />
     </el-tabs>
 
     <el-table v-loading="listLoading" :data="list" :element-loading-text="$t('app.message.list_loading')" fit highlight-current-row @selection-change="handleSelectionChange">
