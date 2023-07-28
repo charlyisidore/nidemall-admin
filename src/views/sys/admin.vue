@@ -11,23 +11,23 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" label="管理员ID" prop="id" sortable />
+      <el-table-column align="center" :label="$t('sys_admin.table.id')" prop="id" sortable />
 
-      <el-table-column align="center" label="管理员名称" prop="username" />
+      <el-table-column align="center" :label="$t('sys_admin.table.username')" prop="username" />
 
-      <el-table-column align="center" label="管理员头像" prop="avatar">
+      <el-table-column align="center" :label="$t('sys_admin.table.avatar')" prop="avatar">
         <template slot-scope="scope">
           <img v-if="scope.row.avatar" :src="scope.row.avatar" width="40">
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="管理员角色" prop="roleIds">
+      <el-table-column align="center" :label="$t('sys_admin.table.role_ids')" prop="roleIds">
         <template slot-scope="scope">
           <el-tag v-for="roleId in scope.row.roleIds" :key="roleId" type="primary" style="margin-right: 20px;"> {{ formatRole(roleId) }} </el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="操作" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('sys_admin.table.actions')" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/admin/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/admin/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
@@ -40,13 +40,13 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="管理员名称" prop="username">
+        <el-form-item :label="$t('sys_admin.form.username')" prop="username">
           <el-input v-model="dataForm.username" />
         </el-form-item>
-        <el-form-item label="管理员密码" prop="password">
+        <el-form-item :label="$t('sys_admin.form.password')" prop="password">
           <el-input v-model="dataForm.password" type="password" auto-complete="off" />
         </el-form-item>
-        <el-form-item label="管理员头像" prop="avatar">
+        <el-form-item :label="$t('sys_admin.form.avatar')" prop="avatar">
           <el-upload
             :headers="headers"
             :action="uploadPath"
@@ -59,7 +59,7 @@
             <i v-else class="el-icon-plus avatar-uploader-icon" />
           </el-upload>
         </el-form-item>
-        <el-form-item label="管理员角色" prop="roleIds">
+        <el-form-item :label="$t('sys_admin.form.role_ids')" prop="roleIds">
           <el-select v-model="dataForm.roleIds" multiple placeholder="请选择">
             <el-option
               v-for="item in roleOptions"

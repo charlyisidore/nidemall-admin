@@ -544,5 +544,20 @@ export default {
       rules_add_time: '开始时间',
       rules_expire_time: '结束时间'
     }
+  },
+  sys_admin: {
+    table: {
+      id: '管理员ID',
+      username: '管理员名称',
+      avatar: '管理员头像',
+      role_ids: '管理员角色',
+      actions: '操作'
+    },
+    form: {
+      username: '管理员名称',
+      password: '管理员密码',
+      avatar: '管理员头像',
+      role_ids: '管理员角色'
+    }
   }
 }

@@ -544,5 +544,20 @@ export default {
       rules_add_time: 'Time added',
       rules_expire_time: 'Expire time'
     }
+  },
+  sys_admin: {
+    table: {
+      id: 'ID',
+      username: 'Username',
+      avatar: 'Avatar',
+      role_ids: 'Roles',
+      actions: 'Actions'
+    },
+    form: {
+      username: 'Username',
+      password: 'Password',
+      avatar: 'Avatar',
+      role_ids: 'Roles'
+    }
   }
 }
