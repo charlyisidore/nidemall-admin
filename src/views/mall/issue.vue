@@ -4,9 +4,9 @@
     <!-- 查询和其他操作 -->
     <div class="filter-container">
       <el-input v-model="listQuery.question" clearable class="filter-item" style="width: 200px;" placeholder="请输入问题" />
-      <el-button v-permission="['GET /admin/issue/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button v-permission="['POST /admin/issue/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
+      <el-button v-permission="['GET /admin/issue/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button v-permission="['POST /admin/issue/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -19,8 +19,8 @@
 
       <el-table-column align="center" :label="$t('mall_issue.table.actions.label')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button v-permission="['POST /admin/issue/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
-          <el-button v-permission="['POST /admin/issue/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button v-permission="['POST /admin/issue/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
+          <el-button v-permission="['POST /admin/issue/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -38,9 +38,9 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button v-if="dialogStatus=='create'" type="primary" @click="createData">{{ $t('button.confirm.label') }}</el-button>
-        <el-button v-else type="primary" @click="updateData">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="dialogFormVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button v-if="dialogStatus=='create'" type="primary" @click="createData">{{ $t('app.button.confirm') }}</el-button>
+        <el-button v-else type="primary" @click="updateData">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 

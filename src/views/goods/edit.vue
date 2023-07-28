@@ -77,7 +77,7 @@
             {{ tag }}
           </el-tag>
           <el-input v-if="newKeywordVisible" ref="newKeywordInput" v-model="newKeyword" class="input-new-keyword" @keyup.enter.native="handleInputConfirm" @blur="handleInputConfirm" />
-          <el-button v-else class="button-new-keyword" type="primary" @click="showInput">{{ $t('button.add.label') }}</el-button>
+          <el-button v-else class="button-new-keyword" type="primary" @click="showInput">{{ $t('app.button.add') }}</el-button>
         </el-form-item>
 
         <el-form-item label="所属分类">
@@ -118,7 +118,7 @@
         </el-table-column>
         <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
           <template slot-scope="scope">
-            <el-button type="primary" size="mini" @click="handleSpecificationShow(scope.row)">{{ $t('button.settings.label') }}</el-button>
+            <el-button type="primary" size="mini" @click="handleSpecificationShow(scope.row)">{{ $t('app.button.settings') }}</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -146,8 +146,8 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="specVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button type="primary" @click="handleSpecificationEdit">{{ $t('button.confirm.label') }}</el-button>
+          <el-button @click="specVisiable = false">{{ $t('app.button.cancel') }}</el-button>
+          <el-button type="primary" @click="handleSpecificationEdit">{{ $t('app.button.confirm') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
@@ -171,7 +171,7 @@
         </el-table-column>
         <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
           <template slot-scope="scope">
-            <el-button type="primary" size="mini" @click="handleProductShow(scope.row)">{{ $t('button.settings.label') }}</el-button>
+            <el-button type="primary" size="mini" @click="handleProductShow(scope.row)">{{ $t('app.button.settings') }}</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -204,22 +204,22 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="productVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button type="primary" @click="handleProductEdit">{{ $t('button.confirm.label') }}</el-button>
+          <el-button @click="productVisiable = false">{{ $t('app.button.cancel') }}</el-button>
+          <el-button type="primary" @click="handleProductEdit">{{ $t('app.button.confirm') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
 
     <el-card class="box-card">
       <h3>商品参数</h3>
-      <el-button type="primary" @click="handleAttributeShow">{{ $t('button.create.label') }}</el-button>
+      <el-button type="primary" @click="handleAttributeShow">{{ $t('app.button.create') }}</el-button>
       <el-table :data="attributesData">
         <el-table-column property="attribute" label="商品参数名称" />
         <el-table-column property="value" label="商品参数值" />
         <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
           <template slot-scope="scope">
-            <el-button type="primary" size="mini" @click="handleAttributeShow(scope.row)">{{ $t('button.settings.label') }}</el-button>
-            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+            <el-button type="primary" size="mini" @click="handleAttributeShow(scope.row)">{{ $t('app.button.settings') }}</el-button>
+            <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -234,15 +234,15 @@
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-          <el-button @click="attributeVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-          <el-button v-if="attributeAdd" type="primary" @click="handleAttributeAdd">{{ $t('button.confirm.label') }}</el-button>
-          <el-button v-else type="primary" @click="handleAttributeEdit">{{ $t('button.confirm.label') }}</el-button>
+          <el-button @click="attributeVisiable = false">{{ $t('app.button.cancel') }}</el-button>
+          <el-button v-if="attributeAdd" type="primary" @click="handleAttributeAdd">{{ $t('app.button.confirm') }}</el-button>
+          <el-button v-else type="primary" @click="handleAttributeEdit">{{ $t('app.button.confirm') }}</el-button>
         </div>
       </el-dialog>
     </el-card>
 
     <div class="op-container">
-      <el-button @click="handleCancel">{{ $t('button.cancel.label') }}</el-button>
+      <el-button @click="handleCancel">{{ $t('app.button.cancel') }}</el-button>
       <el-button type="primary" @click="handleEdit">更新商品</el-button>
     </div>
 

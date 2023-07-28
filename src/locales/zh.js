@@ -86,50 +86,22 @@ export default {
       external_link_alibaba_oss: '阿里云存储',
       external_link_qiniu_kodo: '七牛云存储',
       external_link_kdniao_api: '快递鸟'
-    }
-  },
-  button: {
-    add: {
-      label: '+ 增加'
     },
-    batch_delete: {
-      label: '批量删除'
-    },
-    cancel: {
-      label: '取消'
-    },
-    confirm: {
-      label: '确定'
-    },
-    create: {
-      label: '添加'
-    },
-    delete: {
-      label: '删除'
-    },
-    details: {
-      label: '详情'
-    },
-    download: {
-      label: '导出'
-    },
-    edit: {
-      label: '编辑'
-    },
-    permission: {
-      label: '授权'
-    },
-    reply: {
-      label: '回复'
-    },
-    search: {
-      label: '查找'
-    },
-    settings: {
-      label: '设置'
-    },
-    view: {
-      label: '查看'
+    button: {
+      add: '+ 增加',
+      batch_delete: '批量删除',
+      cancel: '取消',
+      confirm: '确定',
+      create: '添加',
+      delete: '删除',
+      details: '详情',
+      download: '导出',
+      edit: '编辑',
+      permission: '授权',
+      reply: '回复',
+      search: '查找',
+      settings: '设置',
+      view: '查看'
     }
   },
   user_user: {

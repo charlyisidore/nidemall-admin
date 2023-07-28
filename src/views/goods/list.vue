@@ -6,10 +6,10 @@
       <el-input v-model="listQuery.goodsId" clearable class="filter-item" style="width: 160px;" placeholder="请输入商品ID" />
       <el-input v-model="listQuery.goodsSn" clearable class="filter-item" style="width: 160px;" placeholder="请输入商品编号" />
       <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 160px;" placeholder="请输入商品名称" />
-      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
-      <el-button class="filter-item" type="danger" icon="el-icon-delete" :disabled="batchDeleteArr.length === 0" @click="handleDeleteRows">{{ $t('button.batch_delete.label') }}</el-button>
+      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
+      <el-button class="filter-item" type="danger" icon="el-icon-delete" :disabled="batchDeleteArr.length === 0" @click="handleDeleteRows">{{ $t('app.button.batch_delete') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -64,7 +64,7 @@
           <el-dialog :visible.sync="detailDialogVisible" title="商品详情">
             <div class="goods-detail-box" v-html="goodsDetail" />
           </el-dialog>
-          <el-button type="primary" size="mini" @click="showDetail(scope.row.detail)">{{ $t('button.view.label') }}</el-button>
+          <el-button type="primary" size="mini" @click="showDetail(scope.row.detail)">{{ $t('app.button.view') }}</el-button>
         </template>
       </el-table-column>
 
@@ -92,8 +92,8 @@
 
       <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
-          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
+          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>

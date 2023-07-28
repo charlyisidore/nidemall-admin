@@ -5,9 +5,9 @@
     <div class="filter-container">
       <el-input v-model="listQuery.key" clearable class="filter-item" style="width: 200px;" placeholder="请输入对象KEY" />
       <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" placeholder="请输入对象名称" />
-      <el-button v-permission="['GET /admin/storage/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button v-permission="['POST /admin/storage/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
+      <el-button v-permission="['GET /admin/storage/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button v-permission="['POST /admin/storage/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -31,8 +31,8 @@
 
       <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button v-permission="['POST /admin/storage/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
-          <el-button v-permission="['POST /admin/storage/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button v-permission="['POST /admin/storage/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
+          <el-button v-permission="['POST /admin/storage/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -54,8 +54,8 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="updateDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="updateData">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="updateDialogVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="updateData">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 

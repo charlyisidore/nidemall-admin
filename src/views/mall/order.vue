@@ -10,8 +10,8 @@
       <el-select v-model="listQuery.orderStatusArray" multiple style="width: 200px" class="filter-item" placeholder="请选择订单状态">
         <el-option v-for="(key, value) in statusMap" :key="key" :label="key" :value="value" />
       </el-select>
-      <el-button v-permission="['GET /admin/order/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
+      <el-button v-permission="['GET /admin/order/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -91,8 +91,8 @@
 
       <el-table-column align="center" :label="$t('mall_order.table.actions.label')" width="250" class-name="oper">
         <template slot-scope="scope">
-          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('button.details.label') }}</el-button>
-          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.details') }}</el-button>
+          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
           <el-button type="warning" size="mini" @click="handlePay(scope.row)">收款</el-button>
           <el-button type="primary" size="mini" @click="handleShip(scope.row)">发货</el-button>
           <el-button type="danger" size="mini" @click="handleRefund(scope.row)">退款</el-button>
@@ -200,8 +200,8 @@
         </el-table-column> -->
       </el-table>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="payDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmPay">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="payDialogVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="confirmPay">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 
@@ -218,8 +218,8 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="shipDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmShip">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="shipDialogVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="confirmShip">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 
@@ -231,8 +231,8 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="refundDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmRefund">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="refundDialogVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="confirmRefund">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 

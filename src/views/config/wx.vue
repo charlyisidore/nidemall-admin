@@ -35,8 +35,8 @@
         </el-tab-pane>
       </el-tabs>
       <el-form-item>
-        <el-button @click="cancel">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="update">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="cancel">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="update">{{ $t('app.button.confirm') }}</el-button>
       </el-form-item>
     </el-form>
 

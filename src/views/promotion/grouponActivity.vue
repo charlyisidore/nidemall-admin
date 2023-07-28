@@ -4,14 +4,14 @@
     <!-- 查询和其他操作 -->
     <div class="filter-container">
       <el-input v-model="listQuery.grouponRuleId" clearable class="filter-item" style="width: 200px;" placeholder="请输入团购规则ID" />
-      <el-button v-permission="['GET /admin/groupon/listRecord']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
+      <el-button v-permission="['GET /admin/groupon/listRecord']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button
         :loading="downloadLoading"
         class="filter-item"
         type="primary"
         icon="el-icon-download"
         @click="handleDownload"
-      >{{ $t('button.download.label') }}
+      >{{ $t('app.button.download') }}
       </el-button>
     </div>
 

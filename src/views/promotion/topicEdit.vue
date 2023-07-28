@@ -46,7 +46,7 @@
           <el-table-column align="center" label="商品介绍" prop="brief" />
           <el-table-column align="center" label="操作" class-name="small-padding fixed-width">
             <template slot-scope="scope">
-              <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+              <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
             </template>
           </el-table-column>
         </el-table>
@@ -54,15 +54,15 @@
 
     </el-form>
     <div slot="footer" class="dialog-footer">
-      <el-button @click="handleCancel">{{ $t('button.cancel.label') }}</el-button>
-      <el-button type="primary" @click="handleConfirm">{{ $t('button.confirm.label') }}</el-button>
+      <el-button @click="handleCancel">{{ $t('app.button.cancel') }}</el-button>
+      <el-button type="primary" @click="handleConfirm">{{ $t('app.button.confirm') }}</el-button>
     </div>
 
     <el-dialog :visible.sync="addVisiable" title="添加商品">
       <div class="search">
         <el-input v-model="listQuery.goodsSn" clearable class="filter-item" style="width: 200px;" placeholder="请输入商品编号" />
         <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" placeholder="请输入商品名称" />
-        <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
+        <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
         <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row @selection-change="handleSelectionChange">
           <el-table-column type="selection" width="55" />
           <el-table-column align="center" label="商品ID" prop="id" />
@@ -77,8 +77,8 @@
 
       </div>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="addVisiable = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="confirmAdd">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="addVisiable = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="confirmAdd">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 

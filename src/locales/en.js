@@ -86,50 +86,22 @@ export default {
       external_link_alibaba_oss: 'Ali cloud storage',
       external_link_qiniu_kodo: 'Qiniu cloud storage',
       external_link_kdniao_api: 'Kdniao API'
-    }
-  },
-  button: {
-    add: {
-      label: '+ Add'
     },
-    batch_delete: {
-      label: 'Batch delete'
-    },
-    cancel: {
-      label: 'Cancel'
-    },
-    confirm: {
-      label: 'Confirm'
-    },
-    create: {
-      label: 'Create'
-    },
-    delete: {
-      label: 'Delete'
-    },
-    details: {
-      label: 'Details'
-    },
-    download: {
-      label: 'Download'
-    },
-    edit: {
-      label: 'Edit'
-    },
-    permission: {
-      label: 'Permissions'
-    },
-    reply: {
-      label: 'Reply'
-    },
-    search: {
-      label: 'Search'
-    },
-    settings: {
-      label: 'Settings'
-    },
-    view: {
-      label: 'View'
+    button: {
+      add: '+ Add',
+      batch_delete: 'Batch delete',
+      cancel: 'Cancel',
+      confirm: 'Confirm',
+      create: 'Create',
+      delete: 'Delete',
+      details: 'Details',
+      download: 'Download',
+      edit: 'Edit',
+      permission: 'Permissions',
+      reply: 'Reply',
+      search: 'Search',
+      settings: 'Settings',
+      view: 'View'
     }
   },
   user_user: {

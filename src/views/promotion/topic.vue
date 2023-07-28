@@ -8,13 +8,13 @@
       <el-select v-model="listQuery.sort" class="filter-item" placeholder="请选择排序字段">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-      <el-button v-permission="['GET /admin/topic/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
+      <el-button v-permission="['GET /admin/topic/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
 
     <div class="operator-container">
-      <el-button v-permission="['POST /admin/topic/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
-      <el-button v-permission="['POST /admin/topic/batch-delete']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('button.batch_delete.label') }}</el-button>
+      <el-button v-permission="['POST /admin/topic/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
+      <el-button v-permission="['POST /admin/topic/batch-delete']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('app.button.batch_delete') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -36,7 +36,7 @@
           <el-dialog :visible.sync="contentDialogVisible" title="专题详情">
             <div v-html="contentDetail" />
           </el-dialog>
-          <el-button type="primary" size="mini" @click="showContent(scope.row.content)">{{ $t('button.view.label') }}</el-button>
+          <el-button type="primary" size="mini" @click="showContent(scope.row.content)">{{ $t('app.button.view') }}</el-button>
         </template>
       </el-table-column>
 
@@ -46,8 +46,8 @@
 
       <el-table-column align="center" label="操作" min-width="100" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button v-permission="['POST /admin/topic/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
-          <el-button v-permission="['POST /admin/topic/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button v-permission="['POST /admin/topic/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
+          <el-button v-permission="['POST /admin/topic/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>

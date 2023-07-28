@@ -6,8 +6,8 @@
       <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" placeholder="请输入用户名" />
       <el-input v-model="listQuery.userId" clearable class="filter-item" style="width: 200px;" placeholder="请输入用户Id" />
       <el-input v-model="listQuery.mobile" clearable class="filter-item" style="width: 200px;" placeholder="请输入手机号" />
-      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
-      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('button.download.label') }}</el-button>
+      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
+      <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -45,7 +45,7 @@
       </el-table-column>
       <el-table-column align="center" :label="$t('user_user.table.actions.label')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('button.details.label') }}</el-button>
+          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.details') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -74,8 +74,8 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="userDialogVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button type="primary" @click="handleUserUpdate">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="userDialogVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button type="primary" @click="handleUserUpdate">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
   </div>

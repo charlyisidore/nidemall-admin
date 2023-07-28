@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-button v-permission="['POST /admin/category/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('button.create.label') }}</el-button>
+      <el-button v-permission="['POST /admin/category/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
     </div>
 
     <!-- 查询结果 -->
@@ -37,8 +37,8 @@
 
       <el-table-column align="center" :label="$t('mall_category.table.actions.label')" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button v-permission="['POST /admin/category/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('button.edit.label') }}</el-button>
-          <el-button v-permission="['POST /admin/category/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button v-permission="['POST /admin/category/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
+          <el-button v-permission="['POST /admin/category/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -94,9 +94,9 @@
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">{{ $t('button.cancel.label') }}</el-button>
-        <el-button v-if="dialogStatus=='create'" type="primary" @click="createData">{{ $t('button.confirm.label') }}</el-button>
-        <el-button v-else type="primary" @click="updateData">{{ $t('button.confirm.label') }}</el-button>
+        <el-button @click="dialogFormVisible = false">{{ $t('app.button.cancel') }}</el-button>
+        <el-button v-if="dialogStatus=='create'" type="primary" @click="createData">{{ $t('app.button.confirm') }}</el-button>
+        <el-button v-else type="primary" @click="updateData">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
 

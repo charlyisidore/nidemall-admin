@@ -4,12 +4,12 @@
     <!-- 查询和其他操作 -->
     <div class="filter-container">
       <el-input v-model="listQuery.title" clearable class="filter-item" style="width: 200px;" placeholder="请输入标题关键字" />
-      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('button.search.label') }}</el-button>
+      <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
     </div>
 
     <div class="operator-container">
       <el-button class="filter-item" type="primary" icon="el-icon-edit" @click="handleBatchRead">批量已读</el-button>
-      <el-button class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('button.batch_delete.label') }}</el-button>
+      <el-button class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchDelete">{{ $t('app.button.batch_delete') }}</el-button>
     </div>
 
     <el-tabs v-model="listQuery.type" @tab-click="handleFilter">
@@ -35,7 +35,7 @@
       <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleRead(scope.row)">阅读</el-button>
-          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('button.delete.label') }}</el-button>
+          <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -46,7 +46,7 @@
       <el-divider content-position="left">{{ notice.admin }} 于 {{ notice.time }} 通知如下内容：</el-divider>
       <div v-html="notice.content" />
       <div slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="afterRead">{{ $t('button.confirm.label') }}</el-button>
+        <el-button type="primary" @click="afterRead">{{ $t('app.button.confirm') }}</el-button>
       </div>
     </el-dialog>
   </div>
