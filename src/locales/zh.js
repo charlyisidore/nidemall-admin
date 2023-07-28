@@ -1,4 +1,5 @@
 export default {
+  lang: '中文',
   login: {
     page: {
       title: '管理员登录'

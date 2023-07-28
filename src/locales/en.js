@@ -1,4 +1,5 @@
 export default {
+  lang: 'English',
   login: {
     page: {
       title: 'Admin login'
