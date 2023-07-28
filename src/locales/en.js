@@ -116,8 +116,8 @@ export default {
       status: 'Status',
       actions: 'Actions'
     },
-    form_title: 'Edit user',
     form: {
+      title: 'Edit user',
       username: 'Username',
       nickname: 'Nickname',
       mobile: 'Mobile',

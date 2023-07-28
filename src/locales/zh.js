@@ -116,8 +116,8 @@ export default {
       status: '状态',
       actions: '操作'
     },
-    form_title: '用户编辑',
     form: {
+      title: '用户编辑',
       username: '用户名',
       nickname: '用户昵称',
       mobile: '用户手机',
