@@ -13,29 +13,29 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" label="广告ID" prop="id" sortable />
+      <el-table-column align="center" :label="$t('promotion_ad.table.id')" prop="id" sortable />
 
-      <el-table-column align="center" label="广告标题" prop="name" />
+      <el-table-column align="center" :label="$t('promotion_ad.table.name')" prop="name" />
 
-      <el-table-column align="center" label="广告内容" prop="content" />
+      <el-table-column align="center" :label="$t('promotion_ad.table.content')" prop="content" />
 
-      <el-table-column align="center" label="广告图片" prop="url">
+      <el-table-column align="center" :label="$t('promotion_ad.table.url')" prop="url">
         <template slot-scope="scope">
           <el-image :src="thumbnail(scope.row.url)" :preview-src-list="toPreview(scope.row, scope.row.url)" style="width: 80px; height: 40px" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="广告位置" prop="position" />
+      <el-table-column align="center" :label="$t('promotion_ad.table.position')" prop="position" />
 
-      <el-table-column align="center" label="活动链接" prop="link" />
+      <el-table-column align="center" :label="$t('promotion_ad.table.link')" prop="link" />
 
-      <el-table-column align="center" label="是否启用" prop="enabled">
+      <el-table-column align="center" :label="$t('promotion_ad.table.enabled')" prop="enabled">
         <template slot-scope="scope">
           <el-tag :type="scope.row.enabled ? 'success' : 'error' ">{{ scope.row.enabled ? '启用' : '不启用' }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('promotion_ad.table.actions')" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/ad/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/ad/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
@@ -48,13 +48,13 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="广告标题" prop="name">
+        <el-form-item :label="$t('promotion_ad.form.name')" prop="name">
           <el-input v-model="dataForm.name" />
         </el-form-item>
-        <el-form-item label="广告内容" prop="content">
+        <el-form-item :label="$t('promotion_ad.form.content')" prop="content">
           <el-input v-model="dataForm.content" />
         </el-form-item>
-        <el-form-item label="广告图片" prop="url">
+        <el-form-item :label="$t('promotion_ad.form.url')" prop="url">
           <el-upload
             :headers="headers"
             :action="uploadPath"
@@ -69,18 +69,18 @@
             <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过1024kb</div>
           </el-upload>
         </el-form-item>
-        <el-form-item label="广告位置" prop="position">
+        <el-form-item :label="$t('promotion_ad.form.position')" prop="position">
           <el-select v-model="dataForm.position" placeholder="请选择">
-            <el-option :value="1" label="首页" />
+            <el-option :value="1" :label="$t('promotion_ad.value.position_1')" />
           </el-select>
         </el-form-item>
-        <el-form-item label="活动链接" prop="link">
+        <el-form-item :label="$t('promotion_ad.form.link')" prop="link">
           <el-input v-model="dataForm.link" />
         </el-form-item>
-        <el-form-item label="是否启用" prop="enabled">
+        <el-form-item :label="$t('promotion_ad.form.enabled')" prop="enabled">
           <el-select v-model="dataForm.enabled" placeholder="请选择">
-            <el-option :value="true" label="启用" />
-            <el-option :value="false" label="不启用" />
+            <el-option :value="true" :label="$t('promotion_ad.value.enabled_true')" />
+            <el-option :value="false" :label="$t('promotion_ad.value.enabled_false')" />
           </el-select>
         </el-form-item>
       </el-form>

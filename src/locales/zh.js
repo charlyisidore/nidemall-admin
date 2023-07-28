@@ -389,5 +389,30 @@ export default {
     form: {
       content: '回复内容'
     }
+  },
+  promotion_ad: {
+    table: {
+      id: '广告ID',
+      name: '广告标题',
+      content: '广告内容',
+      url: '广告图片',
+      position: '广告位置',
+      link: '活动链接',
+      enabled: '是否启用',
+      actions: '操作'
+    },
+    form: {
+      name: '广告标题',
+      content: '广告内容',
+      url: '广告图片',
+      position: '广告位置',
+      link: '活动链接',
+      enabled: '是否启用'
+    },
+    value: {
+      position_1: '首页',
+      enabled_true: '启用',
+      enabled_false: '不启用'
+    }
   }
 }

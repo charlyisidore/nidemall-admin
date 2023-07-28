@@ -389,5 +389,30 @@ export default {
     form: {
       content: 'Content'
     }
+  },
+  promotion_ad: {
+    table: {
+      id: 'ID',
+      name: 'Name',
+      content: 'Content',
+      url: 'Picture',
+      position: 'Position',
+      link: 'Link',
+      enabled: 'Enabled',
+      actions: 'Actions'
+    },
+    form: {
+      name: 'Name',
+      content: 'Content',
+      url: 'Picture',
+      position: 'Position',
+      link: 'Link',
+      enabled: 'Enabled'
+    },
+    value: {
+      position_1: 'Home',
+      enabled_true: 'On',
+      enabled_false: 'Off'
+    }
   }
 }
