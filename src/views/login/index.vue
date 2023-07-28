@@ -61,17 +61,29 @@ import LocaleChanger from '@/components/LocaleChanger'
 
 const isDev = (process.env.NODE_ENV === 'development')
 
+// Returns i18n localized rules
+const loginRules = function() {
+  const validatePassword = (rule, value, callback) => {
+    if (value.length < 6) {
+      callback(new Error(this.$t('login.message.password_min_length')))
+    } else {
+      callback()
+    }
+  }
+
+  return {
+    username: [{ required: true, message: this.$t('login.message.username_required'), trigger: 'blur' }],
+    password: [
+      { required: true, message: this.$t('login.message.password_required'), trigger: 'blur' },
+      { validator: validatePassword, trigger: 'blur' }
+    ]
+  }
+}
+
 export default {
   name: 'Login',
   components: { LocaleChanger },
   data() {
-    const validatePassword = (rule, value, callback) => {
-      if (value.length < 6) {
-        callback(new Error(this.$t('login.message.password_min_length')))
-      } else {
-        callback()
-      }
-    }
     return {
       loginForm: {
         username: isDev ? 'admin123' : '',
@@ -79,19 +91,17 @@ export default {
         code: ''
       },
       codeImg: '',
-      loginRules: {
-        username: [{ required: true, message: this.$t('login.message.username_required'), trigger: 'blur' }],
-        password: [
-          { required: true, message: this.$t('login.message.password_required'), trigger: 'blur' },
-          { validator: validatePassword, trigger: 'blur' }
-        ]
-      },
+      loginRules: loginRules.call(this),
       passwordType: 'password',
       loading: false,
       isDev
     }
   },
   watch: {
+    '$i18n.locale': function() {
+      // Recomputes rules when i18n locale is changed
+      this.loginRules = loginRules.call(this)
+    },
     $route: {
       handler: function(route) {
         this.redirect = route.query && route.query.redirect
