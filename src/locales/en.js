@@ -105,9 +105,6 @@ export default {
     }
   },
   user_user: {
-    dialog: {
-      edit: 'Edit user'
-    },
     table: {
       id: 'ID',
       nickname: 'Nickname',
@@ -118,6 +115,9 @@ export default {
       user_level: 'Level',
       status: 'Status',
       actions: 'Actions'
+    },
+    dialog: {
+      edit: 'Edit user'
     },
     form: {
       username: 'Username',
@@ -371,6 +371,23 @@ export default {
     button: {
       publish: 'Publish',
       edit: 'Edit'
+    }
+  },
+  goods_comment: {
+    table: {
+      user_id: 'User ID',
+      value_id: 'Item ID',
+      star: 'Rating',
+      content: 'Content',
+      pic_urls: 'Pictures',
+      add_time: 'Time added',
+      actions: 'Actions'
+    },
+    dialog: {
+      reply: 'Reply'
+    },
+    form: {
+      content: 'Content'
     }
   }
 }

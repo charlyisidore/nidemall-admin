@@ -105,9 +105,6 @@ export default {
     }
   },
   user_user: {
-    dialog: {
-      edit: '用户编辑'
-    },
     table: {
       id: '用户ID',
       nickname: '用户昵称',
@@ -118,6 +115,9 @@ export default {
       user_level: '用户等级',
       status: '状态',
       actions: '操作'
+    },
+    dialog: {
+      edit: '用户编辑'
     },
     form: {
       username: '用户名',
@@ -371,6 +371,23 @@ export default {
     button: {
       publish: '上架',
       edit: '更新商品'
+    }
+  },
+  goods_comment: {
+    table: {
+      user_id: '用户ID',
+      value_id: '商品ID',
+      star: '打分',
+      content: '评论内容',
+      pic_urls: '评论图片',
+      add_time: '时间',
+      actions: '操作'
+    },
+    dialog: {
+      reply: '回复'
+    },
+    form: {
+      content: '回复内容'
     }
   }
 }
