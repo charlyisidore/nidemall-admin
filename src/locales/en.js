@@ -511,5 +511,24 @@ export default {
     button: {
       goods_create: 'Add'
     }
+  },
+  promotion_groupon_rule: {
+    table: {
+      id: 'ID',
+      goods_id: 'Goods ID',
+      goods_name: 'Goods name',
+      pic_url: 'Picture',
+      discount: 'Discount',
+      discount_member: 'Min buy quantity',
+      status: 'Status',
+      expire_time: 'Expire time',
+      actions: 'Actions'
+    },
+    form: {
+      goods_id: 'Goods ID',
+      discount: 'Discount',
+      discount_member: 'Min buy quantity',
+      expire_time: 'Expire time'
+    }
   }
 }

@@ -511,5 +511,24 @@ export default {
     button: {
       goods_create: '创建商品'
     }
+  },
+  promotion_groupon_rule: {
+    table: {
+      id: '团购规则ID',
+      goods_id: '商品ID',
+      goods_name: '名称',
+      pic_url: '图片',
+      discount: '团购优惠',
+      discount_member: '团购要求',
+      status: '状态',
+      expire_time: '结束时间',
+      actions: '操作'
+    },
+    form: {
+      goods_id: '商品ID',
+      discount: '团购折扣',
+      discount_member: '团购人数要求',
+      expire_time: '过期时间'
+    }
   }
 }

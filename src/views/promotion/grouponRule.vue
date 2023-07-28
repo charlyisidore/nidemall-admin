@@ -18,31 +18,31 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" label="团购规则ID" prop="id" />
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.id')" prop="id" />
 
-      <el-table-column align="center" label="商品ID" prop="goodsId" />
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.goods_id')" prop="goodsId" />
 
-      <el-table-column align="center" min-width="100" label="名称" prop="goodsName" />
+      <el-table-column align="center" min-width="100" :label="$t('promotion_groupon_rule.table.goods_name')" prop="goodsName" />
 
-      <el-table-column align="center" property="picUrl" label="图片">
+      <el-table-column align="center" property="picUrl" :label="$t('promotion_groupon_rule.table.pic_url')">
         <template slot-scope="scope">
           <img :src="scope.row.picUrl" width="40">
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="团购优惠" prop="discount" />
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.discount')" prop="discount" />
 
-      <el-table-column align="center" label="团购要求" prop="discountMember" />
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.discount_member')" prop="discountMember" />
 
-      <el-table-column align="center" label="状态" prop="status">
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.status')" prop="status">
         <template slot-scope="scope">
           <el-tag :type="scope.row.status === 0 ? 'success' : 'error' ">{{ statusMap[scope.row.status] }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="结束时间" prop="expireTime" />
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.expire_time')" prop="expireTime" />
 
-      <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('promotion_groupon_rule.table.actions')" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/groupon/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/groupon/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
@@ -61,16 +61,16 @@
         label-width="120px"
         style="width: 400px; margin-left:50px;"
       >
-        <el-form-item label="商品ID" prop="goodsId">
+        <el-form-item :label="$t('promotion_groupon_rule.form.goods_id')" prop="goodsId">
           <el-input v-model="dataForm.goodsId" />
         </el-form-item>
-        <el-form-item label="团购折扣" prop="discount">
+        <el-form-item :label="$t('promotion_groupon_rule.form.discount')" prop="discount">
           <el-input v-model="dataForm.discount" />
         </el-form-item>
-        <el-form-item label="团购人数要求" prop="discountMember">
+        <el-form-item :label="$t('promotion_groupon_rule.form.discount_member')" prop="discountMember">
           <el-input v-model="dataForm.discountMember" />
         </el-form-item>
-        <el-form-item label="过期时间" prop="expireTime">
+        <el-form-item :label="$t('promotion_groupon_rule.form.expire_time')" prop="expireTime">
           <el-date-picker
             v-model="dataForm.expireTime"
             type="datetime"
