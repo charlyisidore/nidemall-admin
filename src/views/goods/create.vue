@@ -105,7 +105,7 @@
     </el-card>
 
     <el-card class="box-card">
-      <h3>{{ $t('goods_create.section.specification') }}</h3>
+      <h3>{{ $t('goods_create.section.specifications') }}</h3>
       <el-row :gutter="20" type="flex" align="middle" style="padding:20px 0;">
         <el-col :span="10">
           <el-radio-group v-model="multipleSpec" @change="specChanged">
@@ -183,23 +183,23 @@
     </el-card>
 
     <el-card class="box-card">
-      <h3>商品库存</h3>
+      <h3>{{ $t('goods_create.section.products') }}</h3>
       <el-table :data="products">
-        <el-table-column property="value" label="货品规格">
+        <el-table-column property="value" :label="$t('goods_create.table.product_specifications')">
           <template slot-scope="scope">
             <el-tag v-for="tag in scope.row.specifications" :key="tag">
               {{ tag }}
             </el-tag>
           </template>
         </el-table-column>
-        <el-table-column property="price" width="100" label="货品售价" />
-        <el-table-column property="number" width="100" label="货品数量" />
-        <el-table-column property="url" width="100" label="货品图片">
+        <el-table-column property="price" width="100" :label="$t('goods_create.table.product_price')" />
+        <el-table-column property="number" width="100" :label="$t('goods_create.table.product_number')" />
+        <el-table-column property="url" width="100" :label="$t('goods_create.table.product_url')">
           <template slot-scope="scope">
             <img v-if="scope.row.url" :src="scope.row.url" width="40">
           </template>
         </el-table-column>
-        <el-table-column align="center" label="操作" width="100" class-name="small-padding fixed-width">
+        <el-table-column align="center" :label="$t('goods_create.table.product_actions')" width="100" class-name="small-padding fixed-width">
           <template slot-scope="scope">
             <el-button type="primary" size="mini" @click="handleProductShow(scope.row)">{{ $t('app.button.settings') }}</el-button>
           </template>
@@ -215,18 +215,18 @@
           label-width="100px"
           style="width: 400px; margin-left:50px;"
         >
-          <el-form-item label="货品规格列" prop="specifications">
+          <el-form-item :label="$t('goods_create.form.product_specifications')" prop="specifications">
             <el-tag v-for="tag in productForm.specifications" :key="tag">
               {{ tag }}
             </el-tag>
           </el-form-item>
-          <el-form-item label="货品售价" prop="price">
+          <el-form-item :label="$t('goods_create.form.product_price')" prop="price">
             <el-input v-model="productForm.price" />
           </el-form-item>
-          <el-form-item label="货品数量" prop="number">
+          <el-form-item :label="$t('goods_create.form.product_number')" prop="number">
             <el-input v-model="productForm.number" />
           </el-form-item>
-          <el-form-item label="货品图片" prop="url">
+          <el-form-item :label="$t('goods_create.form.product_url')" prop="url">
             <el-upload
               :action="uploadPath"
               :show-file-list="false"
@@ -248,12 +248,12 @@
     </el-card>
 
     <el-card class="box-card">
-      <h3>商品参数</h3>
+      <h3>{{ $t('goods_create.section.attributes') }}</h3>
       <el-button type="primary" @click="handleAttributeShow">{{ $t('app.button.create') }}</el-button>
       <el-table :data="attributes">
-        <el-table-column property="attribute" label="商品参数名称" />
-        <el-table-column property="value" label="商品参数值" />
-        <el-table-column align="center" label="操作" width="100" class-name="small-padding fixed-width">
+        <el-table-column property="attribute" :label="$t('goods_create.table.attribute_name')" />
+        <el-table-column property="value" :label="$t('goods_create.table.attribute_value')" />
+        <el-table-column align="center" :label="$t('goods_create.table.attribute_actions')" width="100" class-name="small-padding fixed-width">
           <template slot-scope="scope">
             <el-button type="danger" size="mini" @click="handleAttributeDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
           </template>
@@ -269,10 +269,10 @@
           label-width="100px"
           style="width: 400px; margin-left:50px;"
         >
-          <el-form-item label="商品参数名称" prop="attribute">
+          <el-form-item :label="$t('goods_create.form.attribute_name')" prop="attribute">
             <el-input v-model="attributeForm.attribute" />
           </el-form-item>
-          <el-form-item label="商品参数值" prop="value">
+          <el-form-item :label="$t('goods_create.form.attribute_value')" prop="value">
             <el-input v-model="attributeForm.value" />
           </el-form-item>
         </el-form>

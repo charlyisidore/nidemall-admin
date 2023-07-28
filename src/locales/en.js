@@ -312,13 +312,23 @@ export default {
   goods_create: {
     section: {
       goods: 'Product',
-      specification: 'Specifications'
+      specifications: 'Specifications',
+      products: 'Product variants',
+      attributes: 'Attributes'
     },
     table: {
       specification_name: 'Name',
       specification_value: 'Value',
       specification_pic_url: 'Picture',
-      specification_actions: 'Actions'
+      specification_actions: 'Actions',
+      product_specifications: 'Specifications',
+      product_price: 'Price',
+      product_number: 'Quantity',
+      product_url: 'Picture',
+      product_actions: 'Actions',
+      attribute_name: 'Name',
+      attribute_value: 'Value',
+      attribute_actions: 'Actions'
     },
     form: {
       goods_sn: 'Goods SN',
@@ -337,7 +347,13 @@ export default {
       detail: 'Detail',
       specification_name: 'Name',
       specification_value: 'Value',
-      specification_pic_url: 'Picture'
+      specification_pic_url: 'Picture',
+      product_specifications: 'Specifications',
+      product_price: 'Price',
+      product_number: 'Quantity',
+      product_url: 'Picture',
+      attribute_name: 'Name',
+      attribute_value: 'Value'
     },
     value: {
       is_new_true: 'New',
@@ -346,8 +362,8 @@ export default {
       is_hot_false: 'Ordinary',
       is_on_sale_true: 'On sale',
       is_on_sale_false: 'Not on sale',
-      multiple_spec_true: 'Multiple specifications',
-      multiple_spec_false: 'Single specification'
+      multiple_spec_true: 'Multiple',
+      multiple_spec_false: 'Single'
     }
   }
 }

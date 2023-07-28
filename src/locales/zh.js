@@ -312,13 +312,23 @@ export default {
   goods_create: {
     section: {
       goods: '商品介绍',
-      specification: '商品规格'
+      specifications: '商品规格',
+      products: '商品库存',
+      attributes: '商品参数'
     },
     table: {
       specification_name: '规格名',
       specification_value: '规格值',
       specification_pic_url: '规格图片',
-      specification_actions: '操作'
+      specification_actions: '操作',
+      product_specifications: '货品规格',
+      product_price: '货品售价',
+      product_number: '货品数量',
+      product_url: '货品图片',
+      product_actions: '操作',
+      attribute_name: '商品参数名称',
+      attribute_value: '商品参数值',
+      attribute_actions: '操作'
     },
     form: {
       goods_sn: '商品编号',
@@ -337,7 +347,13 @@ export default {
       detail: '商品详细介绍',
       specification_name: '规格名',
       specification_value: '规格值',
-      specification_pic_url: '规格图片'
+      specification_pic_url: '规格图片',
+      product_specifications: '货品规格列',
+      product_price: '货品售价',
+      product_number: '货品数量',
+      product_url: '货品图片',
+      attribute_name: '商品参数名称',
+      attribute_value: '商品参数值'
     },
     value: {
       is_new_true: '新品',
