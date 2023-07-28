@@ -644,5 +644,20 @@ export default {
       unconfirm: '未确认收货，则订单自动确认收货',
       comment: '未评价商品，则取消评价资格'
     }
+  },
+  config_wx: {
+    section: {
+      home: '首页配置',
+      other: '其他配置'
+    },
+    form: {
+      index_new: '新品首发栏目商品显示数量',
+      index_hot: '人气推荐栏目商品显示数量',
+      index_brand: '品牌制造商直供栏目品牌商显示数量',
+      index_topic: '专题精选栏目显示数量',
+      catlog_list: '分类栏目显示数量',
+      catlog_goods: '分类栏目商品显示数量',
+      share: '商品分享功能'
+    }
   }
 }

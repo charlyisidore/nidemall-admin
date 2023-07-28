@@ -644,5 +644,20 @@ export default {
       unconfirm: 'No confirmation of receipt, then the order is automatically confirmed for receipt',
       comment: 'If the product is not evaluated, it will be disqualified'
     }
+  },
+  config_wx: {
+    section: {
+      home: 'Home',
+      other: 'Other'
+    },
+    form: {
+      index_new: 'Number of new products shown',
+      index_hot: 'Number of hot products shown',
+      index_brand: 'Number of brands shown',
+      index_topic: 'Number of topics shown',
+      catlog_list: 'Number of categories shown',
+      catlog_goods: 'Number of products shown',
+      share: 'Product sharing function'
+    }
   }
 }
