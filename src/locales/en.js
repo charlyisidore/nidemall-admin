@@ -4,38 +4,6 @@ import el from 'element-ui/lib/locale/lang/en'
 export default {
   ...el,
   lang: 'English',
-  login: {
-    page: {
-      title: 'Admin login'
-    },
-    placeholder: {
-      username: 'Admin account',
-      password: 'Admin password'
-    },
-    message: {
-      username_required: 'Username is required',
-      password_required: 'Password is required',
-      password_min_length: 'Password must contain at least 6 characters'
-    },
-    button: {
-      login: 'Login'
-    }
-  },
-  navbar: {
-    tooltip: {
-      locale: 'Language',
-      full_screen: 'Full screen',
-      size_select: 'Select size',
-      notice: 'Notifications'
-    },
-    menu: {
-      home: 'Home',
-      github: 'Github',
-      gitee: 'Gitee',
-      password: 'Change password',
-      logout: 'Logout'
-    }
-  },
   app: {
     menu: {
       dashboard: 'Dashboard',
@@ -107,6 +75,38 @@ export default {
       search: 'Search',
       settings: 'Settings',
       view: 'View'
+    }
+  },
+  login: {
+    page: {
+      title: 'Admin login'
+    },
+    placeholder: {
+      username: 'Admin account',
+      password: 'Admin password'
+    },
+    message: {
+      username_required: 'Username is required',
+      password_required: 'Password is required',
+      password_min_length: 'Password must contain at least 6 characters'
+    },
+    button: {
+      login: 'Login'
+    }
+  },
+  navbar: {
+    tooltip: {
+      locale: 'Language',
+      full_screen: 'Full screen',
+      size_select: 'Select size',
+      notice: 'Notifications'
+    },
+    menu: {
+      home: 'Home',
+      github: 'Github',
+      gitee: 'Gitee',
+      password: 'Change password',
+      logout: 'Logout'
     }
   },
   dashboard: {

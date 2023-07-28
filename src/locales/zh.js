@@ -4,38 +4,6 @@ import el from 'element-ui/lib/locale/lang/zh-CN'
 export default {
   ...el,
   lang: '中文',
-  login: {
-    page: {
-      title: '管理员登录'
-    },
-    placeholder: {
-      username: '管理员账户',
-      password: '管理员密码'
-    },
-    message: {
-      username_required: '管理员账户不允许为空',
-      password_required: '管理员密码不允许为空',
-      password_min_length: '管理员密码长度应大于6'
-    },
-    button: {
-      login: '登录'
-    }
-  },
-  navbar: {
-    tooltip: {
-      locale: '语言',
-      full_screen: '全屏',
-      size_select: '布局大小',
-      notice: '通知中心'
-    },
-    menu: {
-      home: '首页',
-      github: 'Github',
-      gitee: 'Gitee',
-      password: '密码修改',
-      logout: '退出'
-    }
-  },
   app: {
     menu: {
       dashboard: '首页',
@@ -107,6 +75,38 @@ export default {
       search: '查找',
       settings: '设置',
       view: '查看'
+    }
+  },
+  login: {
+    page: {
+      title: '管理员登录'
+    },
+    placeholder: {
+      username: '管理员账户',
+      password: '管理员密码'
+    },
+    message: {
+      username_required: '管理员账户不允许为空',
+      password_required: '管理员密码不允许为空',
+      password_min_length: '管理员密码长度应大于6'
+    },
+    button: {
+      login: '登录'
+    }
+  },
+  navbar: {
+    tooltip: {
+      locale: '语言',
+      full_screen: '全屏',
+      size_select: '布局大小',
+      notice: '通知中心'
+    },
+    menu: {
+      home: '首页',
+      github: 'Github',
+      gitee: 'Gitee',
+      password: '密码修改',
+      logout: '退出'
     }
   },
   dashboard: {
