@@ -65,7 +65,7 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'sidebar.dashboard.title', icon: 'dashboard', affix: true }
+        meta: { title: 'app.menu.dashboard', icon: 'dashboard', affix: true }
       }
     ]
   }
@@ -79,7 +79,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'userManage',
     meta: {
-      title: 'sidebar.user.title',
+      title: 'app.menu.user',
       icon: 'chart'
     },
     children: [
@@ -89,7 +89,7 @@ export const asyncRoutes = [
         name: 'user',
         meta: {
           perms: ['GET /admin/user/list'],
-          title: 'sidebar.user_user.title',
+          title: 'app.menu.user_user',
           noCache: true
         }
       },
@@ -99,7 +99,7 @@ export const asyncRoutes = [
         name: 'address',
         meta: {
           perms: ['GET /admin/address/list'],
-          title: 'sidebar.user_address.title',
+          title: 'app.menu.user_address',
           noCache: true
         }
       },
@@ -109,7 +109,7 @@ export const asyncRoutes = [
         name: 'collect',
         meta: {
           perms: ['GET /admin/collect/list'],
-          title: 'sidebar.user_collect.title',
+          title: 'app.menu.user_collect',
           noCache: true
         }
       },
@@ -119,7 +119,7 @@ export const asyncRoutes = [
         name: 'footprint',
         meta: {
           perms: ['GET /admin/footprint/list'],
-          title: 'sidebar.user_footprint.title',
+          title: 'app.menu.user_footprint',
           noCache: true
         }
       },
@@ -129,7 +129,7 @@ export const asyncRoutes = [
         name: 'history',
         meta: {
           perms: ['GET /admin/history/list'],
-          title: 'sidebar.user_history.title',
+          title: 'app.menu.user_history',
           noCache: true
         }
       },
@@ -139,7 +139,7 @@ export const asyncRoutes = [
         name: 'feedback',
         meta: {
           perms: ['GET /admin/feedback/list'],
-          title: 'sidebar.user_feedback.title',
+          title: 'app.menu.user_feedback',
           noCache: true
         }
       }
@@ -153,7 +153,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'mallManage',
     meta: {
-      title: 'sidebar.mall.title',
+      title: 'app.menu.mall',
       icon: 'chart'
     },
     children: [
@@ -162,7 +162,7 @@ export const asyncRoutes = [
         component: () => import('@/views/mall/region'),
         name: 'region',
         meta: {
-          title: 'sidebar.mall_region.title',
+          title: 'app.menu.mall_region',
           noCache: true
         }
       },
@@ -172,7 +172,7 @@ export const asyncRoutes = [
         name: 'brand',
         meta: {
           perms: ['GET /admin/brand/list', 'POST /admin/brand/create', 'GET /admin/brand/read', 'POST /admin/brand/update', 'POST /admin/brand/delete'],
-          title: 'sidebar.mall_brand.title',
+          title: 'app.menu.mall_brand',
           noCache: true
         }
       },
@@ -182,7 +182,7 @@ export const asyncRoutes = [
         name: 'category',
         meta: {
           perms: ['GET /admin/category/list', 'POST /admin/category/create', 'GET /admin/category/read', 'POST /admin/category/update', 'POST /admin/category/delete'],
-          title: 'sidebar.mall_category.title',
+          title: 'app.menu.mall_category',
           noCache: true
         }
       },
@@ -192,7 +192,7 @@ export const asyncRoutes = [
         name: 'order',
         meta: {
           perms: ['GET /admin/order/list', 'GET /admin/order/detail', 'POST /admin/order/ship', 'POST /admin/order/refund', 'POST /admin/order/delete', 'POST /admin/order/reply'],
-          title: 'sidebar.mall_order.title',
+          title: 'app.menu.mall_order',
           noCache: true
         }
       },
@@ -202,7 +202,7 @@ export const asyncRoutes = [
         name: 'aftersale',
         meta: {
           perms: ['GET /admin/aftersale/list', 'GET /admin/aftersale/detail', 'POST /admin/order/receive', 'POST /admin/aftersale/complete', 'POST /admin/aftersale/reject'],
-          title: 'sidebar.mall_aftersale.title',
+          title: 'app.menu.mall_aftersale',
           noCache: true
         }
       },
@@ -212,7 +212,7 @@ export const asyncRoutes = [
         name: 'issue',
         meta: {
           perms: ['GET /admin/issue/list', 'POST /admin/issue/create', 'GET /admin/issue/read', 'POST /admin/issue/update', 'POST /admin/issue/delete'],
-          title: 'sidebar.mall_issue.title',
+          title: 'app.menu.mall_issue',
           noCache: true
         }
       },
@@ -222,7 +222,7 @@ export const asyncRoutes = [
         name: 'keyword',
         meta: {
           perms: ['GET /admin/keyword/list', 'POST /admin/keyword/create', 'GET /admin/keyword/read', 'POST /admin/keyword/update', 'POST /admin/keyword/delete'],
-          title: 'sidebar.mall_keyword.title',
+          title: 'app.menu.mall_keyword',
           noCache: true
         }
       }
@@ -236,7 +236,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'goodsManage',
     meta: {
-      title: 'sidebar.goods.title',
+      title: 'app.menu.goods',
       icon: 'chart'
     },
     children: [
@@ -246,7 +246,7 @@ export const asyncRoutes = [
         name: 'goodsList',
         meta: {
           perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
-          title: 'sidebar.goods_list.title',
+          title: 'app.menu.goods_list',
           noCache: true
         }
       },
@@ -256,7 +256,7 @@ export const asyncRoutes = [
         name: 'goodsCreate',
         meta: {
           perms: ['POST /admin/goods/create'],
-          title: 'sidebar.goods_create.title',
+          title: 'app.menu.goods_create',
           noCache: true
         }
       },
@@ -266,7 +266,7 @@ export const asyncRoutes = [
         name: 'goodsEdit',
         meta: {
           perms: ['GET /admin/goods/detail', 'POST /admin/goods/update', 'POST /admin/goods/catAndBrand'],
-          title: 'sidebar.goods_edit.title',
+          title: 'app.menu.goods_edit',
           noCache: true
         },
         hidden: true
@@ -277,7 +277,7 @@ export const asyncRoutes = [
         name: 'goodsComment',
         meta: {
           perms: ['GET /admin/comment/list', 'POST /admin/comment/delete'],
-          title: 'sidebar.goods_comment.title',
+          title: 'app.menu.goods_comment',
           noCache: true
         }
       }
@@ -290,7 +290,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'promotionManage',
     meta: {
-      title: 'sidebar.promotion.title',
+      title: 'app.menu.promotion',
       icon: 'chart'
     },
     children: [
@@ -300,7 +300,7 @@ export const asyncRoutes = [
         name: 'ad',
         meta: {
           perms: ['GET /admin/ad/list', 'POST /admin/ad/create', 'GET /admin/ad/read', 'POST /admin/ad/update', 'POST /admin/ad/delete'],
-          title: 'sidebar.promotion_ad.title',
+          title: 'app.menu.promotion_ad',
           noCache: true
         }
       },
@@ -310,7 +310,7 @@ export const asyncRoutes = [
         name: 'coupon',
         meta: {
           perms: ['GET /admin/coupon/list', 'POST /admin/coupon/create', 'POST /admin/coupon/update', 'POST /admin/coupon/delete'],
-          title: 'sidebar.promotion_coupon.title',
+          title: 'app.menu.promotion_coupon',
           noCache: true
         }
       },
@@ -320,7 +320,7 @@ export const asyncRoutes = [
         name: 'couponDetail',
         meta: {
           perms: ['GET /admin/coupon/list', 'GET /admin/coupon/listuser'],
-          title: 'sidebar.promotion_coupon_detail.title',
+          title: 'app.menu.promotion_coupon_detail',
           noCache: true
         },
         hidden: true
@@ -331,7 +331,7 @@ export const asyncRoutes = [
         name: 'topic',
         meta: {
           perms: ['GET /admin/topic/list', 'POST /admin/topic/create', 'GET /admin/topic/read', 'POST /admin/topic/update', 'POST /admin/topic/delete'],
-          title: 'sidebar.promotion_topic.title',
+          title: 'app.menu.promotion_topic',
           noCache: true
         }
       },
@@ -341,7 +341,7 @@ export const asyncRoutes = [
         name: 'topicCreate',
         meta: {
           perms: ['POST /admin/topic/create'],
-          title: 'sidebar.promotion_topic_create.title',
+          title: 'app.menu.promotion_topic_create',
           noCache: true
         },
         hidden: true
@@ -352,7 +352,7 @@ export const asyncRoutes = [
         name: 'topicEdit',
         meta: {
           perms: ['GET /admin/topic/read', 'POST /admin/topic/update'],
-          title: 'sidebar.promotion_topic_edit.title',
+          title: 'app.menu.promotion_topic_edit',
           noCache: true
         },
         hidden: true
@@ -363,7 +363,7 @@ export const asyncRoutes = [
         name: 'grouponRule',
         meta: {
           perms: ['GET /admin/groupon/list', 'POST /admin/groupon/create', 'POST /admin/groupon/update', 'POST /admin/groupon/delete'],
-          title: 'sidebar.promotion_groupon_rule.title',
+          title: 'app.menu.promotion_groupon_rule',
           noCache: true
         }
       },
@@ -373,7 +373,7 @@ export const asyncRoutes = [
         name: 'grouponActivity',
         meta: {
           perms: ['GET /admin/groupon/listRecord'],
-          title: 'sidebar.promotion_groupon_activity.title',
+          title: 'app.menu.promotion_groupon_activity',
           noCache: true
         }
       }
@@ -387,7 +387,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'sysManage',
     meta: {
-      title: 'sidebar.sys.title',
+      title: 'app.menu.sys',
       icon: 'chart'
     },
     children: [
@@ -397,7 +397,7 @@ export const asyncRoutes = [
         name: 'admin',
         meta: {
           perms: ['GET /admin/admin/list', 'POST /admin/admin/create', 'POST /admin/admin/update', 'POST /admin/admin/delete'],
-          title: 'sidebar.sys_admin.title',
+          title: 'app.menu.sys_admin',
           noCache: true
         }
       },
@@ -407,7 +407,7 @@ export const asyncRoutes = [
         name: 'sysNotice',
         meta: {
           perms: ['GET /admin/notice/list', 'POST /admin/notice/create', 'POST /admin/notice/update', 'POST /admin/notice/delete'],
-          title: 'sidebar.sys_notice.title',
+          title: 'app.menu.sys_notice',
           noCache: true
         }
       },
@@ -417,7 +417,7 @@ export const asyncRoutes = [
         name: 'log',
         meta: {
           perms: ['GET /admin/log/list'],
-          title: 'sidebar.sys_log.title',
+          title: 'app.menu.sys_log',
           noCache: true
         }
       },
@@ -427,7 +427,7 @@ export const asyncRoutes = [
         name: 'role',
         meta: {
           perms: ['GET /admin/role/list', 'POST /admin/role/create', 'POST /admin/role/update', 'POST /admin/role/delete', 'GET /admin/role/permissions', 'POST /admin/role/permissions'],
-          title: 'sidebar.sys_role.title',
+          title: 'app.menu.sys_role',
           noCache: true
         }
       },
@@ -437,7 +437,7 @@ export const asyncRoutes = [
         name: 'os',
         meta: {
           perms: ['GET /admin/storage/list', 'POST /admin/storage/create', 'POST /admin/storage/update', 'POST /admin/storage/delete'],
-          title: 'sidebar.sys_os.title',
+          title: 'app.menu.sys_os',
           noCache: true
         }
       }
@@ -451,7 +451,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'configManage',
     meta: {
-      title: 'sidebar.config.title',
+      title: 'app.menu.config',
       icon: 'chart'
     },
     children: [
@@ -461,7 +461,7 @@ export const asyncRoutes = [
         name: 'configMall',
         meta: {
           perms: ['GET /admin/config/mall', 'POST /admin/config/mall'],
-          title: 'sidebar.config_mall.title',
+          title: 'app.menu.config_mall',
           noCache: true
         }
       },
@@ -471,7 +471,7 @@ export const asyncRoutes = [
         name: 'configExpress',
         meta: {
           perms: ['GET /admin/config/express', 'POST /admin/config/express'],
-          title: 'sidebar.config_express.title',
+          title: 'app.menu.config_express',
           noCache: true
         }
       },
@@ -481,7 +481,7 @@ export const asyncRoutes = [
         name: 'configOrder',
         meta: {
           perms: ['GET /admin/config/order', 'POST /admin/config/order'],
-          title: 'sidebar.config_order.title',
+          title: 'app.menu.config_order',
           noCache: true
         }
       },
@@ -491,7 +491,7 @@ export const asyncRoutes = [
         name: 'configWx',
         meta: {
           perms: ['GET /admin/config/wx', 'POST /admin/config/wx'],
-          title: 'sidebar.config_wx.title',
+          title: 'app.menu.config_wx',
           noCache: true
         }
       }
@@ -505,7 +505,7 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'statManage',
     meta: {
-      title: 'sidebar.stat.title',
+      title: 'app.menu.stat',
       icon: 'chart'
     },
     children: [
@@ -515,7 +515,7 @@ export const asyncRoutes = [
         name: 'statUser',
         meta: {
           perms: ['GET /admin/stat/user'],
-          title: 'sidebar.stat_user.title',
+          title: 'app.menu.stat_user',
           noCache: true
         }
       },
@@ -525,7 +525,7 @@ export const asyncRoutes = [
         name: 'statOrder',
         meta: {
           perms: ['GET /admin/stat/order'],
-          title: 'sidebar.stat_order.title',
+          title: 'app.menu.stat_order',
           noCache: true
         }
       },
@@ -535,7 +535,7 @@ export const asyncRoutes = [
         name: 'statGoods',
         meta: {
           perms: ['GET /admin/stat/goods'],
-          title: 'sidebar.stat_goods.title',
+          title: 'app.menu.stat_goods',
           noCache: true
         }
       }
@@ -548,37 +548,37 @@ export const asyncRoutes = [
     alwaysShow: true,
     name: 'externalLink',
     meta: {
-      title: 'sidebar.external_link.title',
+      title: 'app.menu.external_link',
       icon: 'link'
     },
     children: [
       {
         path: 'https://cloud.tencent.com/product/cos',
-        meta: { title: 'sidebar.external_link_tencent_cos.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_tencent_cos', icon: 'link' }
       },
       {
         path: 'https://cloud.tencent.com/product/sms',
-        meta: { title: 'sidebar.external_link_tencent_sms.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_tencent_sms', icon: 'link' }
       },
       {
         path: 'https://pay.weixin.qq.com/index.php/core/home/login',
-        meta: { title: 'sidebar.external_link_weixin_pay.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_weixin_pay', icon: 'link' }
       },
       {
         path: 'https://mpkf.weixin.qq.com/',
-        meta: { title: 'sidebar.external_link_weixin_mpkf.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_weixin_mpkf', icon: 'link' }
       },
       {
         path: 'https://www.alibabacloud.com/zh/product/oss',
-        meta: { title: 'sidebar.external_link_alibaba_oss.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_alibaba_oss', icon: 'link' }
       },
       {
         path: 'https://www.qiniu.com/products/kodo',
-        meta: { title: 'sidebar.external_link_qiniu_kodo.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_qiniu_kodo', icon: 'link' }
       },
       {
         path: 'http://www.kdniao.com/api-track',
-        meta: { title: 'sidebar.external_link_kdniao_api.title', icon: 'link' }
+        meta: { title: 'app.menu.external_link_kdniao_api', icon: 'link' }
       }
     ]
   },
