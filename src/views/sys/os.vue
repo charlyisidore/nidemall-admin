@@ -13,23 +13,23 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" label="对象KEY" prop="key" />
+      <el-table-column align="center" :label="$t('sys_os.table.key')" prop="key" />
 
-      <el-table-column align="center" label="对象名称" prop="name" />
+      <el-table-column align="center" :label="$t('sys_os.table.name')" prop="name" />
 
-      <el-table-column align="center" label="对象类型" prop="type" />
+      <el-table-column align="center" :label="$t('sys_os.table.type')" prop="type" />
 
-      <el-table-column align="center" label="对象大小" prop="size" />
+      <el-table-column align="center" :label="$t('sys_os.table.size')" prop="size" />
 
-      <el-table-column align="center" property="url" label="图片">
+      <el-table-column align="center" property="url" :label="$t('sys_os.table.url')">
         <template slot-scope="scope">
           <img :src="scope.row.url" width="40">
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="图片链接" prop="url" />
+      <el-table-column align="center" :label="$t('sys_os.table.url_link')" prop="url" />
 
-      <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('sys_os.table.actions')" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/storage/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/storage/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
@@ -42,14 +42,14 @@
     <!-- 添加对话框 -->
     <el-dialog :visible.sync="createDialogVisible" title="上传对象">
       <el-upload ref="upload" :show-file-list="false" :limit="1" :http-request="handleUpload" action="#" list-type="picture">
-        <el-button type="primary">点击上传</el-button>
+        <el-button type="primary">{{ $t('sys_os.button.upload') }}</el-button>
       </el-upload>
     </el-dialog>
 
     <!-- 修改对话框 -->
     <el-dialog :visible.sync="updateDialogVisible" title="修改对象名称">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="对象名称" prop="name">
+        <el-form-item :label="$t('sys_os.form.name')" prop="name">
           <el-input v-model="dataForm.name" />
         </el-form-item>
       </el-form>

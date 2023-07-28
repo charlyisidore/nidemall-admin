@@ -596,5 +596,22 @@ export default {
       name: '角色名称',
       desc: '说明'
     }
+  },
+  sys_os: {
+    table: {
+      key: '对象KEY',
+      name: '对象名称',
+      type: '对象类型',
+      size: '对象大小',
+      url: '图片',
+      url_link: '图片链接',
+      actions: '操作'
+    },
+    form: {
+      name: '对象名称'
+    },
+    button: {
+      upload: '点击上传'
+    }
   }
 }

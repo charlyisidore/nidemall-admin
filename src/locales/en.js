@@ -596,5 +596,22 @@ export default {
       name: 'Name',
       desc: 'Description'
     }
+  },
+  sys_os: {
+    table: {
+      key: 'Key',
+      name: 'Name',
+      type: 'Type',
+      size: 'size',
+      url: 'Picture',
+      url_link: 'Link',
+      actions: 'Actions'
+    },
+    form: {
+      name: 'Name'
+    },
+    button: {
+      upload: 'Upload'
+    }
   }
 }
