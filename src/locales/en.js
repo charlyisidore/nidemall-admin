@@ -106,397 +106,185 @@ export default {
   },
   user_user: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      nickname: {
-        label: 'Nickname'
-      },
-      avatar: {
-        label: 'Avatar'
-      },
-      mobile: {
-        label: 'Mobile'
-      },
-      gender: {
-        label: 'Gender'
-      },
-      birthday: {
-        label: 'Birthday'
-      },
-      user_level: {
-        label: 'Level'
-      },
-      status: {
-        label: 'Status'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      id: 'ID',
+      nickname: 'Nickname',
+      avatar: 'Avatar',
+      mobile: 'Mobile',
+      gender: 'Gender',
+      birthday: 'Birthday',
+      user_level: 'Level',
+      status: 'Status',
+      actions: 'Actions'
     },
     form_title: 'Edit user',
     form: {
-      username: {
-        label: 'Username'
-      },
-      nickname: {
-        label: 'Nickname'
-      },
-      mobile: {
-        label: 'Mobile'
-      },
-      gender: {
-        label: 'Gender'
-      },
-      user_level: {
-        label: 'Level'
-      },
-      status: {
-        label: 'Status'
-      }
+      username: 'Username',
+      nickname: 'Nickname',
+      mobile: 'Mobile',
+      gender: 'Gender',
+      user_level: 'Level',
+      status: 'Status'
     }
   },
   user_address: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      user_id: {
-        label: 'User ID'
-      },
-      name: {
-        label: 'Name'
-      },
-      tel: {
-        label: 'Mobile'
-      },
-      address_region: {
-        label: 'Region'
-      },
-      address_detail: {
-        label: 'Detail'
-      },
-      is_default: {
-        label: 'Default'
-      }
+      id: 'ID',
+      user_id: 'User ID',
+      name: 'Name',
+      tel: 'Mobile',
+      address_region: 'Region',
+      address_detail: 'Detail',
+      is_default: 'Default'
     }
   },
   user_collect: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      user_id: {
-        label: 'User ID'
-      },
-      value_id: {
-        label: 'Item ID'
-      },
-      add_time: {
-        label: 'Time added'
-      }
+      id: 'ID',
+      user_id: 'User ID',
+      value_id: 'Item ID',
+      add_time: 'Time added'
     }
   },
   user_footprint: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      user_id: {
-        label: 'User ID'
-      },
-      goods_id: {
-        label: 'Product ID'
-      },
-      add_time: {
-        label: 'Time added'
-      }
+      id: 'ID',
+      user_id: 'User ID',
+      goods_id: 'Product ID',
+      add_time: 'Time added'
     }
   },
   user_history: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      user_id: {
-        label: 'User ID'
-      },
-      keyword: {
-        label: 'Keyword'
-      },
-      add_time: {
-        label: 'Time added'
-      }
+      id: 'ID',
+      user_id: 'User ID',
+      keyword: 'Keyword',
+      add_time: 'Time added'
     }
   },
   user_feedback: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      username: {
-        label: 'Username'
-      },
-      mobile: {
-        label: 'Mobile'
-      },
-      feed_type: {
-        label: 'Type'
-      },
-      content: {
-        label: 'Content'
-      },
-      pic_urls: {
-        label: 'Pictures'
-      },
-      add_time: {
-        label: 'Time added'
-      }
+      id: 'ID',
+      username: 'Username',
+      mobile: 'Mobile',
+      feed_type: 'Type',
+      content: 'Content',
+      pic_urls: 'Pictures',
+      add_time: 'Time added'
     }
   },
   mall_region: {
     table: {
-      name: {
-        label: 'Name'
-      },
-      type: {
-        label: 'Type'
-      },
-      code: {
-        label: 'Code'
-      }
+      name: 'Name',
+      type: 'Type',
+      code: 'Code'
     }
   },
   mall_brand: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      name: {
-        label: 'Name'
-      },
-      pic_url: {
-        label: 'Picture'
-      },
-      desc: {
-        label: 'Description'
-      },
-      floor_price: {
-        label: 'Floor price'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      id: 'ID',
+      name: 'Name',
+      pic_url: 'Picture',
+      desc: 'Description',
+      floor_price: 'Floor price',
+      actions: 'Actions'
     },
     form: {
-      name: {
-        label: 'Name'
-      },
-      simple_desc: {
-        label: 'Description'
-      },
-      pic_url: {
-        label: 'Picture'
-      },
-      floor_price: {
-        label: 'Floor price'
-      }
+      name: 'Name',
+      simple_desc: 'Description',
+      pic_url: 'Picture',
+      floor_price: 'Floor price'
     }
   },
   mall_category: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      name: {
-        label: 'Name'
-      },
-      icon_url: {
-        label: 'Icon'
-      },
-      pic_url: {
-        label: 'Picture'
-      },
-      keywords: {
-        label: 'Keywords'
-      },
-      desc: {
-        label: 'Description'
-      },
-      level: {
-        label: 'Level'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      id: 'ID',
+      name: 'Name',
+      icon_url: 'Icon',
+      pic_url: 'Picture',
+      keywords: 'Keywords',
+      desc: 'Description',
+      level: 'Level',
+      actions: 'Actions'
     },
     form: {
-      name: {
-        label: 'Name'
-      },
-      keywords: {
-        label: 'Keywords'
-      },
-      level: {
-        label: 'Level',
-        value: {
-          L1: 'Level 1',
-          L2: 'Level 2'
-        }
-      },
-      pid: {
-        label: 'Parent'
-      },
-      icon_url: {
-        label: 'Icon'
-      },
-      pic_url: {
-        label: 'Picture'
-      },
-      desc: {
-        label: 'Description'
-      }
+      name: 'Name',
+      keywords: 'Keywords',
+      level: 'Level',
+      pid: 'Parent',
+      icon_url: 'Icon',
+      pic_url: 'Picture',
+      desc: 'Description'
+    },
+    value: {
+      level_L1: 'Level 1',
+      level_L2: 'Level 2'
     }
   },
   mall_order: {
     table: {
-      order_sn: {
-        label: 'Order SN'
-      },
-      avatar: {
-        label: 'Avatar'
-      },
-      user_name: {
-        label: 'User name'
-      },
-      add_time: {
-        label: 'Time added'
-      },
-      order_status: {
-        label: 'Status'
-      },
-      order_price: {
-        label: 'Order price'
-      },
-      actual_price: {
-        label: 'Actual price'
-      },
-      pay_time: {
-        label: 'Time paid'
-      },
-      consignee: {
-        label: 'Consignee'
-      },
-      mobile: {
-        label: 'Mobile'
-      },
-      ship_sn: {
-        label: 'Ship SN'
-      },
-      ship_channel: {
-        label: 'Ship channel'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      order_sn: 'Order SN',
+      avatar: 'Avatar',
+      user_name: 'User name',
+      add_time: 'Time added',
+      order_status: 'Status',
+      order_price: 'Order price',
+      actual_price: 'Actual price',
+      pay_time: 'Time paid',
+      consignee: 'Consignee',
+      mobile: 'Mobile',
+      ship_sn: 'Ship SN',
+      ship_channel: 'Ship channel',
+      actions: 'Actions'
     }
   },
   mall_aftersale: {
     table: {
-      aftersale_sn: {
-        label: 'Aftersale SN'
-      },
-      order_id: {
-        label: 'Order ID'
-      },
-      user_id: {
-        label: 'User ID'
-      },
-      type: {
-        label: 'Type'
-      },
-      reason: {
-        label: 'Reason'
-      },
-      amount: {
-        label: 'Amount'
-      },
-      add_time: {
-        label: 'Time added'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      aftersale_sn: 'Aftersale SN',
+      order_id: 'Order ID',
+      user_id: 'User ID',
+      type: 'Type',
+      reason: 'Reason',
+      amount: 'Amount',
+      add_time: 'Time added',
+      actions: 'Actions'
     }
   },
   mall_issue: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      question: {
-        label: 'Question'
-      },
-      answer: {
-        label: 'Answer'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      id: 'ID',
+      question: 'Question',
+      answer: 'Answer',
+      actions: 'Actions'
     },
     form: {
-      question: {
-        label: 'Question'
-      },
-      answer: {
-        label: 'Answer'
-      }
+      question: 'Question',
+      answer: 'Answer'
     }
   },
   mall_keyword: {
     table: {
-      id: {
-        label: 'ID'
-      },
-      keyword: {
-        label: 'Keyword'
-      },
-      url: {
-        label: 'URL'
-      },
-      is_hot: {
-        label: 'Hot'
-      },
-      is_default: {
-        label: 'Default'
-      },
-      actions: {
-        label: 'Actions'
-      }
+      id: 'ID',
+      keyword: 'Keyword',
+      url: 'URL',
+      is_hot: 'Hot',
+      is_default: 'Default',
+      actions: 'Actions'
     },
     form: {
-      keyword: {
-        label: 'Keyword'
-      },
-      url: {
-        label: 'URL'
-      },
-      is_hot: {
-        label: 'Hot',
-        placeholder: 'Please choose',
-        value: {
-          true: 'Recommended',
-          false: 'Common'
-        }
-      },
-      is_default: {
-        label: 'Default',
-        placeholder: 'Please choose',
-        value: {
-          true: 'Default',
-          false: 'Non default'
-        }
-      }
+      keyword: 'Keyword',
+      url: 'URL',
+      is_hot: 'Hot',
+      is_default: 'Default'
+    },
+    placeholder: {
+      is_hot: 'Please choose',
+      is_default: 'Please choose'
+    },
+    value: {
+      is_hot_true: 'Recommended',
+      is_hot_false: 'Common',
+      is_default_true: 'Default',
+      is_default_false: 'Non default'
     }
   }
 }

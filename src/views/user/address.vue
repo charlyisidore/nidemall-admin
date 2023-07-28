@@ -11,23 +11,23 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" :label="$t('user_address.table.id.label')" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('user_address.table.id')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.user_id.label')" prop="userId" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.user_id')" prop="userId" />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.name.label')" prop="name" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.name')" prop="name" />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.tel.label')" prop="tel" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_address.table.tel')" prop="tel" />
 
-      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_region.label')">
+      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_region')">
         <template slot-scope="scope">
           {{ scope.row.province + scope.row.city + scope.row.county }}
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_detail.label')" prop="addressDetail" />
+      <el-table-column align="center" min-width="300px" :label="$t('user_address.table.address_detail')" prop="addressDetail" />
 
-      <el-table-column align="center" min-width="80px" :label="$t('user_address.table.is_default.label')" prop="isDefault">
+      <el-table-column align="center" min-width="80px" :label="$t('user_address.table.is_default')" prop="isDefault">
         <template slot-scope="scope">
           {{ scope.row.isDefault ? '是' : '否' }}
         </template>

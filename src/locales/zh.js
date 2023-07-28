@@ -106,397 +106,185 @@ export default {
   },
   user_user: {
     table: {
-      id: {
-        label: '用户ID'
-      },
-      nickname: {
-        label: '用户昵称'
-      },
-      avatar: {
-        label: '用户头像'
-      },
-      mobile: {
-        label: '手机号码'
-      },
-      gender: {
-        label: '性别'
-      },
-      birthday: {
-        label: '生日'
-      },
-      user_level: {
-        label: '用户等级'
-      },
-      status: {
-        label: '状态'
-      },
-      actions: {
-        label: '操作'
-      }
+      id: '用户ID',
+      nickname: '用户昵称',
+      avatar: '用户头像',
+      mobile: '手机号码',
+      gender: '性别',
+      birthday: '生日',
+      user_level: '用户等级',
+      status: '状态',
+      actions: '操作'
     },
     form_title: '用户编辑',
     form: {
-      username: {
-        label: '用户名'
-      },
-      nickname: {
-        label: '用户昵称'
-      },
-      mobile: {
-        label: '用户手机'
-      },
-      gender: {
-        label: '用户性别'
-      },
-      user_level: {
-        label: '用户等级'
-      },
-      status: {
-        label: '状态'
-      }
+      username: '用户名',
+      nickname: '用户昵称',
+      mobile: '用户手机',
+      gender: '用户性别',
+      user_level: '用户等级',
+      status: '状态'
     }
   },
   user_address: {
     table: {
-      id: {
-        label: '地址ID'
-      },
-      user_id: {
-        label: '用户ID'
-      },
-      name: {
-        label: '收货人名称'
-      },
-      tel: {
-        label: '手机号码'
-      },
-      address_region: {
-        label: '区域地址'
-      },
-      address_detail: {
-        label: '区域地址'
-      },
-      is_default: {
-        label: '默认'
-      }
+      id: '地址ID',
+      user_id: '用户ID',
+      name: '收货人名称',
+      tel: '手机号码',
+      address_region: '区域地址',
+      address_detail: '区域地址',
+      is_default: '默认'
     }
   },
   user_collect: {
     table: {
-      id: {
-        label: '收藏ID'
-      },
-      user_id: {
-        label: '用户ID'
-      },
-      value_id: {
-        label: '商品ID'
-      },
-      add_time: {
-        label: '添加时间'
-      }
+      id: '收藏ID',
+      user_id: '用户ID',
+      value_id: '商品ID',
+      add_time: '添加时间'
     }
   },
   user_footprint: {
     table: {
-      id: {
-        label: '足迹ID'
-      },
-      user_id: {
-        label: '用户ID'
-      },
-      goods_id: {
-        label: '商品ID'
-      },
-      add_time: {
-        label: '添加时间'
-      }
+      id: '足迹ID',
+      user_id: '用户ID',
+      goods_id: '商品ID',
+      add_time: '添加时间'
     }
   },
   user_history: {
     table: {
-      id: {
-        label: '搜索ID'
-      },
-      user_id: {
-        label: '用户ID'
-      },
-      keyword: {
-        label: '关键字'
-      },
-      add_time: {
-        label: '添加时间'
-      }
+      id: '搜索ID',
+      user_id: '用户ID',
+      keyword: '关键字',
+      add_time: '添加时间'
     }
   },
   user_feedback: {
     table: {
-      id: {
-        label: '反馈ID'
-      },
-      username: {
-        label: '用户名'
-      },
-      mobile: {
-        label: '手机号码'
-      },
-      feed_type: {
-        label: '反馈类型'
-      },
-      content: {
-        label: '反馈内容'
-      },
-      pic_urls: {
-        label: '反馈图片'
-      },
-      add_time: {
-        label: '时间'
-      }
+      id: '反馈ID',
+      username: '用户名',
+      mobile: '手机号码',
+      feed_type: '反馈类型',
+      content: '反馈内容',
+      pic_urls: '反馈图片',
+      add_time: '时间'
     }
   },
   mall_region: {
     table: {
-      name: {
-        label: '区域名称'
-      },
-      type: {
-        label: '区域类型'
-      },
-      code: {
-        label: '区域编码'
-      }
+      name: '区域名称',
+      type: '区域类型',
+      code: '区域编码'
     }
   },
   mall_brand: {
     table: {
-      id: {
-        label: '品牌商ID'
-      },
-      name: {
-        label: '品牌商名称'
-      },
-      pic_url: {
-        label: '品牌商图片'
-      },
-      desc: {
-        label: '介绍'
-      },
-      floor_price: {
-        label: '底价'
-      },
-      actions: {
-        label: '操作'
-      }
+      id: '品牌商ID',
+      name: '品牌商名称',
+      pic_url: '品牌商图片',
+      desc: '介绍',
+      floor_price: '底价',
+      actions: '操作'
     },
     form: {
-      name: {
-        label: '品牌商名称'
-      },
-      simple_desc: {
-        label: '介绍'
-      },
-      pic_url: {
-        label: '品牌商图片'
-      },
-      floor_price: {
-        label: '底价'
-      }
+      name: '品牌商名称',
+      simple_desc: '介绍',
+      pic_url: '品牌商图片',
+      floor_price: '底价'
     }
   },
   mall_category: {
     table: {
-      id: {
-        label: '类目ID'
-      },
-      name: {
-        label: '类目名'
-      },
-      icon_url: {
-        label: '类目图标'
-      },
-      pic_url: {
-        label: '类目图片'
-      },
-      keywords: {
-        label: '关键字'
-      },
-      desc: {
-        label: '简介'
-      },
-      level: {
-        label: '级别'
-      },
-      actions: {
-        label: '操作'
-      }
+      id: '类目ID',
+      name: '类目名',
+      icon_url: '类目图标',
+      pic_url: '类目图片',
+      keywords: '关键字',
+      desc: '简介',
+      level: '级别',
+      actions: '操作'
     },
     form: {
-      name: {
-        label: '类目名称'
-      },
-      keywords: {
-        label: '关键字'
-      },
-      level: {
-        label: '级别',
-        value: {
-          L1: '一级类目',
-          L2: '二级类目'
-        }
-      },
-      pid: {
-        label: '父类目'
-      },
-      icon_url: {
-        label: '类目图标'
-      },
-      pic_url: {
-        label: '类目图片'
-      },
-      desc: {
-        label: '类目简介'
-      }
+      name: '类目名称',
+      keywords: '关键字',
+      level: '级别',
+      pid: '父类目',
+      icon_url: '类目图标',
+      pic_url: '类目图片',
+      desc: '类目简介'
+    },
+    value: {
+      level_L1: '一级类目',
+      level_L2: '二级类目'
     }
   },
   mall_order: {
     table: {
-      order_sn: {
-        label: '订单编号'
-      },
-      avatar: {
-        label: '用户头像'
-      },
-      user_name: {
-        label: '下单用户'
-      },
-      add_time: {
-        label: '下单时间'
-      },
-      order_status: {
-        label: '订单状态'
-      },
-      order_price: {
-        label: '订单金额'
-      },
-      actual_price: {
-        label: '实付金额'
-      },
-      pay_time: {
-        label: '支付时间'
-      },
-      consignee: {
-        label: '收货人'
-      },
-      mobile: {
-        label: '收货电话'
-      },
-      ship_sn: {
-        label: '物流单号'
-      },
-      ship_channel: {
-        label: '物流渠道'
-      },
-      actions: {
-        label: '操作'
-      }
+      order_sn: '订单编号',
+      avatar: '用户头像',
+      user_name: '下单用户',
+      add_time: '下单时间',
+      order_status: '订单状态',
+      order_price: '订单金额',
+      actual_price: '实付金额',
+      pay_time: '支付时间',
+      consignee: '收货人',
+      mobile: '收货电话',
+      ship_sn: '物流单号',
+      ship_channel: '物流渠道',
+      actions: '操作'
     }
   },
   mall_aftersale: {
     table: {
-      aftersale_sn: {
-        label: '售后编号'
-      },
-      order_id: {
-        label: '订单ID'
-      },
-      user_id: {
-        label: '用户ID'
-      },
-      type: {
-        label: '售后类型'
-      },
-      reason: {
-        label: '退款原因'
-      },
-      amount: {
-        label: '退款价格'
-      },
-      add_time: {
-        label: '申请时间'
-      },
-      actions: {
-        label: '操作'
-      }
+      aftersale_sn: '售后编号',
+      order_id: '订单ID',
+      user_id: '用户ID',
+      type: '售后类型',
+      reason: '退款原因',
+      amount: '退款价格',
+      add_time: '申请时间',
+      actions: '操作'
     }
   },
   mall_issue: {
     table: {
-      id: {
-        label: '问题ID'
-      },
-      question: {
-        label: '问题内容'
-      },
-      answer: {
-        label: '问题回复'
-      },
-      actions: {
-        label: '操作'
-      }
+      id: '问题ID',
+      question: '问题内容',
+      answer: '问题回复',
+      actions: '操作'
     },
     form: {
-      question: {
-        label: '问题'
-      },
-      answer: {
-        label: '回复'
-      }
+      question: '问题',
+      answer: '回复'
     }
   },
   mall_keyword: {
     table: {
-      id: {
-        label: '关键词ID'
-      },
-      keyword: {
-        label: '关键词'
-      },
-      url: {
-        label: '跳转链接'
-      },
-      is_hot: {
-        label: '是否推荐'
-      },
-      is_default: {
-        label: '是否默认'
-      },
-      actions: {
-        label: '操作'
-      }
+      id: '关键词ID',
+      keyword: '关键词',
+      url: '跳转链接',
+      is_hot: '是否推荐',
+      is_default: '是否默认',
+      actions: '操作'
     },
     form: {
-      keyword: {
-        label: '关键词'
-      },
-      url: {
-        label: '跳转链接'
-      },
-      is_hot: {
-        label: '是否推荐',
-        placeholder: '请选择',
-        value: {
-          true: '推荐',
-          false: '普通'
-        }
-      },
-      is_default: {
-        label: '是否默认',
-        placeholder: '请选择',
-        value: {
-          true: '默认',
-          false: '非默认'
-        }
-      }
+      keyword: '关键词',
+      url: '跳转链接',
+      is_hot: '是否推荐',
+      is_default: '是否默认'
+    },
+    placeholder: {
+      is_hot: '请选择',
+      is_default: '请选择'
+    },
+    value: {
+      is_hot_true: '推荐',
+      is_hot_false: '普通',
+      is_default_true: '默认',
+      is_default_false: '非默认'
     }
   }
 }

@@ -12,23 +12,23 @@
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
 
-      <el-table-column align="center" :label="$t('user_feedback.table.id.label')" prop="id" />
+      <el-table-column align="center" :label="$t('user_feedback.table.id')" prop="id" />
 
-      <el-table-column align="center" :label="$t('user_feedback.table.username.label')" prop="username" />
+      <el-table-column align="center" :label="$t('user_feedback.table.username')" prop="username" />
 
-      <el-table-column align="center" :label="$t('user_feedback.table.mobile.label')" prop="mobile" />
+      <el-table-column align="center" :label="$t('user_feedback.table.mobile')" prop="mobile" />
 
-      <el-table-column align="center" :label="$t('user_feedback.table.feed_type.label')" prop="feedType" />
+      <el-table-column align="center" :label="$t('user_feedback.table.feed_type')" prop="feedType" />
 
-      <el-table-column align="center" :label="$t('user_feedback.table.content.label')" prop="content" />
+      <el-table-column align="center" :label="$t('user_feedback.table.content')" prop="content" />
 
-      <el-table-column align="center" :label="$t('user_feedback.table.pic_urls.label')" prop="picUrls">
+      <el-table-column align="center" :label="$t('user_feedback.table.pic_urls')" prop="picUrls">
         <template slot-scope="scope">
           <el-image v-for="item in scope.row.picUrls" :key="item" :src="item" :preview-src-list="scope.row.picUrls" :lazy="true" style="width: 40px; height: 40px; margin-right: 5px;" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('user_feedback.table.add_time.label')" prop="addTime" />
+      <el-table-column align="center" :label="$t('user_feedback.table.add_time')" prop="addTime" />
 
     </el-table>
 

@@ -3,15 +3,15 @@
 
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" row-key="id" style="width: 100%;margin-bottom: 20px;" border="">
 
-      <el-table-column :label="$t('mall_region.table.name.label')" prop="name" />
+      <el-table-column :label="$t('mall_region.table.name')" prop="name" />
 
-      <el-table-column :label="$t('mall_region.table.type.label')" prop="type">
+      <el-table-column :label="$t('mall_region.table.type')" prop="type">
         <template slot-scope="scope">
           {{ scope.row.type | typeFilter }}
         </template>
       </el-table-column>
 
-      <el-table-column :label="$t('mall_region.table.code.label')" prop="code" />
+      <el-table-column :label="$t('mall_region.table.code')" prop="code" />
 
     </el-table>
 

@@ -42,54 +42,54 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" min-width="120" :label="$t('mall_order.table.order_sn.label')" prop="orderSn" />
+      <el-table-column align="center" min-width="120" :label="$t('mall_order.table.order_sn')" prop="orderSn" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.avatar.label')" width="80">
+      <el-table-column align="center" :label="$t('mall_order.table.avatar')" width="80">
         <template slot-scope="scope">
           <el-avatar :src="scope.row.avatar" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('mall_order.table.user_name.label')" prop="userName" />
+      <el-table-column align="center" :label="$t('mall_order.table.user_name')" prop="userName" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.add_time.label')" prop="addTime" min-width="100">
+      <el-table-column align="center" :label="$t('mall_order.table.add_time')" prop="addTime" min-width="100">
         <template slot-scope="scope">
           {{ (scope.row.addTime || '').substring(0, 10) }}
         </template>
       </el-table-column>
-      <el-table-column align="center" :label="$t('mall_order.table.order_status.label')" prop="orderStatus">
+      <el-table-column align="center" :label="$t('mall_order.table.order_status')" prop="orderStatus">
         <template slot-scope="scope">
           <el-tag>{{ scope.row.orderStatus | orderStatusFilter }}</el-tag>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('mall_order.table.order_price.label')" prop="orderPrice">
+      <el-table-column align="center" :label="$t('mall_order.table.order_price')" prop="orderPrice">
         <template slot-scope="scope">
           {{ scope.row.orderPrice }} 元
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('mall_order.table.actual_price.label')" prop="actualPrice">
+      <el-table-column align="center" :label="$t('mall_order.table.actual_price')" prop="actualPrice">
         <template slot-scope="scope">
           {{ scope.row.actualPrice }} 元
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('mall_order.table.pay_time.label')" prop="payTime" />
+      <el-table-column align="center" :label="$t('mall_order.table.pay_time')" prop="payTime" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.consignee.label')" prop="consignee">
+      <el-table-column align="center" :label="$t('mall_order.table.consignee')" prop="consignee">
         <template slot-scope="scope">
           <span style="color:red; font-weight:bold;">{{ scope.row.consignee }}</span>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" :label="$t('mall_order.table.mobile.label')" prop="mobile" min-width="100" />
+      <el-table-column align="center" :label="$t('mall_order.table.mobile')" prop="mobile" min-width="100" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.ship_sn.label')" prop="shipSn" />
+      <el-table-column align="center" :label="$t('mall_order.table.ship_sn')" prop="shipSn" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.ship_channel.label')" prop="shipChannel" />
+      <el-table-column align="center" :label="$t('mall_order.table.ship_channel')" prop="shipChannel" />
 
-      <el-table-column align="center" :label="$t('mall_order.table.actions.label')" width="250" class-name="oper">
+      <el-table-column align="center" :label="$t('mall_order.table.actions')" width="250" class-name="oper">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.details') }}</el-button>
           <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>

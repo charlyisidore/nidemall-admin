@@ -11,13 +11,13 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" width="100px" :label="$t('user_history.table.id.label')" prop="id" sortable />
+      <el-table-column align="center" width="100px" :label="$t('user_history.table.id')" prop="id" sortable />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.user_id.label')" prop="userId" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.user_id')" prop="userId" />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.keyword.label')" prop="keyword" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.keyword')" prop="keyword" />
 
-      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.add_time.label')" prop="addTime" />
+      <el-table-column align="center" min-width="100px" :label="$t('user_history.table.add_time')" prop="addTime" />
     </el-table>
 
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
