@@ -310,6 +310,16 @@ export default {
     }
   },
   goods_create: {
+    section: {
+      goods: 'Product',
+      specification: 'Specifications'
+    },
+    table: {
+      specification_name: 'Name',
+      specification_value: 'Value',
+      specification_pic_url: 'Picture',
+      specification_actions: 'Actions'
+    },
     form: {
       goods_sn: 'Goods SN',
       name: 'Name',
@@ -324,7 +334,10 @@ export default {
       category_id: 'Category',
       brand_id: 'Brand',
       brief: 'Description',
-      detail: 'Detail'
+      detail: 'Detail',
+      specification_name: 'Name',
+      specification_value: 'Value',
+      specification_pic_url: 'Picture'
     },
     value: {
       is_new_true: 'New',
@@ -332,7 +345,9 @@ export default {
       is_hot_true: 'Hot',
       is_hot_false: 'Ordinary',
       is_on_sale_true: 'On sale',
-      is_on_sale_false: 'Not on sale'
+      is_on_sale_false: 'Not on sale',
+      multiple_spec_true: 'Multiple specifications',
+      multiple_spec_false: 'Single specification'
     }
   }
 }

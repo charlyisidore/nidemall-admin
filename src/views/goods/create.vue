@@ -2,7 +2,7 @@
   <div class="app-container">
 
     <el-card class="box-card">
-      <h3>商品介绍</h3>
+      <h3>{{ $t('goods_create.section.goods') }}</h3>
       <el-form ref="goods" :rules="rules" :model="goods" label-width="150px">
         <el-form-item :label="$t('goods_create.form.goods_sn')" prop="goodsSn">
           <el-input v-model="goods.goodsSn" />
@@ -105,12 +105,12 @@
     </el-card>
 
     <el-card class="box-card">
-      <h3>商品规格</h3>
+      <h3>{{ $t('goods_create.section.specification') }}</h3>
       <el-row :gutter="20" type="flex" align="middle" style="padding:20px 0;">
         <el-col :span="10">
           <el-radio-group v-model="multipleSpec" @change="specChanged">
-            <el-radio-button :label="false">默认标准规格</el-radio-button>
-            <el-radio-button :label="true">多规格支持</el-radio-button>
+            <el-radio-button :label="false">{{ $t('goods_create.value.multiple_spec_false') }}</el-radio-button>
+            <el-radio-button :label="true">{{ $t('goods_create.value.multiple_spec_true') }}</el-radio-button>
           </el-radio-group>
         </el-col>
         <el-col v-if="multipleSpec" :span="10">
@@ -119,15 +119,15 @@
       </el-row>
 
       <el-table :data="specifications">
-        <el-table-column property="specification" label="规格名" />
-        <el-table-column property="value" label="规格值">
+        <el-table-column property="specification" :label="$t('goods_create.table.specification_name')" />
+        <el-table-column property="value" :label="$t('goods_create.table.specification_value')">
           <template slot-scope="scope">
             <el-tag type="primary">
               {{ scope.row.value }}
             </el-tag>
           </template>
         </el-table-column>
-        <el-table-column property="picUrl" label="规格图片">
+        <el-table-column property="picUrl" :label="$t('goods_create.table.specification_pic_url')">
           <template slot-scope="scope">
             <img v-if="scope.row.picUrl" :src="scope.row.picUrl" width="40">
           </template>
@@ -135,7 +135,7 @@
         <el-table-column
           v-if="multipleSpec"
           align="center"
-          label="操作"
+          :label="$t('goods_create.table.specification_actions')"
           width="250"
           class-name="small-padding fixed-width"
         >
@@ -155,13 +155,13 @@
           label-width="100px"
           style="width: 400px; margin-left:50px;"
         >
-          <el-form-item label="规格名" prop="specification">
+          <el-form-item :label="$t('goods_create.form.specification_name')" prop="specification">
             <el-input v-model="specForm.specification" />
           </el-form-item>
-          <el-form-item label="规格值" prop="value">
+          <el-form-item :label="$t('goods_create.form.specification_value')" prop="value">
             <el-input v-model="specForm.value" />
           </el-form-item>
-          <el-form-item label="规格图片" prop="picUrl">
+          <el-form-item :label="$t('goods_create.form.specification_pic_url')" prop="picUrl">
             <el-upload
               :action="uploadPath"
               :show-file-list="false"

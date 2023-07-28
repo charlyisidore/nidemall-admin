@@ -310,6 +310,16 @@ export default {
     }
   },
   goods_create: {
+    section: {
+      goods: '商品介绍',
+      specification: '商品规格'
+    },
+    table: {
+      specification_name: '规格名',
+      specification_value: '规格值',
+      specification_pic_url: '规格图片',
+      specification_actions: '操作'
+    },
     form: {
       goods_sn: '商品编号',
       name: '商品名称',
@@ -324,7 +334,10 @@ export default {
       category_id: '所属分类',
       brand_id: '所属品牌商',
       brief: '商品简介',
-      detail: '商品详细介绍'
+      detail: '商品详细介绍',
+      specification_name: '规格名',
+      specification_value: '规格值',
+      specification_pic_url: '规格图片'
     },
     value: {
       is_new_true: '新品',
@@ -332,7 +345,9 @@ export default {
       is_hot_true: '热卖',
       is_hot_false: '普通',
       is_on_sale_true: '在售',
-      is_on_sale_false: '未售'
+      is_on_sale_false: '未售',
+      multiple_spec_true: '多规格支持',
+      multiple_spec_false: '默认标准规格'
     }
   }
 }
