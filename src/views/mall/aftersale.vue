@@ -20,7 +20,7 @@
       <el-tab-pane label="待退款" name="unrefund" />
     </el-tabs>
 
-    <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" fit highlight-current-row @selection-change="handleSelectionChange">
+    <el-table v-loading="listLoading" :data="list" :element-loading-text="$t('app.message.list_loading')" fit highlight-current-row @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" />
 
       <el-table-column align="center" :label="$t('mall_aftersale.table.aftersale_sn')" prop="aftersaleSn" />

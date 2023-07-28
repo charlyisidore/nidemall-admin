@@ -8,7 +8,7 @@
     </div>
 
     <!-- 查询结果 -->
-    <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
+    <el-table v-loading="listLoading" :data="list" :element-loading-text="$t('app.message.list_loading')" border fit highlight-current-row>
       <el-table-column align="center" :label="$t('sys_log.table.admin')" prop="admin" />
       <el-table-column align="center" :label="$t('sys_log.table.ip')" prop="ip" />
       <el-table-column align="center" :label="$t('sys_log.table.add_time')" prop="addTime" />

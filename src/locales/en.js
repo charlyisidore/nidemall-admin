@@ -75,6 +75,9 @@ export default {
       search: 'Search',
       settings: 'Settings',
       view: 'View'
+    },
+    message: {
+      list_loading: 'Loading...'
     }
   },
   login: {

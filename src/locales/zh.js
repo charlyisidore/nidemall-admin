@@ -75,6 +75,9 @@ export default {
       search: '查找',
       settings: '设置',
       view: '查看'
+    },
+    message: {
+      list_loading: '正在查询中。。。'
     }
   },
   login: {

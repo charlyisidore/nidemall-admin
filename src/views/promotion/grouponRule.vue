@@ -17,7 +17,7 @@
     </div>
 
     <!-- 查询结果 -->
-    <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
+    <el-table v-loading="listLoading" :data="list" :element-loading-text="$t('app.message.list_loading')" border fit highlight-current-row>
       <el-table-column align="center" :label="$t('promotion_groupon_rule.table.id')" prop="id" />
 
       <el-table-column align="center" :label="$t('promotion_groupon_rule.table.goods_id')" prop="goodsId" />
