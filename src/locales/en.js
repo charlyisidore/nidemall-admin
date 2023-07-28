@@ -560,5 +560,18 @@ export default {
       avatar: 'Avatar',
       role_ids: 'Roles'
     }
+  },
+  sys_notice: {
+    table: {
+      title: 'Title',
+      content: 'Content',
+      add_time: 'Time added',
+      admin_id: 'Admin ID',
+      actions: 'Actions'
+    },
+    form: {
+      title: 'Title',
+      content: 'Content'
+    }
   }
 }

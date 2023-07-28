@@ -18,9 +18,9 @@
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" />
 
-      <el-table-column align="center" label="通知标题" prop="title" />
+      <el-table-column align="center" :label="$t('sys_notice.table.title')" prop="title" />
 
-      <el-table-column align="center" label="通知详情" prop="content">
+      <el-table-column align="center" :label="$t('sys_notice.table.content')" prop="content">
         <template slot-scope="scope">
           <el-dialog :visible.sync="contentDialogVisible" title="通知详情">
             <div v-html="contentDetail" />
@@ -29,11 +29,11 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="添加时间" prop="addTime" />
+      <el-table-column align="center" :label="$t('sys_notice.table.add_time')" prop="addTime" />
 
-      <el-table-column align="center" label="管理员ID" prop="adminId" />
+      <el-table-column align="center" :label="$t('sys_notice.table.admin_id')" prop="adminId" />
 
-      <el-table-column align="center" label="操作" min-width="100" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('sys_notice.table.actions')" min-width="100" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/notice/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/notice/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
@@ -46,10 +46,10 @@
     <!-- 添加或修改对话框 -->
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px">
-        <el-form-item label="通知标题" prop="title">
+        <el-form-item :label="$t('sys_notice.form.title')" prop="title">
           <el-input v-model="dataForm.title" />
         </el-form-item>
-        <el-form-item label="通知内容" prop="content">
+        <el-form-item :label="$t('sys_notice.form.content')" prop="content">
           <editor v-model="dataForm.content" :init="editorInit" />
         </el-form-item>
       </el-form>

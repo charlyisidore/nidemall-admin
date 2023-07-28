@@ -560,5 +560,18 @@ export default {
       avatar: '管理员头像',
       role_ids: '管理员角色'
     }
+  },
+  sys_notice: {
+    table: {
+      title: '通知标题',
+      content: '通知详情',
+      add_time: '添加时间',
+      admin_id: '管理员ID',
+      actions: '操作'
+    },
+    form: {
+      title: '通知标题',
+      content: '通知内容'
+    }
   }
 }
