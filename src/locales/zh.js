@@ -487,5 +487,29 @@ export default {
       read_count: '阅读数量',
       actions: '操作'
     }
+  },
+  promotion_topic_edit: {
+    table: {
+      goods_id: '商品ID',
+      goods_pic_url: '图片',
+      goods_name: '商品名称',
+      goods_brief: '商品介绍',
+      goods_actions: '操作',
+      search_goods_id: '商品ID',
+      search_goods_pic_url: '图片',
+      search_goods_name: '商品名称'
+    },
+    form: {
+      title: '专题标题',
+      subtitle: '专题子标题',
+      pic_url: '专题图片',
+      content: '专题内容',
+      price: '商品低价',
+      read_count: '阅读量',
+      goods: '专题商品'
+    },
+    button: {
+      goods_create: '创建商品'
+    }
   }
 }

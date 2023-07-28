@@ -2,13 +2,13 @@
   <div class="app-container">
 
     <el-form ref="topic" :rules="rules" :model="topic" status-icon label-position="left" label-width="100px" style="width: 800px; margin-left:50px;">
-      <el-form-item label="专题标题" prop="title">
+      <el-form-item :label="$t('promotion_topic_edit.form.title')" prop="title">
         <el-input v-model="topic.title" />
       </el-form-item>
-      <el-form-item label="专题子标题" prop="subtitle">
+      <el-form-item :label="$t('promotion_topic_edit.form.subtitle')" prop="subtitle">
         <el-input v-model="topic.subtitle" />
       </el-form-item>
-      <el-form-item label="专题图片" prop="picUrl">
+      <el-form-item :label="$t('promotion_topic_edit.form.pic_url')" prop="picUrl">
         <el-upload
           :headers="headers"
           :action="uploadPath"
@@ -21,30 +21,30 @@
           <i v-else class="el-icon-plus avatar-uploader-icon" />
         </el-upload>
       </el-form-item>
-      <el-form-item label="专题内容" prop="content">
+      <el-form-item :label="$t('promotion_topic_edit.form.content')" prop="content">
         <editor v-model="topic.content" :init="editorInit" />
       </el-form-item>
-      <el-form-item label="商品低价" prop="price">
+      <el-form-item :label="$t('promotion_topic_edit.form.price')" prop="price">
         <el-input v-model="topic.price" />
       </el-form-item>
-      <el-form-item label="阅读量" prop="readCount">
+      <el-form-item :label="$t('promotion_topic_edit.form.read_count')" prop="readCount">
         <el-input v-model="topic.readCount" />
       </el-form-item>
-      <el-form-item label="专题商品" prop="goods">
-        <el-button style="float:right;" size="mini" type="primary" @click="handleCreate()">创建商品</el-button>
+      <el-form-item :label="$t('promotion_topic_edit.form.goods')" prop="goods">
+        <el-button style="float:right;" size="mini" type="primary" @click="handleCreate()">{{ $t('promotion_topic_edit.button.goods_create') }}</el-button>
 
         <!-- 查询结果 -->
         <el-table :data="goodsList" border fit highlight-current-row>
 
-          <el-table-column align="center" label="商品ID" prop="id" />
-          <el-table-column align="center" property="picUrl" label="图片">
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.goods_id')" prop="id" />
+          <el-table-column align="center" property="picUrl" :label="$t('promotion_topic_edit.table.goods_pic_url')">
             <template slot-scope="scope">
               <img :src="scope.row.picUrl" width="60">
             </template>
           </el-table-column>
-          <el-table-column align="center" label="商品名称" prop="name" />
-          <el-table-column align="center" label="商品介绍" prop="brief" />
-          <el-table-column align="center" label="操作" class-name="small-padding fixed-width">
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.goods_name')" prop="name" />
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.goods_brief')" prop="brief" />
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.goods_actions')" class-name="small-padding fixed-width">
             <template slot-scope="scope">
               <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
             </template>
@@ -65,13 +65,13 @@
         <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
         <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row @selection-change="handleSelectionChange">
           <el-table-column type="selection" width="55" />
-          <el-table-column align="center" label="商品ID" prop="id" />
-          <el-table-column align="center" property="picUrl" label="图片">
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.search_goods_id')" prop="id" />
+          <el-table-column align="center" property="picUrl" :label="$t('promotion_topic_edit.table.search_goods_pic_url')">
             <template slot-scope="scope">
               <img :src="scope.row.picUrl" width="40">
             </template>
           </el-table-column>
-          <el-table-column align="center" label="商品名称" prop="name" />
+          <el-table-column align="center" :label="$t('promotion_topic_edit.table.search_goods_name')" prop="name" />
         </el-table>
         <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
 

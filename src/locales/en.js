@@ -487,5 +487,29 @@ export default {
       read_count: 'Read count',
       actions: 'Actions'
     }
+  },
+  promotion_topic_edit: {
+    table: {
+      goods_id: 'ID',
+      goods_pic_url: 'Picture',
+      goods_name: 'Name',
+      goods_brief: 'Description',
+      goods_actions: 'Actions',
+      search_goods_id: 'ID',
+      search_goods_pic_url: 'Picture',
+      search_goods_name: 'Name'
+    },
+    form: {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      pic_url: 'Picture',
+      content: 'Content',
+      price: 'Price',
+      read_count: 'Read count',
+      goods: 'Goods'
+    },
+    button: {
+      goods_create: 'Add'
+    }
   }
 }
