@@ -286,5 +286,28 @@ export default {
       is_default_true: '默认',
       is_default_false: '非默认'
     }
+  },
+  goods_list: {
+    table: {
+      id: '商品ID',
+      name: '名称',
+      pic_url: '图片',
+      share_url: '分享图',
+      detail: '详情',
+      counter_price: '市场售价',
+      retail_price: '当前价格',
+      is_new: '是否新品',
+      is_hot: '是否热品',
+      is_on_sale: '是否在售',
+      actions: '操作',
+
+      goods_sn: '商品编号',
+      gallery: '宣传画廊',
+      brief: '商品介绍',
+      unit: '商品单位',
+      keywords: '关键字',
+      category_id: '类目ID',
+      brand_id: '品牌商ID'
+    }
   }
 }

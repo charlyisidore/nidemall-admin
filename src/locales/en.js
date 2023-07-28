@@ -286,5 +286,27 @@ export default {
       is_default_true: 'Default',
       is_default_false: 'Non default'
     }
+  },
+  goods_list: {
+    table: {
+      id: 'ID',
+      name: 'Name',
+      pic_url: 'Picture',
+      share_url: 'Share',
+      detail: 'Detail',
+      counter_price: 'Counter price',
+      retail_price: 'Retail price',
+      is_new: 'New',
+      is_hot: 'Hot',
+      is_on_sale: 'On sale',
+      actions: 'Actions',
+      goods_sn: 'Goods SN',
+      gallery: 'Gallery',
+      brief: 'Description',
+      unit: 'Unit',
+      keywords: 'Keywords',
+      category_id: 'Category',
+      brand_id: 'Brand'
+    }
   }
 }
