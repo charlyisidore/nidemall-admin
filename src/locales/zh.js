@@ -309,7 +309,7 @@ export default {
       brand_id: '品牌商ID'
     }
   },
-  goods_create: {
+  goods_edit: {
     section: {
       goods: '商品介绍',
       specifications: '商品规格',
@@ -331,6 +331,7 @@ export default {
       attribute_actions: '操作'
     },
     form: {
+      id: '商品ID',
       goods_sn: '商品编号',
       name: '商品名称',
       counter_price: '市场售价',
@@ -366,65 +367,7 @@ export default {
       multiple_spec_false: '默认标准规格'
     },
     button: {
-      publish: '上架'
-    }
-  },
-  goods_edit: {
-    section: {
-      goods: '商品介绍',
-      specifications: '商品规格',
-      products: '商品库存',
-      attributes: '商品参数'
-    },
-    table: {
-      specification_name: '规格名',
-      specification_value: '规格值',
-      specification_pic_url: '规格图片',
-      specification_actions: '操作',
-      product_specifications: '货品规格',
-      product_price: '货品售价',
-      product_number: '货品数量',
-      product_url: '货品图片',
-      product_actions: '操作',
-      attribute_name: '商品参数名称',
-      attribute_value: '商品参数值',
-      attribute_actions: '操作'
-    },
-    form: {
-      id: '商品ID',
-      name: '商品名称',
-      goods_sn: '商品编号',
-      counter_price: '市场售价',
-      is_new: '是否新品',
-      is_hot: '是否热卖',
-      is_on_sale: '是否在售',
-      pic_url: '商品图片',
-      gallery: '宣传画廊',
-      unit: '商品单位',
-      keywords: '关键字',
-      category_id: '所属分类',
-      brand_id: '所属品牌商',
-      brief: '商品简介',
-      detail: '商品详细介绍',
-      specification_name: '规格名',
-      specification_value: '规格值',
-      specification_pic_url: '规格图片',
-      product_specifications: '货品规格列',
-      product_price: '货品售价',
-      product_number: '货品数量',
-      product_url: '货品图片',
-      attribute_name: '商品参数名称',
-      attribute_value: '商品参数值'
-    },
-    value: {
-      is_new_true: '新品',
-      is_new_false: '非新品',
-      is_hot_true: '热卖',
-      is_hot_false: '普通',
-      is_on_sale_true: '在售',
-      is_on_sale_false: '未售'
-    },
-    button: {
+      publish: '上架',
       edit: '更新商品'
     }
   }
