@@ -105,6 +105,14 @@ export default {
       view: '查看'
     }
   },
+  dashboard: {
+    section: {
+      user_total: '用户数量',
+      goods_total: '商品数量',
+      product_total: '货品数量',
+      order_total: '订单数量'
+    }
+  },
   user_user: {
     table: {
       id: '用户ID',

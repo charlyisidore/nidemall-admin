@@ -105,6 +105,14 @@ export default {
       view: 'View'
     }
   },
+  dashboard: {
+    section: {
+      user_total: 'Users',
+      goods_total: 'Goods',
+      product_total: 'Products',
+      order_total: 'Orders'
+    }
+  },
   user_user: {
     table: {
       id: 'ID',
