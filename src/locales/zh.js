@@ -454,5 +454,27 @@ export default {
       goods_type_1: '指定分类',
       goods_type_2: '指定商品'
     }
+  },
+  promotion_coupon_detail: {
+    table: {
+      name: '名称',
+      desc: '介绍名称',
+      tag: '标签',
+      type: '优惠券类型',
+      min: '最低消费',
+      discount: '优惠面值',
+      limit: '每人限额',
+      status: '当前状态',
+      goods_type: '商品范围',
+      time_scope: '有效期',
+      code: '优惠兑换码',
+      total: '发行数量',
+      id: '用户优惠券ID',
+      user_id: '用户ID',
+      add_time: '领取时间',
+      use_status: '使用状态',
+      order_id: '订单ID',
+      used_time: '使用时间'
+    }
   }
 }

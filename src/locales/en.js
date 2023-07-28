@@ -423,7 +423,7 @@ export default {
       tag: 'Tag',
       min: 'Min spend',
       discount: 'Discount',
-      limit: 'Limit/pers.',
+      limit: 'Limit/user',
       goods_type: 'Goods type',
       type: 'Coupon type',
       total: 'Quantity',
@@ -441,7 +441,7 @@ export default {
       tag: 'Tag',
       min: 'Min spend',
       discount: 'Discount',
-      limit: 'Limit/pers.',
+      limit: 'Limit/user',
       type: 'Coupon type',
       total: 'Quantity',
       time_type: 'Validity period',
@@ -453,6 +453,28 @@ export default {
       goods_type_0: 'All',
       goods_type_1: 'By category',
       goods_type_2: 'By product'
+    }
+  },
+  promotion_coupon_detail: {
+    table: {
+      name: 'Name',
+      desc: 'Description',
+      tag: 'Tag',
+      type: 'Coupon type',
+      min: 'Min spend',
+      discount: 'Discount',
+      limit: 'Limit/user',
+      status: 'Status',
+      goods_type: 'Goods type',
+      time_scope: 'Validity period',
+      code: 'Code',
+      total: 'Quantity',
+      id: 'ID',
+      user_id: 'User ID',
+      add_time: 'Time added',
+      use_status: 'Use status',
+      order_id: 'Order ID',
+      used_time: 'Time used'
     }
   }
 }
