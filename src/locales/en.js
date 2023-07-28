@@ -10,29 +10,24 @@ export default {
     message: {
       username_required: 'Username is required',
       password_required: 'Password is required',
-      password_min_length: 'Password should contain at least 6 characters'
+      password_min_length: 'Password must contain at least 6 characters'
     },
     button: {
       login: 'Login'
     }
   },
   navbar: {
-    locale_changer: {
-      tooltip: 'Language'
+    tooltip: {
+      locale: 'Language',
+      full_screen: 'Full screen',
+      size_select: 'Select size',
+      notice: 'Notifications'
     },
-    full_screen: {
-      tooltip: 'Full screen'
-    },
-    size_select: {
-      tooltip: 'Select size'
-    },
-    notice: {
-      tooltip: 'Notifications'
-    },
-    avatar_dropdown: {
+    menu: {
       home: 'Home',
       github: 'Github',
-      change_password: 'Change password',
+      gitee: 'Gitee',
+      password: 'Change password',
       logout: 'Logout'
     }
   },

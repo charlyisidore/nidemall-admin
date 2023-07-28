@@ -6,19 +6,19 @@
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
-        <el-tooltip :content="$t('navbar.locale_changer.tooltip')" effect="dark" placement="bottom">
+        <el-tooltip :content="$t('navbar.tooltip.locale')" effect="dark" placement="bottom">
           <locale-changer class="right-menu-item" />
         </el-tooltip>
 
-        <el-tooltip :content="$t('navbar.full_screen.tooltip')" effect="dark" placement="bottom">
+        <el-tooltip :content="$t('navbar.tooltip.full_screen')" effect="dark" placement="bottom">
           <screenfull class="right-menu-item" />
         </el-tooltip>
 
-        <el-tooltip :content="$t('navbar.size_select.tooltip')" effect="dark" placement="bottom">
+        <el-tooltip :content="$t('navbar.tooltip.size_select')" effect="dark" placement="bottom">
           <size-select class="right-menu-item" />
         </el-tooltip>
 
-        <el-tooltip :content="$t('navbar.notice.tooltip')" effect="dark" placement="bottom">
+        <el-tooltip :content="$t('navbar.tooltip.notice')" effect="dark" placement="bottom">
           <notice class="right-menu-item" />
         </el-tooltip>
       </template>
@@ -31,21 +31,21 @@
         <el-dropdown-menu slot="dropdown">
           <router-link to="/">
             <el-dropdown-item>
-              {{ $t('navbar.avatar_dropdown.home') }}
+              {{ $t('navbar.menu.home') }}
             </el-dropdown-item>
           </router-link>
           <el-dropdown-item divided>
             <a target="_blank" href="https://github.com/charlyisidore/nidemall-admin">
-              {{ $t('navbar.avatar_dropdown.github') }}
+              {{ $t('navbar.menu.github') }}
             </a>
           </el-dropdown-item>
           <el-dropdown-item divided>
             <router-link to="/profile/password">
-              {{ $t('navbar.avatar_dropdown.change_password') }}
+              {{ $t('navbar.menu.password') }}
             </router-link>
           </el-dropdown-item>
           <el-dropdown-item divided @click.native="logout">
-            <span style="display:block;">{{ $t('navbar.avatar_dropdown.logout') }}</span>
+            <span style="display:block;">{{ $t('navbar.menu.logout') }}</span>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>

@@ -17,22 +17,17 @@ export default {
     }
   },
   navbar: {
-    locale_changer: {
-      tooltip: '语言'
+    tooltip: {
+      locale: '语言',
+      full_screen: '全屏',
+      size_select: '布局大小',
+      notice: '通知中心'
     },
-    full_screen: {
-      tooltip: '全屏'
-    },
-    size_select: {
-      tooltip: '布局大小'
-    },
-    notice: {
-      tooltip: '通知中心'
-    },
-    avatar_dropdown: {
+    menu: {
       home: '首页',
       github: 'Github',
-      change_password: '密码修改',
+      gitee: 'Gitee',
+      password: '密码修改',
       logout: '退出'
     }
   },
