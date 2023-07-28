@@ -290,6 +290,10 @@ export default {
     form: {
       question: 'Question',
       answer: 'Answer'
+    },
+    placeholder: {
+      filter_question: 'Question',
+      answer: 'Content'
     }
   },
   mall_keyword: {
@@ -308,6 +312,8 @@ export default {
       is_default: 'Default'
     },
     placeholder: {
+      filter_keyword: 'Keyword',
+      filter_url: 'URL',
       is_hot: 'Please choose',
       is_default: 'Please choose'
     },

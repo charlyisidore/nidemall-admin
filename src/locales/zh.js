@@ -290,6 +290,10 @@ export default {
     form: {
       question: '问题',
       answer: '回复'
+    },
+    placeholder: {
+      filter_question: '请输入问题',
+      answer: '请输入内容'
     }
   },
   mall_keyword: {
@@ -308,6 +312,8 @@ export default {
       is_default: '是否默认'
     },
     placeholder: {
+      filter_keyword: '请输入关键字',
+      filter_url: '请输入跳转链接',
       is_hot: '请选择',
       is_default: '请选择'
     },

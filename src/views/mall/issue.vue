@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.question" clearable class="filter-item" style="width: 200px;" placeholder="请输入问题" />
+      <el-input v-model="listQuery.question" clearable class="filter-item" style="width: 200px;" :placeholder="$t('mall_issue.placeholder.filter_question')" />
       <el-button v-permission="['GET /admin/issue/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button v-permission="['POST /admin/issue/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
@@ -34,7 +34,7 @@
           <el-input v-model="dataForm.question" />
         </el-form-item>
         <el-form-item :label="$t('mall_issue.form.answer')" prop="answer">
-          <el-input v-model="dataForm.answer" :rows="8" type="textarea" placeholder="请输入内容" />
+          <el-input v-model="dataForm.answer" :rows="8" type="textarea" :placeholder="$t('mall_issue.placeholder.answer')" />
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
