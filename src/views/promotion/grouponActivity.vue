@@ -21,31 +21,31 @@
       <el-table-column type="expand">
         <template slot-scope="scope">
           <el-table :data="scope.row.subGroupons" border style="width: 100%">
-            <el-table-column align="center" label="订单ID" prop="orderId" />
-            <el-table-column align="center" label="用户ID" prop="userId" />
+            <el-table-column align="center" :label="$t('promotion_groupon_activity.table.order_id')" prop="orderId" />
+            <el-table-column align="center" :label="$t('promotion_groupon_activity.table.user_id')" prop="userId" />
           </el-table>
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="订单ID" prop="groupon.orderId" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.groupon_order_id')" prop="groupon.orderId" />
 
-      <el-table-column align="center" label="用户ID" prop="groupon.userId" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.groupon_user_id')" prop="groupon.userId" />
 
-      <el-table-column align="center" label="参与人数" prop="subGroupons.length" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.subgroupons_length')" prop="subGroupons.length" />
 
-      <el-table-column align="center" label="团购折扣" prop="rules.discount" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.rules_discount')" prop="rules.discount" />
 
-      <el-table-column align="center" label="团购要求" prop="rules.discountMember" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.rules_discount_member')" prop="rules.discountMember" />
 
-      <el-table-column align="center" property="iconUrl" label="分享图片">
+      <el-table-column align="center" property="iconUrl" :label="$t('promotion_groupon_activity.table.groupon_share_url')">
         <template slot-scope="scope">
           <img :src="scope.row.groupon.shareUrl" width="40">
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="开始时间" prop="rules.addTime" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.rules_add_time')" prop="rules.addTime" />
 
-      <el-table-column align="center" label="结束时间" prop="rules.expireTime" />
+      <el-table-column align="center" :label="$t('promotion_groupon_activity.table.rules_expire_time')" prop="rules.expireTime" />
     </el-table>
 
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />

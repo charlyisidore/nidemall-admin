@@ -530,5 +530,19 @@ export default {
       discount_member: '团购人数要求',
       expire_time: '过期时间'
     }
+  },
+  promotion_groupon_activity: {
+    table: {
+      order_id: '订单ID',
+      user_id: '用户ID',
+      groupon_order_id: '订单ID',
+      groupon_user_id: '用户ID',
+      subgroupons_length: '参与人数',
+      rules_discount: '团购折扣',
+      rules_discount_member: '团购要求',
+      groupon_share_url: '分享图片',
+      rules_add_time: '开始时间',
+      rules_expire_time: '结束时间'
+    }
   }
 }

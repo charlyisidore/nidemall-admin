@@ -530,5 +530,19 @@ export default {
       discount_member: 'Min buy quantity',
       expire_time: 'Expire time'
     }
+  },
+  promotion_groupon_activity: {
+    table: {
+      order_id: 'Order ID',
+      user_id: 'User ID',
+      groupon_order_id: 'Order ID',
+      groupon_user_id: 'User ID',
+      subgroupons_length: 'Number used',
+      rules_discount: 'Discount',
+      rules_discount_member: 'Min buy quantity',
+      groupon_share_url: 'Picture',
+      rules_add_time: 'Time added',
+      rules_expire_time: 'Expire time'
+    }
   }
 }
