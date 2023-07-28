@@ -476,5 +476,16 @@ export default {
       order_id: '订单ID',
       used_time: '使用时间'
     }
+  },
+  promotion_topic: {
+    table: {
+      title: '专题标题',
+      subtitle: '专题子标题',
+      pic_url: '图片',
+      content: '专题详情',
+      price: '底价',
+      read_count: '阅读数量',
+      actions: '操作'
+    }
   }
 }

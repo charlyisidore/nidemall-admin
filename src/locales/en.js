@@ -476,5 +476,16 @@ export default {
       order_id: 'Order ID',
       used_time: 'Time used'
     }
+  },
+  promotion_topic: {
+    table: {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      pic_url: 'Picture',
+      content: 'Content',
+      price: 'Price',
+      read_count: 'Read count',
+      actions: 'Actions'
+    }
   }
 }

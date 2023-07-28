@@ -21,17 +21,17 @@
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" />
 
-      <el-table-column align="center" label="专题标题" prop="title" />
+      <el-table-column align="center" :label="$t('promotion_topic.table.title')" prop="title" />
 
-      <el-table-column align="center" label="专题子标题" min-width="200" prop="subtitle" />
+      <el-table-column align="center" :label="$t('promotion_topic.table.subtitle')" min-width="200" prop="subtitle" />
 
-      <el-table-column align="center" property="picUrl" label="图片">
+      <el-table-column align="center" property="picUrl" :label="$t('promotion_topic.table.pic_url')">
         <template slot-scope="scope">
           <el-image :src="thumbnail(scope.row.picUrl)" :preview-src-list="toPreview(scope.row, scope.row.picUrl)" style="width: 40px; height: 40px" />
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="专题详情" prop="content">
+      <el-table-column align="center" :label="$t('promotion_topic.table.content')" prop="content">
         <template slot-scope="scope">
           <el-dialog :visible.sync="contentDialogVisible" title="专题详情">
             <div v-html="contentDetail" />
@@ -40,11 +40,11 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="底价" prop="price" />
+      <el-table-column align="center" :label="$t('promotion_topic.table.price')" prop="price" />
 
-      <el-table-column align="center" label="阅读数量" prop="readCount" />
+      <el-table-column align="center" :label="$t('promotion_topic.table.read_count')" prop="readCount" />
 
-      <el-table-column align="center" label="操作" min-width="100" class-name="small-padding fixed-width">
+      <el-table-column align="center" :label="$t('promotion_topic.table.actions')" min-width="100" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/topic/update']" type="primary" size="mini" @click="handleUpdate(scope.row)">{{ $t('app.button.edit') }}</el-button>
           <el-button v-permission="['POST /admin/topic/delete']" type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
