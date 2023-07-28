@@ -1,4 +1,8 @@
+// https://element.eleme.cn/#/en-US/component/i18n
+import el from 'element-ui/lib/locale/lang/zh-CN'
+
 export default {
+  ...el,
   lang: '中文',
   login: {
     page: {

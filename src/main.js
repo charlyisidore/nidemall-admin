@@ -6,6 +6,7 @@ import Cookies from 'js-cookie'
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import Element from 'element-ui'
+import ElementLocale from 'element-ui/lib/locale'
 import './styles/element-variables.scss'
 
 import '@/styles/index.scss' // global css
@@ -37,6 +38,9 @@ const i18n = new VueI18n({
   },
   messages: { en, zh }
 })
+
+// https://element.eleme.cn/#/en-US/component/i18n
+ElementLocale.i18n((key, value) => i18n.t(key, value))
 
 Vue.use(Print)
 
