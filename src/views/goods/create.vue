@@ -285,7 +285,7 @@
 
     <div class="op-container">
       <el-button @click="handleCancel">{{ $t('app.button.cancel') }}</el-button>
-      <el-button type="primary" @click="handlePublish">上架</el-button>
+      <el-button type="primary" @click="handlePublish">{{ $t('goods_create.button.publish') }}</el-button>
     </div>
 
   </div>

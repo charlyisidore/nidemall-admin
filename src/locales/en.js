@@ -364,6 +364,68 @@ export default {
       is_on_sale_false: 'Not on sale',
       multiple_spec_true: 'Multiple',
       multiple_spec_false: 'Single'
+    },
+    button: {
+      publish: 'Publish'
+    }
+  },
+  goods_edit: {
+    section: {
+      goods: 'Product',
+      specifications: 'Specifications',
+      products: 'Product variants',
+      attributes: 'Attributes'
+    },
+    table: {
+      specification_name: 'Name',
+      specification_value: 'Value',
+      specification_pic_url: 'Picture',
+      specification_actions: 'Actions',
+      product_specifications: 'Specifications',
+      product_price: 'Price',
+      product_number: 'Quantity',
+      product_url: 'Picture',
+      product_actions: 'Actions',
+      attribute_name: 'Name',
+      attribute_value: 'Value',
+      attribute_actions: 'Actions'
+    },
+    form: {
+      id: 'ID',
+      name: 'Name',
+      goods_sn: 'Goods SN',
+      counter_price: 'Counter price',
+      is_new: 'New',
+      is_hot: 'Hot',
+      is_on_sale: 'On sale',
+      pic_url: 'Picture',
+      gallery: 'Gallery',
+      unit: 'Unit',
+      keywords: 'Keywords',
+      category_id: 'Category',
+      brand_id: 'Brand',
+      brief: 'Description',
+      detail: 'Detail',
+      specification_name: 'Name',
+      specification_value: 'Value',
+      specification_pic_url: 'Picture',
+      product_specifications: 'Specifications',
+      product_price: 'Price',
+      product_number: 'Quantity',
+      product_url: 'Picture',
+      attribute_name: 'Name',
+      attribute_value: 'Value'
+    },
+    value: {
+      is_new_true: 'New',
+      is_new_false: 'Not new',
+      is_hot_true: 'Hot',
+      is_hot_false: 'Ordinary',
+      is_on_sale_true: 'On sale',
+      is_on_sale_false: 'Not on sale'
+    },
+    button: {
+      edit: 'Edit'
     }
   }
 }
