@@ -626,5 +626,11 @@ export default {
       mall_longitude: '经度',
       mall_latitude: '纬度'
     }
+  },
+  config_express: {
+    form: {
+      freight_min: '运费满减所需最低消费',
+      freight_value: '运费满减不足所需运费'
+    }
   }
 }

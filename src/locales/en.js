@@ -626,5 +626,11 @@ export default {
       mall_longitude: 'Longitude',
       mall_latitude: 'Latitude'
     }
+  },
+  config_express: {
+    form: {
+      freight_min: 'Min spend for free delivery',
+      freight_value: 'Delivery fee'
+    }
   }
 }
