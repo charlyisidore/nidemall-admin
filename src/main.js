@@ -39,6 +39,7 @@ const i18n = new VueI18n({
   messages: { en, zh }
 })
 
+// Update Element UI locale when Vue locale is changed
 // https://element.eleme.cn/#/en-US/component/i18n
 ElementLocale.i18n((key, value) => i18n.t(key, value))
 

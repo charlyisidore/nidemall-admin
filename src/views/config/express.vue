@@ -11,7 +11,7 @@
         <el-button @click="cancel">{{ $t('app.button.cancel') }}</el-button>
         <el-button type="primary" @click="update">{{ $t('app.button.confirm') }}</el-button>
       </el-form-item>
-    </el-form></div>
+  </el-form></div>
 </template>
 
 <script>
