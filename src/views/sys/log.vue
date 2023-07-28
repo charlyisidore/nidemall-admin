@@ -9,22 +9,22 @@
 
     <!-- 查询结果 -->
     <el-table v-loading="listLoading" :data="list" element-loading-text="正在查询中。。。" border fit highlight-current-row>
-      <el-table-column align="center" label="操作管理员" prop="admin" />
-      <el-table-column align="center" label="IP地址" prop="ip" />
-      <el-table-column align="center" label="操作时间" prop="addTime" />
-      <el-table-column align="center" label="操作类别" prop="type">
+      <el-table-column align="center" :label="$t('sys_log.table.admin')" prop="admin" />
+      <el-table-column align="center" :label="$t('sys_log.table.ip')" prop="ip" />
+      <el-table-column align="center" :label="$t('sys_log.table.add_time')" prop="addTime" />
+      <el-table-column align="center" :label="$t('sys_log.table.type')" prop="type">
         <template slot-scope="scope">
           <el-tag>{{ scope.row.type | typeFilter }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column align="center" label="操作动作" prop="action" />
-      <el-table-column align="center" label="操作状态" prop="status">
+      <el-table-column align="center" :label="$t('sys_log.table.action')" prop="action" />
+      <el-table-column align="center" :label="$t('sys_log.table.status')" prop="status">
         <template slot-scope="scope">
           <el-tag :type="scope.row.status ? 'success' : 'error' ">{{ scope.row.status ? '成功' : '失败' }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column align="center" label="操作结果" prop="result" />
-      <el-table-column align="center" label="备注信息" prop="comment" />
+      <el-table-column align="center" :label="$t('sys_log.table.result')" prop="result" />
+      <el-table-column align="center" :label="$t('sys_log.table.comment')" prop="comment" />
 
     </el-table>
 

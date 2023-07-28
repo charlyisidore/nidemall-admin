@@ -573,5 +573,17 @@ export default {
       title: '通知标题',
       content: '通知内容'
     }
+  },
+  sys_log: {
+    table: {
+      admin: '操作管理员',
+      ip: 'IP地址',
+      add_time: '操作时间',
+      type: '操作类别',
+      action: '操作动作',
+      status: '操作状态',
+      result: '操作结果',
+      comment: '备注信息'
+    }
   }
 }

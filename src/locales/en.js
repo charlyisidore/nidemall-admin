@@ -573,5 +573,17 @@ export default {
       title: 'Title',
       content: 'Content'
     }
+  },
+  sys_log: {
+    table: {
+      admin: 'Admin',
+      ip: 'IP address',
+      add_time: 'Time added',
+      type: 'Type',
+      action: 'Action',
+      status: 'Status',
+      result: 'Result',
+      comment: 'Comment'
+    }
   }
 }
