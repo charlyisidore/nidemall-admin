@@ -300,7 +300,6 @@ export default {
       is_hot: '是否热品',
       is_on_sale: '是否在售',
       actions: '操作',
-
       goods_sn: '商品编号',
       gallery: '宣传画廊',
       brief: '商品介绍',
@@ -308,6 +307,32 @@ export default {
       keywords: '关键字',
       category_id: '类目ID',
       brand_id: '品牌商ID'
+    }
+  },
+  goods_create: {
+    form: {
+      goods_sn: '商品编号',
+      name: '商品名称',
+      counter_price: '市场售价',
+      is_new: '是否新品',
+      is_hot: '是否热卖',
+      is_on_sale: '是否在售',
+      pic_url: '商品图片',
+      gallery: '宣传画廊',
+      unit: '商品单位',
+      keywords: '关键字',
+      category_id: '所属分类',
+      brand_id: '所属品牌商',
+      brief: '商品简介',
+      detail: '商品详细介绍'
+    },
+    value: {
+      is_new_true: '新品',
+      is_new_false: '非新品',
+      is_hot_true: '热卖',
+      is_hot_false: '普通',
+      is_on_sale_true: '在售',
+      is_on_sale_false: '未售'
     }
   }
 }

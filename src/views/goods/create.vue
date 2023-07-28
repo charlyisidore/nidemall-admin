@@ -4,37 +4,37 @@
     <el-card class="box-card">
       <h3>商品介绍</h3>
       <el-form ref="goods" :rules="rules" :model="goods" label-width="150px">
-        <el-form-item label="商品编号" prop="goodsSn">
+        <el-form-item :label="$t('goods_create.form.goods_sn')" prop="goodsSn">
           <el-input v-model="goods.goodsSn" />
         </el-form-item>
-        <el-form-item label="商品名称" prop="name">
+        <el-form-item :label="$t('goods_create.form.name')" prop="name">
           <el-input v-model="goods.name" />
         </el-form-item>
-        <el-form-item label="市场售价" prop="counterPrice">
+        <el-form-item :label="$t('goods_create.form.counter_price')" prop="counterPrice">
           <el-input v-model="goods.counterPrice" placeholder="0.00">
             <template slot="append">元</template>
           </el-input>
         </el-form-item>
-        <el-form-item label="是否新品" prop="isNew">
+        <el-form-item :label="$t('goods_create.form.is_new')" prop="isNew">
           <el-radio-group v-model="goods.isNew">
-            <el-radio :label="true">新品</el-radio>
-            <el-radio :label="false">非新品</el-radio>
+            <el-radio :label="true">{{ $t('goods_create.value.is_new_true') }}</el-radio>
+            <el-radio :label="false">{{ $t('goods_create.value.is_new_false') }}</el-radio>
           </el-radio-group>
         </el-form-item>
-        <el-form-item label="是否热卖" prop="isHot">
+        <el-form-item :label="$t('goods_create.form.is_hot')" prop="isHot">
           <el-radio-group v-model="goods.isHot">
-            <el-radio :label="false">普通</el-radio>
-            <el-radio :label="true">热卖</el-radio>
+            <el-radio :label="false">{{ $t('goods_create.value.is_hot_false') }}</el-radio>
+            <el-radio :label="true">{{ $t('goods_create.value.is_hot_true') }}</el-radio>
           </el-radio-group>
         </el-form-item>
-        <el-form-item label="是否在售" prop="isOnSale">
+        <el-form-item :label="$t('goods_create.form.is_on_sale')" prop="isOnSale">
           <el-radio-group v-model="goods.isOnSale">
-            <el-radio :label="true">在售</el-radio>
-            <el-radio :label="false">未售</el-radio>
+            <el-radio :label="true">{{ $t('goods_create.value.is_on_sale_true') }}</el-radio>
+            <el-radio :label="false">{{ $t('goods_create.value.is_on_sale_false') }}</el-radio>
           </el-radio-group>
         </el-form-item>
 
-        <el-form-item label="商品图片">
+        <el-form-item :label="$t('goods_create.form.pic_url')">
           <el-upload
             :action="uploadPath"
             :show-file-list="false"
@@ -48,7 +48,7 @@
           </el-upload>
         </el-form-item>
 
-        <el-form-item label="宣传画廊">
+        <el-form-item :label="$t('goods_create.form.gallery')">
           <el-upload
             :action="uploadPath"
             :limit="5"
@@ -64,11 +64,11 @@
           </el-upload>
         </el-form-item>
 
-        <el-form-item label="商品单位">
+        <el-form-item :label="$t('goods_create.form.unit')">
           <el-input v-model="goods.unit" placeholder="件 / 个 / 盒" />
         </el-form-item>
 
-        <el-form-item label="关键字">
+        <el-form-item :label="$t('goods_create.form.keywords')">
           <el-tag v-for="tag in keywords" :key="tag" closable type="primary" @close="handleClose(tag)">
             {{ tag }}
           </el-tag>
@@ -84,21 +84,21 @@
           <el-button v-else class="button-new-keyword" type="primary" @click="showInput">{{ $t('app.button.add') }}</el-button>
         </el-form-item>
 
-        <el-form-item label="所属分类">
+        <el-form-item :label="$t('goods_create.form.category_id')">
           <el-cascader :options="categoryList" expand-trigger="hover" clearable @change="handleCategoryChange" />
         </el-form-item>
 
-        <el-form-item label="所属品牌商">
+        <el-form-item :label="$t('goods_create.form.brand_id')">
           <el-select v-model="goods.brandId" clearable>
             <el-option v-for="item in brandList" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
         </el-form-item>
 
-        <el-form-item label="商品简介">
+        <el-form-item :label="$t('goods_create.form.brief')">
           <el-input v-model="goods.brief" />
         </el-form-item>
 
-        <el-form-item label="商品详细介绍">
+        <el-form-item :label="$t('goods_create.form.detail')">
           <editor v-model="goods.detail" :init="editorInit" />
         </el-form-item>
       </el-form>

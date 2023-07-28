@@ -281,8 +281,8 @@ export default {
       is_default: 'Please choose'
     },
     value: {
-      is_hot_true: 'Recommended',
-      is_hot_false: 'Common',
+      is_hot_true: 'Hot',
+      is_hot_false: 'Ordinary',
       is_default_true: 'Default',
       is_default_false: 'Non default'
     }
@@ -307,6 +307,32 @@ export default {
       keywords: 'Keywords',
       category_id: 'Category',
       brand_id: 'Brand'
+    }
+  },
+  goods_create: {
+    form: {
+      goods_sn: 'Goods SN',
+      name: 'Name',
+      counter_price: 'Counter price',
+      is_new: 'New',
+      is_hot: 'Hot',
+      is_on_sale: 'On sale',
+      pic_url: 'Picture',
+      gallery: 'Gallery',
+      unit: 'Unit',
+      keywords: 'Keywords',
+      category_id: 'Category',
+      brand_id: 'Brand',
+      brief: 'Description',
+      detail: 'Detail'
+    },
+    value: {
+      is_new_true: 'New',
+      is_new_false: 'Not new',
+      is_hot_true: 'Hot',
+      is_hot_false: 'Ordinary',
+      is_on_sale_true: 'On sale',
+      is_on_sale_false: 'Not on sale'
     }
   }
 }
