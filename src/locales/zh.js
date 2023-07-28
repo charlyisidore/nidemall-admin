@@ -94,7 +94,7 @@ export default {
       confirm: '确定',
       create: '添加',
       delete: '删除',
-      details: '详情',
+      detail: '详情',
       download: '导出',
       edit: '编辑',
       permission: '授权',

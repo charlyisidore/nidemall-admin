@@ -45,7 +45,7 @@
       </el-table-column>
       <el-table-column align="center" :label="$t('user_user.table.actions')" width="250" class-name="small-padding fixed-width">
         <template slot-scope="scope">
-          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.details') }}</el-button>
+          <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.detail') }}</el-button>
         </template>
       </el-table-column>
     </el-table>

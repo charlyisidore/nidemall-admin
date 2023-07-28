@@ -94,7 +94,7 @@ export default {
       confirm: 'Confirm',
       create: 'Create',
       delete: 'Delete',
-      details: 'Details',
+      detail: 'Details',
       download: 'Download',
       edit: 'Edit',
       permission: 'Permissions',
