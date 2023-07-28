@@ -613,5 +613,18 @@ export default {
     button: {
       upload: 'Upload'
     }
+  },
+  config_mall: {
+    form: {
+      mall_name: 'Name',
+      mall_address: 'Address',
+      mall_coordinates: 'Coordinates',
+      mall_phone: 'Phone',
+      mall_qq: 'QQ'
+    },
+    placeholder: {
+      mall_longitude: 'Longitude',
+      mall_latitude: 'Latitude'
+    }
   }
 }

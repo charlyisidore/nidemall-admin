@@ -613,5 +613,18 @@ export default {
     button: {
       upload: '点击上传'
     }
+  },
+  config_mall: {
+    form: {
+      mall_name: '商场名称',
+      mall_address: '商场地址',
+      mall_coordinates: '地理坐标',
+      mall_phone: '联系电话',
+      mall_qq: '联系QQ'
+    },
+    placeholder: {
+      mall_longitude: '经度',
+      mall_latitude: '纬度'
+    }
   }
 }
