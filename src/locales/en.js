@@ -105,6 +105,9 @@ export default {
     }
   },
   user_user: {
+    dialog: {
+      edit: 'Edit user'
+    },
     table: {
       id: 'ID',
       nickname: 'Nickname',
@@ -117,7 +120,6 @@ export default {
       actions: 'Actions'
     },
     form: {
-      title: 'Edit user',
       username: 'Username',
       nickname: 'Nickname',
       mobile: 'Mobile',

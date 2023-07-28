@@ -52,7 +52,7 @@
 
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
     <!-- 用户编辑对话框 -->
-    <el-dialog :visible.sync="userDialogVisible" :title="$t('user_user.form.title')">
+    <el-dialog :visible.sync="userDialogVisible" :title="$t('user_user.dialog.edit')">
       <el-form ref="userDetail" :model="userDetail" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item :label="$t('user_user.form.username')" prop="username">
           <el-input v-model="userDetail.username" :disabled="true" />

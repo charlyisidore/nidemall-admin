@@ -105,6 +105,9 @@ export default {
     }
   },
   user_user: {
+    dialog: {
+      edit: '用户编辑'
+    },
     table: {
       id: '用户ID',
       nickname: '用户昵称',
@@ -117,7 +120,6 @@ export default {
       actions: '操作'
     },
     form: {
-      title: '用户编辑',
       username: '用户名',
       nickname: '用户昵称',
       mobile: '用户手机',
