@@ -585,5 +585,16 @@ export default {
       result: '操作结果',
       comment: '备注信息'
     }
+  },
+  sys_role: {
+    table: {
+      name: '角色名称',
+      desc: '说明',
+      actions: '操作'
+    },
+    form: {
+      name: '角色名称',
+      desc: '说明'
+    }
   }
 }

@@ -585,5 +585,16 @@ export default {
       result: 'Result',
       comment: 'Comment'
     }
+  },
+  sys_role: {
+    table: {
+      name: 'Name',
+      desc: 'Description',
+      actions: 'Actions'
+    },
+    form: {
+      name: 'Name',
+      desc: 'Description'
+    }
   }
 }
