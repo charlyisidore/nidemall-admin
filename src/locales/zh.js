@@ -714,5 +714,25 @@ export default {
       catlog_goods: '分类栏目商品显示数量',
       share: '商品分享功能'
     }
+  },
+  profile_notice: {
+    section: {
+      unread: '未读通知',
+      read: '已读通知',
+      all: '所有通知'
+    },
+    table: {
+      notice_title: '通知标题',
+      add_time: '通知时间',
+      read_time: '通知状态',
+      actions: '操作'
+    },
+    placeholder: {
+      filter_title: '请输入标题关键字'
+    },
+    button: {
+      batch_read: '批量已读',
+      read: '阅读'
+    }
   }
 }

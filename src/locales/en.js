@@ -714,5 +714,25 @@ export default {
       catlog_goods: 'Number of products shown',
       share: 'Product sharing function'
     }
+  },
+  profile_notice: {
+    section: {
+      unread: 'Unread',
+      read: 'Read',
+      all: 'All'
+    },
+    table: {
+      notice_title: 'Title',
+      add_time: 'Time added',
+      read_time: 'Time read',
+      actions: 'Actions'
+    },
+    placeholder: {
+      filter_title: 'Title'
+    },
+    button: {
+      batch_read: 'Batch read',
+      read: 'Read'
+    }
   }
 }
