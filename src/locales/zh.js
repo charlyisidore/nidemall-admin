@@ -660,6 +660,10 @@ export default {
       password: '管理员密码',
       avatar: '管理员头像',
       role_ids: '管理员角色'
+    },
+    placeholder: {
+      filter_username: '请输入管理员名称',
+      role_ids: '请选择'
     }
   },
   sys_notice: {
@@ -685,6 +689,9 @@ export default {
       status: '操作状态',
       result: '操作结果',
       comment: '备注信息'
+    },
+    placeholder: {
+      filter_name: '请输入操作管理员'
     }
   },
   sys_role: {

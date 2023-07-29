@@ -660,6 +660,10 @@ export default {
       password: 'Password',
       avatar: 'Avatar',
       role_ids: 'Roles'
+    },
+    placeholder: {
+      filter_username: 'Username',
+      role_ids: 'Please choose'
     }
   },
   sys_notice: {
@@ -685,6 +689,9 @@ export default {
       status: 'Status',
       result: 'Result',
       comment: 'Comment'
+    },
+    placeholder: {
+      filter_name: 'Admin'
     }
   },
   sys_role: {

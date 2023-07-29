@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" placeholder="请输入管理员名称" />
+      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" :placeholder="$t('sys_admin.placeholder.filter_username')" />
       <el-button v-permission="['GET /admin/admin/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button v-permission="['POST /admin/admin/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
@@ -60,7 +60,7 @@
           </el-upload>
         </el-form-item>
         <el-form-item :label="$t('sys_admin.form.role_ids')" prop="roleIds">
-          <el-select v-model="dataForm.roleIds" multiple placeholder="请选择">
+          <el-select v-model="dataForm.roleIds" multiple :placeholder="$t('sys_admin.placeholder.role_ids')">
             <el-option
               v-for="item in roleOptions"
               :key="item.value"
