@@ -158,10 +158,10 @@
             <span>{{ $t('mall_order.text.detail_ship_time', { ship_time: orderDetail.order.shipTime }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_refund_info')">
-            <span>（退款金额）{{ orderDetail.order.refundAmount }}元</span>
-            <span>（退款类型）{{ orderDetail.order.refundType }}</span>
-            <span>（退款备注）{{ orderDetail.order.refundContent }}</span>
-            <span>（退款时间）{{ orderDetail.order.refundTime }}</span>
+            <span>{{ $t('mall_order.text.detail_refund_amount', { refund_amount: orderDetail.order.refundAmount }) }}</span>
+            <span>{{ $t('mall_order.text.detail_refund_type', { refund_type: orderDetail.order.refundType }) }}</span>
+            <span>{{ $t('mall_order.text.detail_refund_content', { refund_content: orderDetail.order.refundContent }) }}</span>
+            <span>{{ $t('mall_order.text.detail_refund_time', { refund_time: orderDetail.order.refundTime }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_receipt_info')">
             <span>（确认收货时间）{{ orderDetail.order.confirmTime }}</span>

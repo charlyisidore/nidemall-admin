@@ -291,7 +291,11 @@ export default {
       detail_pay_time: '（支付时间）{pay_time}',
       detail_ship_channel: '（快递公司）{ship_channel}',
       detail_ship_sn: '（快递单号）{ship_sn}',
-      detail_ship_time: '（发货时间）{ship_time}'
+      detail_ship_time: '（发货时间）{ship_time}',
+      detail_refund_amount: '（退款金额）{refund_amount}元',
+      detail_refund_type: '（退款类型）{refund_type}',
+      detail_refund_content: '（退款备注）{refund_content}',
+      detail_refund_time: '（退款时间）{refund_time}'
     },
     table: {
       order_sn: '订单编号',

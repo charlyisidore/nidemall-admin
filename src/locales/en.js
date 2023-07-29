@@ -291,7 +291,11 @@ export default {
       detail_pay_time: '(payment time) {pay_time} ',
       detail_ship_channel: '(shipment company) {ship_channel} ',
       detail_ship_sn: '(shipment SN) {ship_sn} ',
-      detail_ship_time: '(shipment time) {ship_time} '
+      detail_ship_time: '(shipment time) {ship_time} ',
+      detail_refund_amount: '(refund amount) {refund_amount}元 ',
+      detail_refund_type: '(type) {refund_type} ',
+      detail_refund_content: '(content) {refund_content} ',
+      detail_refund_time: '(time) {refund_time} '
     },
     table: {
       order_sn: 'Order SN',
