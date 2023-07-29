@@ -1,3 +1,4 @@
+<!-- https://kazupon.github.io/vue-i18n/guide/locale.html -->
 <template>
   <el-select v-model="$i18n.locale" size="mini" placeholder="lang" class="select">
     <el-option v-for="(lang, i) in langs" :key="`Lang${i}`" :label="lang.label" :value="lang.value" />
