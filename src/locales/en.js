@@ -305,6 +305,19 @@ export default {
       ship: 'Ship',
       refund: 'Refund'
     },
+    form: {
+      detail_order_sn: 'Order SN',
+      detail_order_status: 'Status',
+      detail_user_nickname: 'User nickname',
+      detail_message: 'User message',
+      detail_receiving_info: 'Receipt info',
+      detail_goods: 'Goods info',
+      detail_price_info: 'Price info',
+      detail_pay_info: 'Payment info',
+      detail_ship_info: 'Shipment info',
+      detail_refund_info: 'Refund info',
+      detail_receipt_info: 'Receipt info'
+    },
     placeholder: {
       filter_nickname: 'Nickname',
       filter_consignee: 'Consignee',

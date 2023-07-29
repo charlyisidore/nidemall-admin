@@ -106,24 +106,24 @@
     <el-dialog :visible.sync="orderDialogVisible" :title="$t('mall_order.dialog.detail')" width="800">
       <section ref="print">
         <el-form :data="orderDetail" label-position="left">
-          <el-form-item label="订单编号">
+          <el-form-item :label="$t('mall_order.form.detail_order_sn')">
             <span>{{ orderDetail.order.orderSn }}</span>
           </el-form-item>
-          <el-form-item label="订单状态">
+          <el-form-item :label="$t('mall_order.form.detail_order_status')">
             <el-tag>{{ orderDetail.order.orderStatus | orderStatusFilter }}</el-tag>
           </el-form-item>
-          <el-form-item label="订单用户">
+          <el-form-item :label="$t('mall_order.form.detail_user_nickname')">
             <span>{{ orderDetail.user.nickname }}</span>
           </el-form-item>
-          <el-form-item label="用户留言">
+          <el-form-item :label="$t('mall_order.form.detail_message')">
             <span>{{ orderDetail.order.message }}</span>
           </el-form-item>
-          <el-form-item label="收货信息">
+          <el-form-item :label="$t('mall_order.form.detail_receiving_info')">
             <span>（收货人）{{ orderDetail.order.consignee }}</span>
             <span>（手机号）{{ orderDetail.order.mobile }}</span>
             <span>（地址）{{ orderDetail.order.address }}</span>
           </el-form-item>
-          <el-form-item label="商品信息">
+          <el-form-item :label="$t('mall_order.form.detail_goods')">
             <el-table :data="orderDetail.orderGoods" border fit highlight-current-row>
               <el-table-column align="center" label="商品名称" prop="goodsName" />
               <el-table-column align="center" label="商品编号" prop="goodsSn" />
@@ -137,7 +137,7 @@
               </el-table-column>
             </el-table>
           </el-form-item>
-          <el-form-item label="费用信息">
+          <el-form-item :label="$t('mall_order.form.detail_price_info')">
             <span>
               (实际费用){{ orderDetail.order.actualPrice }}元 =
               (商品总价){{ orderDetail.order.goodsPrice }}元 +
@@ -146,22 +146,22 @@
               (积分减免){{ orderDetail.order.integralPrice }}元
             </span>
           </el-form-item>
-          <el-form-item label="支付信息">
+          <el-form-item :label="$t('mall_order.form.detail_pay_info')">
             <span>（支付渠道）微信支付</span>
             <span>（支付时间）{{ orderDetail.order.payTime }}</span>
           </el-form-item>
-          <el-form-item label="快递信息">
+          <el-form-item :label="$t('mall_order.form.detail_ship_info')">
             <span>（快递公司）{{ orderDetail.order.shipChannel }}</span>
             <span>（快递单号）{{ orderDetail.order.shipSn }}</span>
             <span>（发货时间）{{ orderDetail.order.shipTime }}</span>
           </el-form-item>
-          <el-form-item label="退款信息">
+          <el-form-item :label="$t('mall_order.form.detail_refund_info')">
             <span>（退款金额）{{ orderDetail.order.refundAmount }}元</span>
             <span>（退款类型）{{ orderDetail.order.refundType }}</span>
             <span>（退款备注）{{ orderDetail.order.refundContent }}</span>
             <span>（退款时间）{{ orderDetail.order.refundTime }}</span>
           </el-form-item>
-          <el-form-item label="收货信息">
+          <el-form-item :label="$t('mall_order.form.detail_receipt_info')">
             <span>（确认收货时间）{{ orderDetail.order.confirmTime }}</span>
           </el-form-item>
         </el-form>

@@ -305,6 +305,19 @@ export default {
       ship: '发货',
       refund: '退款'
     },
+    form: {
+      detail_order_sn: '订单编号',
+      detail_order_status: '订单状态',
+      detail_user_nickname: '订单用户',
+      detail_message: '用户留言',
+      detail_receiving_info: '收货信息',
+      detail_goods: '商品信息',
+      detail_price_info: '费用信息',
+      detail_pay_info: '支付信息',
+      detail_ship_info: '快递信息',
+      detail_refund_info: '退款信息',
+      detail_receipt_info: '收货信息'
+    },
     placeholder: {
       filter_nickname: '请输入用户昵称',
       filter_consignee: '请输入收货人名称',
