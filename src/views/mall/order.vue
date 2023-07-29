@@ -164,13 +164,13 @@
             <span>{{ $t('mall_order.text.detail_refund_time', { refund_time: orderDetail.order.refundTime }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_receipt_info')">
-            <span>（确认收货时间）{{ orderDetail.order.confirmTime }}</span>
+            <span>{{ $t('mall_order.text.detail_confirm_time', { confirm_time: orderDetail.order.confirmTime }) }}</span>
           </el-form-item>
         </el-form>
       </section>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="orderDialogVisible = false">取 消</el-button>
-        <el-button type="primary" @click="printOrder">打 印</el-button>
+        <el-button @click="orderDialogVisible = false">{{ $t('mall_order.button.detail_cancel') }}</el-button>
+        <el-button type="primary" @click="printOrder">{{ $t('mall_order.button.detail_print') }}</el-button>
       </span>
     </el-dialog>
 

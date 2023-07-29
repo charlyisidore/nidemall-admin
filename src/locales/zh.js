@@ -295,7 +295,8 @@ export default {
       detail_refund_amount: '（退款金额）{refund_amount}元',
       detail_refund_type: '（退款类型）{refund_type}',
       detail_refund_content: '（退款备注）{refund_content}',
-      detail_refund_time: '（退款时间）{refund_time}'
+      detail_refund_time: '（退款时间）{refund_time}',
+      detail_confirm_time: '（确认收货时间）{confirm_time}'
     },
     table: {
       order_sn: '订单编号',
@@ -356,7 +357,9 @@ export default {
     button: {
       pay: '收款',
       ship: '发货',
-      refund: '退款'
+      refund: '退款',
+      detail_cancel: '取 消',
+      detail_print: '打 印'
     }
   },
   mall_aftersale: {

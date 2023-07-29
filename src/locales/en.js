@@ -295,7 +295,8 @@ export default {
       detail_refund_amount: '(refund amount) {refund_amount}元 ',
       detail_refund_type: '(type) {refund_type} ',
       detail_refund_content: '(content) {refund_content} ',
-      detail_refund_time: '(time) {refund_time} '
+      detail_refund_time: '(time) {refund_time} ',
+      detail_confirm_time: '(confirm time) {confirm_time} '
     },
     table: {
       order_sn: 'Order SN',
@@ -356,7 +357,9 @@ export default {
     button: {
       pay: 'Pay',
       ship: 'Ship',
-      refund: 'Refund'
+      refund: 'Refund',
+      detail_cancel: 'Cancel',
+      detail_print: 'Print'
     }
   },
   mall_aftersale: {
