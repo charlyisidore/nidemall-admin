@@ -901,6 +901,10 @@ export default {
     }
   },
   config_order: {
+    text: {
+      minutes: 'minutes',
+      days: 'days'
+    },
     form: {
       unpaid: 'Timeout after order creation',
       unconfirm: 'Overdue after shipment',

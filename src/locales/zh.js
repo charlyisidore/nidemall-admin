@@ -901,6 +901,10 @@ export default {
     }
   },
   config_order: {
+    text: {
+      minutes: '分钟',
+      days: '天'
+    },
     form: {
       unpaid: '用户下单后超时',
       unconfirm: '订单发货后超期',

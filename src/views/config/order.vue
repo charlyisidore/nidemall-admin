@@ -3,19 +3,19 @@
     <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-width="300px">
       <el-form-item :label="$t('config_order.form.unpaid')" prop="litemall_order_unpaid">
         <el-input v-model="dataForm.litemall_order_unpaid" class="input-width">
-          <template slot="append">分钟</template>
+          <template slot="append">{{ $t('config_order.text.minutes') }}</template>
         </el-input>
         <span class="info">{{ $t('config_order.help.unpaid') }}</span>
       </el-form-item>
       <el-form-item :label="$t('config_order.form.unconfirm')" prop="litemall_order_unconfirm">
         <el-input v-model="dataForm.litemall_order_unconfirm" class="input-width">
-          <template slot="append"> 天</template>
+          <template slot="append"> {{ $t('config_order.text.days') }}</template>
         </el-input>
         <span class="info">{{ $t('config_order.help.unconfirm') }}</span>
       </el-form-item>
       <el-form-item :label="$t('config_order.form.comment')" prop="litemall_order_comment">
         <el-input v-model="dataForm.litemall_order_comment" class="input-width">
-          <template slot="append">天</template>
+          <template slot="append">{{ $t('config_order.text.days') }}</template>
         </el-input>
         <span class="info">{{ $t('config_order.help.comment') }}</span>
       </el-form-item>
