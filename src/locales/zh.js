@@ -405,6 +405,10 @@ export default {
     }
   },
   mall_keyword: {
+    text: {
+      yes: '是',
+      no: '否'
+    },
     table: {
       id: '关键词ID',
       keyword: '关键词',

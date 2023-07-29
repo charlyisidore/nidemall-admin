@@ -405,6 +405,10 @@ export default {
     }
   },
   mall_keyword: {
+    text: {
+      yes: 'Yes',
+      no: 'No'
+    },
     table: {
       id: 'ID',
       keyword: 'Keyword',

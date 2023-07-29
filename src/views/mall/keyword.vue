@@ -21,13 +21,13 @@
 
       <el-table-column align="center" min-width="100px" :label="$t('mall_keyword.table.is_hot')" prop="isHot">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.isHot ? 'success' : 'error' ">{{ scope.row.isHot ? '是' : '否' }}</el-tag>
+          <el-tag :type="scope.row.isHot ? 'success' : 'error' ">{{ $t(scope.row.isHot ? 'mall_keyword.text.yes' : 'mall_keyword.text.no') }}</el-tag>
         </template>
       </el-table-column>
 
       <el-table-column align="center" min-width="100px" :label="$t('mall_keyword.table.is_default')" prop="isDefault">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.isDefault ? 'success' : 'error' ">{{ scope.row.isDefault ? '是' : '否' }}</el-tag>
+          <el-tag :type="scope.row.isDefault ? 'success' : 'error' ">{{ $t(scope.row.isDefault ? 'mall_keyword.text.yes' : 'mall_keyword.text.no') }}</el-tag>
         </template>
       </el-table-column>
 
