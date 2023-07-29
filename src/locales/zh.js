@@ -413,6 +413,14 @@ export default {
     placeholder: {
       filter_aftersale_sn: '请输入售后编号',
       filter_order_id: '请输入订单ID'
+    },
+    button: {
+      batch_recept: '批量通过',
+      batch_reject: '批量拒绝',
+      recept: '通过',
+      reject: '拒绝',
+      refund: '退款',
+      cancel: '取 消'
     }
   },
   mall_issue: {

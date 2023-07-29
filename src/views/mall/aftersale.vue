@@ -10,8 +10,8 @@
     </div>
 
     <div class="operator-container">
-      <el-button v-permission="['GET /admin/aftersale/batch-recept']" class="filter-item" type="success" icon="el-icon-info" @click="handleBatchRecept">批量通过</el-button>
-      <el-button v-permission="['GET /admin/aftersale/batch-reject']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchReject">批量拒绝</el-button>
+      <el-button v-permission="['GET /admin/aftersale/batch-recept']" class="filter-item" type="success" icon="el-icon-info" @click="handleBatchRecept">{{ $t('mall_aftersale.button.batch_recept') }}</el-button>
+      <el-button v-permission="['GET /admin/aftersale/batch-reject']" class="filter-item" type="danger" icon="el-icon-delete" @click="handleBatchReject">{{ $t('mall_aftersale.button.batch_reject') }}</el-button>
     </div>
 
     <el-tabs v-model="tab" @tab-click="handleClick">
@@ -38,9 +38,9 @@
       <el-table-column align="center" :label="$t('mall_aftersale.table.actions')" min-width="120" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button v-permission="['POST /admin/aftersale/detail']" type="primary" size="mini" @click="handleRead(scope.row)">{{ $t('app.button.detail') }}</el-button>
-          <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/recept']" type="success" size="mini" @click="handleRecept(scope.row)">通过</el-button>
-          <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/reject']" type="danger" size="mini" @click="handleReject(scope.row)">拒绝</el-button>
-          <el-button v-if="scope.row.status === 2" v-permission="['POST /admin/aftersale/refund']" type="warning" size="mini" @click="handleRefund(scope.row)">退款</el-button>
+          <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/recept']" type="success" size="mini" @click="handleRecept(scope.row)">{{ $t('mall_aftersale.button.recept') }}</el-button>
+          <el-button v-if="scope.row.status === 1" v-permission="['POST /admin/aftersale/reject']" type="danger" size="mini" @click="handleReject(scope.row)">{{ $t('mall_aftersale.button.reject') }}</el-button>
+          <el-button v-if="scope.row.status === 2" v-permission="['POST /admin/aftersale/refund']" type="warning" size="mini" @click="handleRefund(scope.row)">{{ $t('mall_aftersale.button.refund') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -106,7 +106,7 @@
         </el-form>
       </section>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="aftersaleDialogVisible = false">取 消</el-button>
+        <el-button @click="aftersaleDialogVisible = false">{{ $t('mall_aftersale.button.cancel') }}</el-button>
       </span>
     </el-dialog>
   </div>

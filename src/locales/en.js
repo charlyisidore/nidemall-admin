@@ -413,6 +413,14 @@ export default {
     placeholder: {
       filter_aftersale_sn: 'Aftersale SN',
       filter_order_id: 'Order ID'
+    },
+    button: {
+      batch_recept: 'Batch pass',
+      batch_reject: 'Batch reject',
+      recept: 'Pass',
+      reject: 'Reject',
+      refund: 'Refund',
+      cancel: 'Cancel'
     }
   },
   mall_issue: {
