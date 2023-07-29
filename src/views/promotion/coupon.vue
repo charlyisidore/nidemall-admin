@@ -157,7 +157,7 @@
                   size="mini"
                   type="text"
                   @click="handleDeleteGoodsCategory(scope.$index, scope.row)"
-                >删除
+                >{{ $t('app.button.delete') }}
                 </el-button>
               </template>
             </el-table-column>
@@ -200,7 +200,7 @@
                   size="mini"
                   type="text"
                   @click="handleDeleteGoods(scope.$index, scope.row)"
-                >删除
+                >{{ $t('app.button.delete') }}
                 </el-button>
               </template>
             </el-table-column>
