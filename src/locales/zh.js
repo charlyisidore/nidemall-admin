@@ -762,6 +762,10 @@ export default {
       url_link: '图片链接',
       actions: '操作'
     },
+    dialog: {
+      create: '上传对象',
+      update: '修改对象名称'
+    },
     form: {
       name: '对象名称'
     },

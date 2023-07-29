@@ -762,6 +762,10 @@ export default {
       url_link: 'Link',
       actions: 'Actions'
     },
+    dialog: {
+      create: 'Create',
+      update: 'Update'
+    },
     form: {
       name: 'Name'
     },

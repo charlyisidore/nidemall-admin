@@ -40,14 +40,14 @@
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
 
     <!-- 添加对话框 -->
-    <el-dialog :visible.sync="createDialogVisible" title="上传对象">
+    <el-dialog :visible.sync="createDialogVisible" :title="$t('sys_os.dialog.create')">
       <el-upload ref="upload" :show-file-list="false" :limit="1" :http-request="handleUpload" action="#" list-type="picture">
         <el-button type="primary">{{ $t('sys_os.button.upload') }}</el-button>
       </el-upload>
     </el-dialog>
 
     <!-- 修改对话框 -->
-    <el-dialog :visible.sync="updateDialogVisible" title="修改对象名称">
+    <el-dialog :visible.sync="updateDialogVisible" :title="$t('sys_os.dialog.update')">
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item :label="$t('sys_os.form.name')" prop="name">
           <el-input v-model="dataForm.name" />
