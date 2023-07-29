@@ -607,9 +607,6 @@ export default {
     }
   },
   promotion_topic_edit: {
-    dialog: {
-      add_goods: '添加商品'
-    },
     table: {
       goods_id: '商品ID',
       goods_pic_url: '图片',
@@ -619,6 +616,9 @@ export default {
       search_goods_id: '商品ID',
       search_goods_pic_url: '图片',
       search_goods_name: '商品名称'
+    },
+    dialog: {
+      add_goods: '添加商品'
     },
     form: {
       title: '专题标题',

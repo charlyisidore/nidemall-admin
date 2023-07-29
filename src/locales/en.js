@@ -607,9 +607,6 @@ export default {
     }
   },
   promotion_topic_edit: {
-    dialog: {
-      add_goods: 'Add goods'
-    },
     table: {
       goods_id: 'ID',
       goods_pic_url: 'Picture',
@@ -619,6 +616,9 @@ export default {
       search_goods_id: 'ID',
       search_goods_pic_url: 'Picture',
       search_goods_name: 'Name'
+    },
+    dialog: {
+      add_goods: 'Add goods'
     },
     form: {
       title: 'Title',
