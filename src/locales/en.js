@@ -297,7 +297,13 @@ export default {
       mobile: 'Mobile',
       ship_sn: 'Ship SN',
       ship_channel: 'Ship channel',
-      actions: 'Actions'
+      actions: 'Actions',
+      detail_goods_name: 'Name',
+      detail_goods_sn: 'Goods SN',
+      detail_goods_specifications: 'Specifications',
+      detail_goods_price: 'Price',
+      detail_goods_number: 'Quantity',
+      detail_goods_pic_url: 'Picture'
     },
     dialog: {
       detail: 'Details',

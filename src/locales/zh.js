@@ -297,7 +297,13 @@ export default {
       mobile: '收货电话',
       ship_sn: '物流单号',
       ship_channel: '物流渠道',
-      actions: '操作'
+      actions: '操作',
+      detail_goods_name: '商品名称',
+      detail_goods_sn: '商品编号',
+      detail_goods_specifications: '货品规格',
+      detail_goods_price: '货品价格',
+      detail_goods_number: '货品数量',
+      detail_goods_pic_url: '货品图片'
     },
     dialog: {
       detail: '订单详情',

@@ -125,12 +125,12 @@
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_goods')">
             <el-table :data="orderDetail.orderGoods" border fit highlight-current-row>
-              <el-table-column align="center" label="商品名称" prop="goodsName" />
-              <el-table-column align="center" label="商品编号" prop="goodsSn" />
-              <el-table-column align="center" label="货品规格" prop="specifications" />
-              <el-table-column align="center" label="货品价格" prop="price" />
-              <el-table-column align="center" label="货品数量" prop="number" />
-              <el-table-column align="center" label="货品图片" prop="picUrl">
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_name')" prop="goodsName" />
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_sn')" prop="goodsSn" />
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_specifications')" prop="specifications" />
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_price')" prop="price" />
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_number')" prop="number" />
+              <el-table-column align="center" :label="$t('mall_order.table.detail_goods_pic_url')" prop="picUrl">
                 <template slot-scope="scope">
                   <img :src="scope.row.picUrl" width="40">
                 </template>
