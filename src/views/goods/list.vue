@@ -74,19 +74,19 @@
 
       <el-table-column align="center" :label="$t('goods_list.table.is_new')" prop="isNew">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.isNew ? 'success' : 'error' ">{{ scope.row.isNew ? '新品' : '非新品' }}</el-tag>
+          <el-tag :type="scope.row.isNew ? 'success' : 'error' ">{{ $t(scope.row.isNew ? 'goods_list.value.is_new_true' : 'goods_list.value.is_new_false') }}</el-tag>
         </template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('goods_list.table.is_hot')" prop="isHot">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.isHot ? 'success' : 'error' ">{{ scope.row.isHot ? '热品' : '非热品' }}</el-tag>
+          <el-tag :type="scope.row.isHot ? 'success' : 'error' ">{{ $t(scope.row.isHot ? 'goods_list.value.is_hot_true' : 'goods_list.value.is_hot_false') }}</el-tag>
         </template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('goods_list.table.is_on_sale')" prop="isOnSale">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.isOnSale ? 'success' : 'error' ">{{ scope.row.isOnSale ? '在售' : '未售' }}</el-tag>
+          <el-tag :type="scope.row.isOnSale ? 'success' : 'error' ">{{ $t(scope.row.isOnSale ? 'goods_list.value.is_on_sale_true' : 'goods_list.value.is_on_sale_false') }}</el-tag>
         </template>
       </el-table-column>
 

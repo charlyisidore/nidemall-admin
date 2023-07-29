@@ -460,6 +460,14 @@ export default {
     dialog: {
       detail: 'Details'
     },
+    value: {
+      is_new_true: 'New',
+      is_new_false: 'Not new',
+      is_hot_true: 'Hot',
+      is_hot_false: 'Ordinary',
+      is_on_sale_true: 'On sale',
+      is_on_sale_false: 'Not on sale'
+    },
     placeholder: {
       filter_goods_id: 'Goods ID',
       filter_goods_sn: 'Goods SN',

@@ -460,6 +460,14 @@ export default {
     dialog: {
       detail: '商品详情'
     },
+    value: {
+      is_new_true: '新品',
+      is_new_false: '非新品',
+      is_hot_true: '热卖',
+      is_hot_false: '普通',
+      is_on_sale_true: '在售',
+      is_on_sale_false: '未售'
+    },
     placeholder: {
       filter_goods_id: '请输入商品ID',
       filter_goods_sn: '请输入商品编号',
