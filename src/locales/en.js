@@ -709,6 +709,9 @@ export default {
     form: {
       name: 'Name',
       desc: 'Description'
+    },
+    placeholder: {
+      filter_name: 'Name'
     }
   },
   sys_os: {

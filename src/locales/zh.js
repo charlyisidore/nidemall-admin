@@ -709,6 +709,9 @@ export default {
     form: {
       name: '角色名称',
       desc: '说明'
+    },
+    placeholder: {
+      filter_name: '请输入角色名称'
     }
   },
   sys_os: {
