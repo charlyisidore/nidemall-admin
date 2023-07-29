@@ -286,7 +286,12 @@ export default {
       detail_consigne: '(consignee) {consignee} ',
       detail_mobile: '(mobile) {mobile} ',
       detail_address: '(address) {address} ',
-      detail_price_info: '(actual){actual_price}元 = (goods){goods_price}元 + (freight){freight_price}元 - (coupon){coupon_price}元 - (integral){integral_price}元'
+      detail_price_info: '(actual){actual_price}元 = (goods){goods_price}元 + (freight){freight_price}元 - (coupon){coupon_price}元 - (integral){integral_price}元',
+      detail_pay_channel: '(payment channel) {pay_channel} ',
+      detail_pay_time: '(payment time) {pay_time} ',
+      detail_ship_channel: '(shipment company) {ship_channel} ',
+      detail_ship_sn: '(shipment SN) {ship_sn} ',
+      detail_ship_time: '(shipment time) {ship_time} '
     },
     table: {
       order_sn: 'Order SN',

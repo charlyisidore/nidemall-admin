@@ -149,13 +149,13 @@
             </span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_pay_info')">
-            <span>（支付渠道）微信支付</span>
-            <span>（支付时间）{{ orderDetail.order.payTime }}</span>
+            <span>{{ $t('mall_order.text.detail_pay_channel', { pay_channel: '微信支付' }) }}</span>
+            <span>{{ $t('mall_order.text.detail_pay_time', { pay_time: orderDetail.order.payTime }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_ship_info')">
-            <span>（快递公司）{{ orderDetail.order.shipChannel }}</span>
-            <span>（快递单号）{{ orderDetail.order.shipSn }}</span>
-            <span>（发货时间）{{ orderDetail.order.shipTime }}</span>
+            <span>{{ $t('mall_order.text.detail_ship_channel', { ship_channel: orderDetail.order.shipChannel }) }}</span>
+            <span>{{ $t('mall_order.text.detail_ship_sn', { ship_sn: orderDetail.order.shipSn }) }}</span>
+            <span>{{ $t('mall_order.text.detail_ship_time', { ship_time: orderDetail.order.shipTime }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_refund_info')">
             <span>（退款金额）{{ orderDetail.order.refundAmount }}元</span>

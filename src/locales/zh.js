@@ -286,7 +286,12 @@ export default {
       detail_consigne: '（收货人）{consignee}',
       detail_mobile: '（手机号）{mobile}',
       detail_address: '（地址）{address}',
-      detail_price_info: '(实际费用){actual_price}元 = (商品总价){goods_price}元 + (快递费用){freight_price}元 - (优惠减免){coupon_price}元 - (积分减免){integral_price}元'
+      detail_price_info: '(实际费用){actual_price}元 = (商品总价){goods_price}元 + (快递费用){freight_price}元 - (优惠减免){coupon_price}元 - (积分减免){integral_price}元',
+      detail_pay_channel: '（支付渠道）{pay_channel}',
+      detail_pay_time: '（支付时间）{pay_time}',
+      detail_ship_channel: '（快递公司）{ship_channel}',
+      detail_ship_sn: '（快递单号）{ship_sn}',
+      detail_ship_time: '（发货时间）{ship_time}'
     },
     table: {
       order_sn: '订单编号',
