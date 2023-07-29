@@ -299,6 +299,12 @@ export default {
       ship_channel: 'Ship channel',
       actions: 'Actions'
     },
+    dialog: {
+      detail: 'Details',
+      pay: 'Pay',
+      ship: 'Ship',
+      refund: 'Refund'
+    },
     placeholder: {
       filter_nickname: 'Nickname',
       filter_consignee: 'Consignee',
@@ -307,6 +313,11 @@ export default {
       filter_time_end: 'To date',
       filter_order_status: 'Status',
       ship_channel: 'Please choose'
+    },
+    button: {
+      pay: 'Pay',
+      ship: 'Ship',
+      refund: 'Refund'
     }
   },
   mall_aftersale: {

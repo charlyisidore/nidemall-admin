@@ -299,6 +299,12 @@ export default {
       ship_channel: '物流渠道',
       actions: '操作'
     },
+    dialog: {
+      detail: '订单详情',
+      pay: '订单收款',
+      ship: '发货',
+      refund: '退款'
+    },
     placeholder: {
       filter_nickname: '请输入用户昵称',
       filter_consignee: '请输入收货人名称',
@@ -307,6 +313,11 @@ export default {
       filter_time_end: '结束日期',
       filter_order_status: '请选择订单状态',
       ship_channel: '请选择'
+    },
+    button: {
+      pay: '收款',
+      ship: '发货',
+      refund: '退款'
     }
   },
   mall_aftersale: {

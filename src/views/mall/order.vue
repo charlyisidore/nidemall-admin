@@ -93,9 +93,9 @@
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleDetail(scope.row)">{{ $t('app.button.detail') }}</el-button>
           <el-button type="danger" size="mini" @click="handleDelete(scope.row)">{{ $t('app.button.delete') }}</el-button>
-          <el-button type="warning" size="mini" @click="handlePay(scope.row)">收款</el-button>
-          <el-button type="primary" size="mini" @click="handleShip(scope.row)">发货</el-button>
-          <el-button type="danger" size="mini" @click="handleRefund(scope.row)">退款</el-button>
+          <el-button type="warning" size="mini" @click="handlePay(scope.row)">{{ $t('mall_order.button.pay') }}</el-button>
+          <el-button type="primary" size="mini" @click="handleShip(scope.row)">{{ $t('mall_order.button.ship') }}</el-button>
+          <el-button type="danger" size="mini" @click="handleRefund(scope.row)">{{ $t('mall_order.button.refund') }}</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -103,7 +103,7 @@
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
 
     <!-- 订单详情对话框 -->
-    <el-dialog :visible.sync="orderDialogVisible" title="订单详情" width="800">
+    <el-dialog :visible.sync="orderDialogVisible" :title="$t('mall_order.dialog.detail')" width="800">
       <section ref="print">
         <el-form :data="orderDetail" label-position="left">
           <el-form-item label="订单编号">
@@ -173,7 +173,7 @@
     </el-dialog>
 
     <!-- 收款对话框 -->
-    <el-dialog :visible.sync="payDialogVisible" title="订单收款" width="40%" center>
+    <el-dialog :visible.sync="payDialogVisible" :title="$t('mall_order.dialog.pay')" width="40%" center>
       <el-form ref="payForm" :model="payForm" status-icon label-position="left" label-width="100px">
         <div style="margin-bottom: 10px;">
           确认当前订单（订单编号 {{ payForm.orderSn }} ) 已经完成线下收款  ？
@@ -206,7 +206,7 @@
     </el-dialog>
 
     <!-- 发货对话框 -->
-    <el-dialog :visible.sync="shipDialogVisible" title="发货">
+    <el-dialog :visible.sync="shipDialogVisible" :title="$t('mall_order.dialog.ship')">
       <el-form ref="shipForm" :model="shipForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item label="快递公司" prop="shipChannel">
           <el-select v-model="shipForm.shipChannel" :placeholder="$t('mall_order.placeholder.ship_channel')">
@@ -224,7 +224,7 @@
     </el-dialog>
 
     <!-- 退款对话框 -->
-    <el-dialog :visible.sync="refundDialogVisible" title="退款">
+    <el-dialog :visible.sync="refundDialogVisible" :title="$t('mall_order.dialog.refund')">
       <el-form ref="refundForm" :model="refundForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item label="退款金额" prop="refundMoney">
           <el-input v-model="refundForm.refundMoney" :disabled="true" />
