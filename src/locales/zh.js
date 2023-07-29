@@ -554,6 +554,10 @@ export default {
       use_status: '使用状态',
       order_id: '订单ID',
       used_time: '使用时间'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_status: '请选择使用状态'
     }
   },
   promotion_topic: {

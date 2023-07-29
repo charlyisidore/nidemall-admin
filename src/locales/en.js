@@ -554,6 +554,10 @@ export default {
       use_status: 'Use status',
       order_id: 'Order ID',
       used_time: 'Time used'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_status: 'Status'
     }
   },
   promotion_topic: {
