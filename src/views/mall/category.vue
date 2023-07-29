@@ -31,7 +31,7 @@
 
       <el-table-column align="center" :label="$t('mall_category.table.level')" prop="level">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.level === 'L1' ? 'primary' : 'info' ">{{ scope.row.level === 'L1' ? '一级类目' : '二级类目' }}</el-tag>
+          <el-tag :type="scope.row.level === 'L1' ? 'primary' : 'info' ">{{ $t(scope.row.level === 'L1' ? 'mall_category.value.level_L1' : 'mall_category.value.level_L2') }}</el-tag>
         </template>
       </el-table-column>
 
