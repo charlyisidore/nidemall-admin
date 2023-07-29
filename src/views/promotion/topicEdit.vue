@@ -57,10 +57,10 @@
       <el-button type="primary" @click="handleConfirm">{{ $t('app.button.confirm') }}</el-button>
     </div>
 
-    <el-dialog :visible.sync="addVisiable" title="添加商品">
+    <el-dialog :visible.sync="addVisiable" :title="$t('promotion_topic_edit.dialog.add_goods')">
       <div class="search">
-        <el-input v-model="listQuery.goodsSn" clearable class="filter-item" style="width: 200px;" placeholder="请输入商品编号"/>
-        <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" placeholder="请输入商品名称"/>
+        <el-input v-model="listQuery.goodsSn" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_topic_edit.placeholder.search_goods_sn')"/>
+        <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_topic_edit.placeholder.search_name')"/>
         <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
         <el-table v-loading="listLoading" :data="list" :element-loading-text="$t('app.message.list_loading')" border fit highlight-current-row @selection-change="handleSelectionChange">
           <el-table-column type="selection" width="55"/>

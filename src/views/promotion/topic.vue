@@ -3,9 +3,9 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.title" clearable class="filter-item" style="width: 200px;" placeholder="请输入专题标题" />
-      <el-input v-model="listQuery.subtitle" clearable class="filter-item" style="width: 200px;" placeholder="请输入专题子标题" />
-      <el-select v-model="listQuery.sort" class="filter-item" placeholder="请选择排序字段">
+      <el-input v-model="listQuery.title" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_topic.placeholder.filter_title')" />
+      <el-input v-model="listQuery.subtitle" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_topic.placeholder.filter_subtitle')" />
+      <el-select v-model="listQuery.sort" class="filter-item" :placeholder="$t('promotion_topic.placeholder.filter_sort')">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
       <el-button v-permission="['GET /admin/topic/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>

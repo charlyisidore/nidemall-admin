@@ -569,9 +569,17 @@ export default {
       price: '底价',
       read_count: '阅读数量',
       actions: '操作'
+    },
+    placeholder: {
+      filter_title: '请输入专题标题',
+      filter_subtitle: '请输入专题子标题',
+      filter_sort: '请选择排序字段'
     }
   },
   promotion_topic_edit: {
+    dialog: {
+      add_goods: '添加商品'
+    },
     table: {
       goods_id: '商品ID',
       goods_pic_url: '图片',
@@ -590,6 +598,10 @@ export default {
       price: '商品低价',
       read_count: '阅读量',
       goods: '专题商品'
+    },
+    placeholder: {
+      search_goods_sn: '请输入商品编号',
+      search_name: '请输入商品名称'
     },
     button: {
       goods_create: '创建商品'

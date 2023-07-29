@@ -569,9 +569,17 @@ export default {
       price: 'Price',
       read_count: 'Read count',
       actions: 'Actions'
+    },
+    placeholder: {
+      filter_title: 'Title',
+      filter_subtitle: 'Subtitle',
+      filter_sort: 'Sort by'
     }
   },
   promotion_topic_edit: {
+    dialog: {
+      add_goods: 'Add goods'
+    },
     table: {
       goods_id: 'ID',
       goods_pic_url: 'Picture',
@@ -590,6 +598,10 @@ export default {
       price: 'Price',
       read_count: 'Read count',
       goods: 'Goods'
+    },
+    placeholder: {
+      search_goods_sn: 'Goods SN',
+      search_name: 'Name'
     },
     button: {
       goods_create: 'Add'
