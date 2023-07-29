@@ -179,6 +179,10 @@ export default {
       user_id: '用户ID',
       goods_id: '商品ID',
       add_time: '添加时间'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_goods_id: '请输入商品ID'
     }
   },
   user_history: {
@@ -198,6 +202,10 @@ export default {
       content: '反馈内容',
       pic_urls: '反馈图片',
       add_time: '时间'
+    },
+    placeholder: {
+      filter_username: '请输入用户名',
+      filter_id: '请输入反馈ID'
     }
   },
   mall_region: {

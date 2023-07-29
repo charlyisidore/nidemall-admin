@@ -179,6 +179,10 @@ export default {
       user_id: 'User ID',
       goods_id: 'Goods ID',
       add_time: 'Time added'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_goods_id: 'Goods ID'
     }
   },
   user_history: {
@@ -198,6 +202,10 @@ export default {
       content: 'Content',
       pic_urls: 'Pictures',
       add_time: 'Time added'
+    },
+    placeholder: {
+      filter_username: 'Username',
+      filter_id: 'Feedback ID'
     }
   },
   mall_region: {

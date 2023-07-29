@@ -3,8 +3,8 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" placeholder="请输入用户名"/>
-      <el-input v-model="listQuery.id" clearable class="filter-item" style="width: 200px;" placeholder="请输入反馈ID"/>
+      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" :placeholder="$t('user_feedback.placeholder.filter_username')"/>
+      <el-input v-model="listQuery.id" clearable class="filter-item" style="width: 200px;" :placeholder="$t('user_feedback.placeholder.filter_id')"/>
       <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
