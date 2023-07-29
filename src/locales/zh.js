@@ -401,6 +401,15 @@ export default {
       handle_time: '处理时间',
       pictures: '售后图片'
     },
+    value: {
+      status_1: '已申请,待审核',
+      status_2: '审核通过,待退款',
+      status_3: '退款成功',
+      status_4: '审核不通过,已拒绝',
+      type_0: '未收货退款',
+      type_1: '不退货退款',
+      type_2: '退货退款'
+    },
     placeholder: {
       filter_aftersale_sn: '请输入售后编号',
       filter_order_id: '请输入订单ID'

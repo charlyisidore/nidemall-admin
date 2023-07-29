@@ -401,6 +401,15 @@ export default {
       handle_time: 'Time processed',
       pictures: 'Pictures'
     },
+    value: {
+      status_1: 'Applied for, pending review',
+      status_2: 'Approved, pending refund',
+      status_3: 'Refunded',
+      status_4: 'Refund Successful',
+      type_0: 'Refund without receipt',
+      type_1: 'No Refund',
+      type_2: 'Return Refund'
+    },
     placeholder: {
       filter_aftersale_sn: 'Aftersale SN',
       filter_order_id: 'Order ID'

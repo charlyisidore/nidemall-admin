@@ -67,18 +67,18 @@
             <el-tag>{{ aftersaleDetail.amount }}</el-tag>
           </el-form-item>
           <el-form-item :label="$t('mall_aftersale.form.status')">
-            <el-tag v-if="aftersaleDetail.status === 1">已申请,待审核</el-tag>
-            <el-tag v-if="aftersaleDetail.status === 2">审核通过,待退款</el-tag>
-            <el-tag v-if="aftersaleDetail.status === 3">退款成功</el-tag>
-            <el-tag v-if="aftersaleDetail.status === 4">审核不通过,已拒绝</el-tag>
+            <el-tag v-if="aftersaleDetail.status === 1">{{ $t('mall_aftersale.value.status_1') }}</el-tag>
+            <el-tag v-if="aftersaleDetail.status === 2">{{ $t('mall_aftersale.value.status_2') }}</el-tag>
+            <el-tag v-if="aftersaleDetail.status === 3">{{ $t('mall_aftersale.value.status_3') }}</el-tag>
+            <el-tag v-if="aftersaleDetail.status === 4">{{ $t('mall_aftersale.value.status_4') }}</el-tag>
           </el-form-item>
           <el-form-item :label="$t('mall_aftersale.form.user_id')">
             <el-tag>{{ aftersaleDetail.userId }}</el-tag>
           </el-form-item>
           <el-form-item :label="$t('mall_aftersale.form.type')">
-            <el-tag v-if="aftersaleDetail.type === 0">未收货退款</el-tag>
-            <el-tag v-if="aftersaleDetail.type === 1">不退货退款</el-tag>
-            <el-tag v-if="aftersaleDetail.type === 2">退货退款</el-tag>
+            <el-tag v-if="aftersaleDetail.type === 0">{{ $t('mall_aftersale.value.type_0') }}</el-tag>
+            <el-tag v-if="aftersaleDetail.type === 1">{{ $t('mall_aftersale.value.type_1') }}</el-tag>
+            <el-tag v-if="aftersaleDetail.type === 2">{{ $t('mall_aftersale.value.type_2') }}</el-tag>
           </el-form-item>
           <el-form-item :label="$t('mall_aftersale.form.reason')">
             <span>{{ aftersaleDetail.reason }}</span>
