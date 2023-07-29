@@ -451,6 +451,9 @@ export default {
       category_id: 'Category',
       brand_id: 'Brand'
     },
+    dialog: {
+      detail: 'Details'
+    },
     placeholder: {
       filter_goods_id: 'Goods ID',
       filter_goods_sn: 'Goods SN',

@@ -61,7 +61,7 @@
 
       <el-table-column align="center" :label="$t('goods_list.table.detail')" prop="detail">
         <template slot-scope="scope">
-          <el-dialog :visible.sync="detailDialogVisible" title="商品详情">
+          <el-dialog :visible.sync="detailDialogVisible" :title="$t('goods_list.dialog.detail')">
             <div class="goods-detail-box" v-html="goodsDetail" />
           </el-dialog>
           <el-button type="primary" size="mini" @click="showDetail(scope.row.detail)">{{ $t('app.button.view') }}</el-button>

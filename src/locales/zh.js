@@ -451,6 +451,9 @@ export default {
       category_id: '类目ID',
       brand_id: '品牌商ID'
     },
+    dialog: {
+      detail: '商品详情'
+    },
     placeholder: {
       filter_goods_id: '请输入商品ID',
       filter_goods_sn: '请输入商品编号',
