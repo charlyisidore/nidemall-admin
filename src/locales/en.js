@@ -478,6 +478,15 @@ export default {
       attribute_value: 'Value',
       attribute_actions: 'Actions'
     },
+    dialog: {
+      create_specification: 'Specification',
+      create_product: 'Product',
+      create_attribute: 'Attribute',
+      edit_specification: 'Specification',
+      edit_product: 'Product',
+      edit_attribute_add: 'Add attribute',
+      edit_attribute_edit: 'Edit attribute'
+    },
     form: {
       id: 'ID',
       goods_sn: 'Goods SN',

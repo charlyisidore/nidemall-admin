@@ -145,7 +145,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="specVisiable" title="设置规格">
+      <el-dialog :visible.sync="specVisiable" :title="$t('goods_edit.dialog.create_specification')">
         <el-form
           ref="specForm"
           :rules="rules"
@@ -206,7 +206,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="productVisiable" title="添加货品">
+      <el-dialog :visible.sync="productVisiable" :title="$t('goods_edit.dialog.create_product')">
         <el-form
           ref="productForm"
           :model="productForm"
@@ -260,7 +260,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="attributeVisiable" title="添加商品参数">
+      <el-dialog :visible.sync="attributeVisiable" :title="$t('goods_edit.dialog.create_attribute')">
         <el-form
           ref="attributeForm"
           :model="attributeForm"

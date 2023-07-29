@@ -478,6 +478,15 @@ export default {
       attribute_value: '商品参数值',
       attribute_actions: '操作'
     },
+    dialog: {
+      create_specification: '设置规格',
+      create_product: '添加货品',
+      create_attribute: '添加商品参数',
+      edit_specification: '设置规格',
+      edit_product: '编辑货品',
+      edit_attribute_add: '添加商品参数',
+      edit_attribute_edit: '编辑商品参数'
+    },
     form: {
       id: '商品ID',
       goods_sn: '商品编号',

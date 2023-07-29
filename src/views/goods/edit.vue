@@ -123,7 +123,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="specVisiable" title="设置规格">
+      <el-dialog :visible.sync="specVisiable" :title="$t('goods_edit.dialog.edit_specification')">
         <el-form ref="specForm" :rules="rules" :model="specForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
           <el-form-item :label="$t('goods_edit.form.specification_name')" prop="specification">
             <el-input v-model="specForm.specification" disabled />
@@ -176,7 +176,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="productVisiable" title="编辑货品">
+      <el-dialog :visible.sync="productVisiable" :title="$t('goods_edit.dialog.edit_product')">
         <el-form ref="productForm" :model="productForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
           <el-form-item :label="$t('goods_edit.form.product_specifications')" prop="specifications">
             <el-tag v-for="tag in productForm.specifications" :key="tag">
@@ -224,7 +224,7 @@
         </el-table-column>
       </el-table>
 
-      <el-dialog :visible.sync="attributeVisiable" :title="attributeAdd ? '添加商品参数' : '编辑商品参数'">
+      <el-dialog :visible.sync="attributeVisiable" :title="$t(attributeAdd ? 'goods_edit.dialog.edit_attribute_add' : 'goods_edit.dialog.edit_attribute_edit')">
         <el-form ref="attributeForm" :model="attributeForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
           <el-form-item :label="$t('goods_edit.form.attribute_name')" prop="attribute">
             <el-input v-model="attributeForm.attribute" />
