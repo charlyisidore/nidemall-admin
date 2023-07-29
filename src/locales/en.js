@@ -612,6 +612,10 @@ export default {
       discount: 'Discount',
       discount_member: 'Min buy quantity',
       expire_time: 'Expire time'
+    },
+    placeholder: {
+      filter_goods_id: 'Goods ID',
+      expire_time: 'Select date'
     }
   },
   promotion_groupon_activity: {
@@ -626,6 +630,9 @@ export default {
       groupon_share_url: 'Picture',
       rules_add_time: 'Time added',
       rules_expire_time: 'Expire time'
+    },
+    placeholder: {
+      filter_groupon_rule_id: 'Rule ID'
     }
   },
   sys_admin: {

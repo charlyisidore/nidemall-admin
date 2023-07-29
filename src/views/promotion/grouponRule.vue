@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.goodsId" clearable class="filter-item" style="width: 200px;" placeholder="请输入商品编号" />
+      <el-input v-model="listQuery.goodsId" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_groupon_rule.placeholder.filter_goods_id')" />
       <el-button v-permission="['GET /admin/groupon/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button v-permission="['POST /admin/groupon/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
       <el-button
@@ -74,7 +74,7 @@
           <el-date-picker
             v-model="dataForm.expireTime"
             type="datetime"
-            placeholder="选择日期"
+            :placeholder="$t('promotion_groupon_rule.placeholder.expire_time')"
             value-format="yyyy-MM-dd HH:mm:ss"
           />
         </el-form-item>

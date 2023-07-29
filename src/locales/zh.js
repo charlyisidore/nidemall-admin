@@ -612,6 +612,10 @@ export default {
       discount: '团购折扣',
       discount_member: '团购人数要求',
       expire_time: '过期时间'
+    },
+    placeholder: {
+      filter_goods_id: '请输入商品编号',
+      expire_time: '选择日期'
     }
   },
   promotion_groupon_activity: {
@@ -626,6 +630,9 @@ export default {
       groupon_share_url: '分享图片',
       rules_add_time: '开始时间',
       rules_expire_time: '结束时间'
+    },
+    placeholder: {
+      filter_groupon_rule_id: '请输入团购规则ID'
     }
   },
   sys_admin: {

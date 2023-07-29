@@ -3,7 +3,7 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.grouponRuleId" clearable class="filter-item" style="width: 200px;" placeholder="请输入团购规则ID" />
+      <el-input v-model="listQuery.grouponRuleId" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_groupon_activity.placeholder.filter_groupon_rule_id')" />
       <el-button v-permission="['GET /admin/groupon/listRecord']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button
         :loading="downloadLoading"
