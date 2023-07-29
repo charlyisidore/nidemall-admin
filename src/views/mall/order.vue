@@ -6,7 +6,7 @@
       <el-input v-model="listQuery.nickname" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_nickname')" />
       <el-input v-model="listQuery.consignee" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_consignee')" />
       <el-input v-model="listQuery.orderSn" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_order_sn')" />
-      <el-date-picker v-model="listQuery.timeArray" type="datetimerange" value-format="yyyy-MM-dd HH:mm:ss" class="filter-item" range-separator="至" :start-placeholder="$t('mall_order.placeholder.filter_time_start')" :end-placeholder="$t('mall_order.placeholder.filter_time_end')" :picker-options="pickerOptions" />
+      <el-date-picker v-model="listQuery.timeArray" type="datetimerange" value-format="yyyy-MM-dd HH:mm:ss" class="filter-item" :range-separator="$t('mall_order.text.date_range_separator')" :start-placeholder="$t('mall_order.placeholder.filter_time_start')" :end-placeholder="$t('mall_order.placeholder.filter_time_end')" :picker-options="pickerOptions" />
       <el-select v-model="listQuery.orderStatusArray" multiple style="width: 200px" class="filter-item" :placeholder="$t('mall_order.placeholder.filter_order_status')">
         <el-option v-for="(key, value) in statusMap" :key="key" :label="key" :value="value" />
       </el-select>
@@ -228,7 +228,7 @@
     <!-- 退款对话框 -->
     <el-dialog :visible.sync="refundDialogVisible" :title="$t('mall_order.dialog.refund')">
       <el-form ref="refundForm" :model="refundForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="退款金额" prop="refundMoney">
+        <el-form-item :label="$t('mall_order.form.refund_money')" prop="refundMoney">
           <el-input v-model="refundForm.refundMoney" :disabled="true" />
         </el-form-item>
       </el-form>

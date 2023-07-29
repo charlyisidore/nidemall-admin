@@ -278,6 +278,7 @@ export default {
   },
   mall_order: {
     text: {
+      date_range_separator: '至',
       expand_goods_name: '商品名称：{goods_name}',
       expand_specifications: '规格：{specifications}',
       expand_unit_price: '单价：{price} 元',
@@ -343,7 +344,8 @@ export default {
       pay_old_money: '订单金额',
       pay_new_money: '付款金额',
       ship_channel: '快递公司',
-      ship_sn: '快递编号'
+      ship_sn: '快递编号',
+      refund_money: '退款金额'
     },
     placeholder: {
       filter_nickname: '请输入用户昵称',

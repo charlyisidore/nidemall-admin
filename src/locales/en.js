@@ -278,6 +278,7 @@ export default {
   },
   mall_order: {
     text: {
+      date_range_separator: 'to',
       expand_goods_name: 'Goods name: {goods_name}',
       expand_specifications: 'Specifications: {specifications}',
       expand_unit_price: 'Unit price: {price} 元',
@@ -343,7 +344,8 @@ export default {
       pay_old_money: 'Order amount',
       pay_new_money: 'Payment amount',
       ship_channel: 'Ship company',
-      ship_sn: 'Ship SN'
+      ship_sn: 'Ship SN',
+      refund_money: 'Refund amount'
     },
     placeholder: {
       filter_nickname: 'Nickname',
