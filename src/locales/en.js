@@ -277,6 +277,13 @@ export default {
     }
   },
   mall_order: {
+    text: {
+      expand_goods_name: 'Goods name: {goods_name}',
+      expand_specifications: 'Specifications: {specifications}',
+      expand_unit_price: 'Unit price: {price} 元',
+      expand_number: 'Quantity: {number}',
+      expand_subtotal_price: 'Subtotal: {price} 元'
+    },
     table: {
       order_sn: 'Order SN',
       avatar: 'Avatar',

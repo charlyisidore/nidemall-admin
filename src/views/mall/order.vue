@@ -24,19 +24,19 @@
               <img :src="item.picUrl" width="40">
             </div>
             <div class="name">
-              商品名称：{{ item.goodsName }}
+              {{ $t('mall_order.text.expand_goods_name', { goods_name: item.goodsName }) }}
             </div>
             <div class="spec">
-              规格：{{ item.specifications.join('-') }}
+              {{ $t('mall_order.text.expand_specifications', { specifications: item.specifications.join('-') }) }}
             </div>
             <div class="price">
-              单价：{{ item.price }} 元
+              {{ $t('mall_order.text.expand_unit_price', { price: item.price }) }}
             </div>
             <div class="num">
-              数量：{{ item.number }} 件
+              {{ $t('mall_order.text.expand_number', { number: item.number }) }}
             </div>
             <div class="price">
-              小计：{{ item.price * item.number }} 元
+              {{ $t('mall_order.text.expand_subtotal_price', { price: item.price * item.number }) }}
             </div>
           </div>
         </template>
