@@ -113,7 +113,7 @@ export default {
     menu: {
       home: '首页',
       github: 'Github',
-      gitee: 'Gitee',
+      gitee: '码云',
       password: '密码修改',
       logout: '退出'
     }
