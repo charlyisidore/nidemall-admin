@@ -178,7 +178,7 @@
     <el-dialog :visible.sync="payDialogVisible" :title="$t('mall_order.dialog.pay')" width="40%" center>
       <el-form ref="payForm" :model="payForm" status-icon label-position="left" label-width="100px">
         <div style="margin-bottom: 10px;">
-          确认当前订单（订单编号 {{ payForm.orderSn }} ) 已经完成线下收款  ？
+          {{ $t('mall_order.message.pay_confirm', { order_sn: payForm.orderSn }) }}
         </div>
         <el-form-item :label="$t('mall_order.form.pay_old_money')" prop="oldMoney">
           <el-input-number v-model="payForm.oldMoney" :controls="false" disabled />

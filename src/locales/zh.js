@@ -354,6 +354,9 @@ export default {
       filter_order_status: '请选择订单状态',
       ship_channel: '请选择'
     },
+    message: {
+      pay_confirm: '确认当前订单（订单编号 {order_sn} ) 已经完成线下收款  ？'
+    },
     button: {
       pay: '收款',
       ship: '发货',

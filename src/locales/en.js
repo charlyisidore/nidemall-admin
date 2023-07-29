@@ -354,6 +354,9 @@ export default {
       filter_order_status: 'Status',
       ship_channel: 'Please choose'
     },
+    message: {
+      pay_confirm: 'Confirm that the current order (order number {order_sn}) has been paid offline?'
+    },
     button: {
       pay: 'Pay',
       ship: 'Ship',
