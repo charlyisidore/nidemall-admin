@@ -481,6 +481,11 @@ export default {
     }
   },
   promotion_coupon: {
+    text: {
+      days: '天',
+      to_time: '至',
+      units: '张'
+    },
     table: {
       id: '优惠券ID',
       name: '优惠券名称',
@@ -518,6 +523,15 @@ export default {
       goods_type_0: '全场通用',
       goods_type_1: '指定分类',
       goods_type_2: '指定商品'
+    },
+    placeholder: {
+      filter_name: '请输入优惠券标题',
+      filter_type: '请选择优惠券类型',
+      filter_status: '请选择优惠券状态',
+      start_time: '选择日期',
+      end_time: '选择日期',
+      category: '请选择分类名称',
+      goods: '商品名称/商品货号'
     }
   },
   promotion_coupon_detail: {

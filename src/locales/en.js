@@ -481,6 +481,11 @@ export default {
     }
   },
   promotion_coupon: {
+    text: {
+      days: 'days',
+      to_time: 'to',
+      units: 'units'
+    },
     table: {
       id: 'ID',
       name: 'Name',
@@ -518,6 +523,15 @@ export default {
       goods_type_0: 'All',
       goods_type_1: 'By category',
       goods_type_2: 'By product'
+    },
+    placeholder: {
+      filter_name: 'Name',
+      filter_type: 'Coupon type',
+      filter_status: 'Status',
+      start_time: 'Select date',
+      end_time: 'Select date',
+      category: 'Select category',
+      goods: 'Goods name / Goods ID'
     }
   },
   promotion_coupon_detail: {

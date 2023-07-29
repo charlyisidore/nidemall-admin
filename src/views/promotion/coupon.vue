@@ -3,11 +3,11 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" placeholder="请输入优惠券标题" />
-      <el-select v-model="listQuery.type" clearable style="width: 200px" class="filter-item" placeholder="请选择优惠券类型">
+      <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_coupon.placeholder.filter_name')" />
+      <el-select v-model="listQuery.type" clearable style="width: 200px" class="filter-item" :placeholder="$t('promotion_coupon.placeholder.filter_type')">
         <el-option v-for="type in typeOptions" :key="type.value" :label="type.label" :value="type.value" />
       </el-select>
-      <el-select v-model="listQuery.status" clearable style="width: 200px" class="filter-item" placeholder="请选择优惠券状态">
+      <el-select v-model="listQuery.status" clearable style="width: 200px" class="filter-item" :placeholder="$t('promotion_coupon.placeholder.filter_status')">
         <el-option v-for="type in statusOptions" :key="type.value" :label="type.label" :value="type.value" />
       </el-select>
       <el-button v-permission="['GET /admin/coupon/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
@@ -89,7 +89,7 @@
         </el-form-item>
         <el-form-item :label="$t('promotion_coupon.form.limit')" prop="limit">
           <el-input v-model="dataForm.limit">
-            <template slot="append">张</template>
+            <template slot="append">{{ $t('promotion_coupon.text.units') }}</template>
           </el-input>
         </el-form-item>
         <el-form-item :label="$t('promotion_coupon.form.type')" prop="type">
@@ -104,7 +104,7 @@
         </el-form-item>
         <el-form-item :label="$t('promotion_coupon.form.total')" prop="total">
           <el-input v-model="dataForm.total">
-            <template slot="append">张</template>
+            <template slot="append">{{ $t('promotion_coupon.text.units') }}</template>
           </el-input>
         </el-form-item>
         <el-form-item :label="$t('promotion_coupon.form.time_type')">
@@ -115,16 +115,16 @@
         </el-form-item>
         <el-form-item v-show="dataForm.timeType === 0">
           <el-input v-model="dataForm.days">
-            <template slot="append">天</template>
+            <template slot="append">{{ $t('promotion_coupon.text.days') }}</template>
           </el-input>
         </el-form-item>
         <el-form-item v-show="dataForm.timeType === 1">
           <el-col :span="11">
-            <el-date-picker v-model="dataForm.startTime" type="datetime" placeholder="选择日期" value-format="yyyy-MM-dd HH:mm:ss" style="width: 100%;" />
+            <el-date-picker v-model="dataForm.startTime" type="datetime" :placeholder="$t('promotion_coupon.placeholder.start_time')" value-format="yyyy-MM-dd HH:mm:ss" style="width: 100%;" />
           </el-col>
-          <el-col :span="2" class="line">至</el-col>
+          <el-col :span="2" class="line">{{ $t('promotion_coupon.text.to_time') }}</el-col>
           <el-col :span="11">
-            <el-date-picker v-model="dataForm.endTime" type="datetime" placeholder="选择日期" value-format="yyyy-MM-dd HH:mm:ss" style="width: 100%;" />
+            <el-date-picker v-model="dataForm.endTime" type="datetime" :placeholder="$t('promotion_coupon.placeholder.end_time')" value-format="yyyy-MM-dd HH:mm:ss" style="width: 100%;" />
           </el-col>
         </el-form-item>
         <el-form-item :label="$t('promotion_coupon.form.goods_type')">
@@ -138,7 +138,7 @@
           <el-cascader
             v-model="selectGoodsCategory"
             clearable
-            placeholder="请选择分类名称"
+            :placeholder="$t('promotion_coupon.placeholder.category')"
             :options="goodsCategoryOptions"
           />
           <el-button @click="handleAddGoodsCategory()">{{ $t('app.button.create') }}</el-button>
@@ -169,7 +169,7 @@
             filterable
             remote
             reserve-keyword
-            placeholder="商品名称/商品货号"
+            :placeholder="$t('promotion_coupon.placeholder.goods')"
           >
             <el-option
               v-for="item in goodsOptions"
