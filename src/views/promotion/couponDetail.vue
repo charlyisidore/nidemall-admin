@@ -15,8 +15,8 @@
         <el-col :span="4" class="table-cell">{{ coupon.desc }}</el-col>
         <el-col :span="4" class="table-cell">{{ coupon.tag }}</el-col>
         <el-col :span="4" class="table-cell">{{ coupon.type | formatType }}</el-col>
-        <el-col :span="4" class="table-cell">满{{ coupon.min }}元可用</el-col>
-        <el-col :span="4" class="table-cell">减免{{ coupon.discount }}元</el-col>
+        <el-col :span="4" class="table-cell">{{ $t('promotion_coupon_detail.text.coupon_min', { min: coupon.min }) }}</el-col>
+        <el-col :span="4" class="table-cell">{{ $t('promotion_coupon_detail.text.coupon_discount', { discount: coupon.discount }) }}</el-col>
       </el-row>
       <el-row>
         <el-col :span="4" class="table-cell-title">{{ $t('promotion_coupon_detail.table.limit') }}</el-col>
@@ -32,7 +32,7 @@
         <el-col :span="4" class="table-cell">{{ coupon.goodsType | formatGoodsType }}</el-col>
         <el-col :span="4" class="table-cell">{{ getTimeScope() }}</el-col>
         <el-col :span="4" class="table-cell">{{ coupon.code }}</el-col>
-        <el-col :span="4" class="table-cell">{{ coupon.total === 0 ? "不限" : coupon.total }}</el-col>
+        <el-col :span="4" class="table-cell">{{ coupon.total === 0 ? $t('promotion_coupon_detail.text.unlimited') : coupon.total }}</el-col>
       </el-row>
     </div>
 

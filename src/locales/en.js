@@ -644,6 +644,11 @@ export default {
     }
   },
   promotion_coupon_detail: {
+    text: {
+      coupon_min: 'Available for {min}元 spent',
+      coupon_discount: 'Reduced by {discount}元',
+      unlimited: 'Unlimited'
+    },
     table: {
       name: 'Name',
       desc: 'Description',
