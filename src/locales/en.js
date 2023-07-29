@@ -899,6 +899,9 @@ export default {
     }
   },
   profile_notice: {
+    text: {
+      admin_time: '{admin} 于 {time} 通知如下内容：'
+    },
     section: {
       unread: 'Unread',
       read: 'Read',

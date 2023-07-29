@@ -43,7 +43,7 @@
     <pagination v-show="total>0" :total="total" :page.sync="listQuery.page" :limit.sync="listQuery.limit" @pagination="getList" />
 
     <el-dialog :title="notice.title" :visible.sync="noticeVisible" center>
-      <el-divider content-position="left">{{ notice.admin }} 于 {{ notice.time }} 通知如下内容：</el-divider>
+      <el-divider content-position="left">{{ $t('profile_notice.text.admin_time', { admin: notice.admin, time: notice.time }) }}</el-divider>
       <div v-html="notice.content" />
       <div slot="footer" class="dialog-footer">
         <el-button type="primary" @click="afterRead">{{ $t('app.button.confirm') }}</el-button>
