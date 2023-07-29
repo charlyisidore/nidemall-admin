@@ -811,6 +811,10 @@ export default {
     },
     placeholder: {
       filter_name: 'Admin'
+    },
+    value: {
+      status_success: 'Success',
+      status_error: 'Error'
     }
   },
   sys_role: {

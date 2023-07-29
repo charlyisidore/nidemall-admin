@@ -811,6 +811,10 @@ export default {
     },
     placeholder: {
       filter_name: '请输入操作管理员'
+    },
+    value: {
+      status_success: '成功',
+      status_error: '失败'
     }
   },
   sys_role: {

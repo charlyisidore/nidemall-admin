@@ -20,7 +20,7 @@
       <el-table-column align="center" :label="$t('sys_log.table.action')" prop="action" />
       <el-table-column align="center" :label="$t('sys_log.table.status')" prop="status">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.status ? 'success' : 'error' ">{{ scope.row.status ? '成功' : '失败' }}</el-tag>
+          <el-tag :type="scope.row.status ? 'success' : 'error' ">{{ $t(scope.row.status ? 'sys_log.value.status_success' : 'sys_log.value.status_error') }}</el-tag>
         </template>
       </el-table-column>
       <el-table-column align="center" :label="$t('sys_log.table.result')" prop="result" />
