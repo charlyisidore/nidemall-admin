@@ -33,7 +33,7 @@
 
       <el-table-column align="center" :label="$t('promotion_topic.table.content')" prop="content">
         <template slot-scope="scope">
-          <el-dialog :visible.sync="contentDialogVisible" title="专题详情">
+          <el-dialog :visible.sync="contentDialogVisible" :title="$t('promotion_topic.dialog.content_detail')">
             <div v-html="contentDetail" />
           </el-dialog>
           <el-button type="primary" size="mini" @click="showContent(scope.row.content)">{{ $t('app.button.view') }}</el-button>

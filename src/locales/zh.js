@@ -604,6 +604,9 @@ export default {
       read_count: '阅读数量',
       actions: '操作'
     },
+    dialog: {
+      content_detail: '专题详情'
+    },
     placeholder: {
       filter_title: '请输入专题标题',
       filter_subtitle: '请输入专题子标题',

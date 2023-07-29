@@ -604,6 +604,9 @@ export default {
       read_count: 'Read count',
       actions: 'Actions'
     },
+    dialog: {
+      content_detail: 'Content detail'
+    },
     placeholder: {
       filter_title: 'Title',
       filter_subtitle: 'Subtitle',
