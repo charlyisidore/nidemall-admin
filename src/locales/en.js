@@ -307,7 +307,10 @@ export default {
       detail_goods_specifications: 'Specifications',
       detail_goods_price: 'Price',
       detail_goods_number: 'Quantity',
-      detail_goods_pic_url: 'Picture'
+      detail_goods_pic_url: 'Picture',
+      pay_goods_name: 'Name',
+      pay_goods_specifications: 'Specifications',
+      pay_goods_number: 'Quantity'
     },
     dialog: {
       detail: 'Details',
@@ -326,7 +329,11 @@ export default {
       detail_pay_info: 'Payment info',
       detail_ship_info: 'Shipment info',
       detail_refund_info: 'Refund info',
-      detail_receipt_info: 'Receipt info'
+      detail_receipt_info: 'Receipt info',
+      pay_old_money: 'Order amount',
+      pay_new_money: 'Payment amount',
+      ship_channel: 'Ship company',
+      ship_sn: 'Ship SN'
     },
     placeholder: {
       filter_nickname: 'Nickname',

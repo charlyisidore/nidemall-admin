@@ -180,21 +180,21 @@
         <div style="margin-bottom: 10px;">
           确认当前订单（订单编号 {{ payForm.orderSn }} ) 已经完成线下收款  ？
         </div>
-        <el-form-item label="订单金额" prop="oldMoney">
+        <el-form-item :label="$t('mall_order.form.pay_old_money')" prop="oldMoney">
           <el-input-number v-model="payForm.oldMoney" :controls="false" disabled />
         </el-form-item>
-        <el-form-item label="付款金额" prop="newMoney">
+        <el-form-item :label="$t('mall_order.form.pay_new_money')" prop="newMoney">
           <el-input-number v-model="payForm.newMoney" :controls="false" />
         </el-form-item>
       </el-form>
       <el-table :data="payForm.goodsList">
-        <el-table-column property="goodsName" label="商品" />
-        <el-table-column label="规格">
+        <el-table-column property="goodsName" :label="$t('mall_order.table.pay_goods_name')" />
+        <el-table-column :label="$t('mall_order.table.pay_goods_specifications')">
           <template slot-scope="scope">
             {{ scope.row.specifications.join('-') }}
           </template>
         </el-table-column>
-        <el-table-column property="onumber" width="100" label="下单数量" />
+        <el-table-column property="onumber" width="100" :label="$t('mall_order.table.pay_goods_number')" />
         <!-- <el-table-column label="实际数量" width="100">
           <template slot-scope="scope">
             <el-input-number v-model="scope.row.number" :min="0" :controls="false" />
@@ -210,12 +210,12 @@
     <!-- 发货对话框 -->
     <el-dialog :visible.sync="shipDialogVisible" :title="$t('mall_order.dialog.ship')">
       <el-form ref="shipForm" :model="shipForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
-        <el-form-item label="快递公司" prop="shipChannel">
+        <el-form-item :label="$t('mall_order.form.ship_channel')" prop="shipChannel">
           <el-select v-model="shipForm.shipChannel" :placeholder="$t('mall_order.placeholder.ship_channel')">
             <el-option v-for="item in channels" :key="item.code" :label="item.name" :value="item.code" />
           </el-select>
         </el-form-item>
-        <el-form-item label="快递编号" prop="shipSn">
+        <el-form-item :label="$t('mall_order.form.ship_sn')" prop="shipSn">
           <el-input v-model="shipForm.shipSn" />
         </el-form-item>
       </el-form>

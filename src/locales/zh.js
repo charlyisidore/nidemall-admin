@@ -307,7 +307,10 @@ export default {
       detail_goods_specifications: '货品规格',
       detail_goods_price: '货品价格',
       detail_goods_number: '货品数量',
-      detail_goods_pic_url: '货品图片'
+      detail_goods_pic_url: '货品图片',
+      pay_goods_name: '商品',
+      pay_goods_specifications: '规格',
+      pay_goods_number: '下单数量'
     },
     dialog: {
       detail: '订单详情',
@@ -326,7 +329,11 @@ export default {
       detail_pay_info: '支付信息',
       detail_ship_info: '快递信息',
       detail_refund_info: '退款信息',
-      detail_receipt_info: '收货信息'
+      detail_receipt_info: '收货信息',
+      pay_old_money: '订单金额',
+      pay_new_money: '付款金额',
+      ship_channel: '快递公司',
+      ship_sn: '快递编号'
     },
     placeholder: {
       filter_nickname: '请输入用户昵称',
