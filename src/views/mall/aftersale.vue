@@ -51,50 +51,50 @@
       <back-to-top :visibility-height="100" />
     </el-tooltip>
     <!-- 详情对话框 -->
-    <el-dialog :visible.sync="aftersaleDialogVisible" title="售后详情" width="800">
+    <el-dialog :visible.sync="aftersaleDialogVisible" :title="$t('mall_aftersale.dialog.detail')" width="800">
       <section ref="print">
         <el-form :data="aftersaleDetail" label-position="left">
-          <el-form-item label="售后id">
+          <el-form-item :label="$t('mall_aftersale.form.id')">
             <el-tag>{{ aftersaleDetail.id }}</el-tag>
           </el-form-item>
-          <el-form-item label="售后编号">
+          <el-form-item :label="$t('mall_aftersale.form.aftersale_sn')">
             <el-tag>{{ aftersaleDetail.aftersaleSn }}</el-tag>
           </el-form-item>
-          <el-form-item label="订单号">
+          <el-form-item :label="$t('mall_aftersale.form.order_id')">
             <el-tag>{{ aftersaleDetail.orderId }}</el-tag>
           </el-form-item>
-          <el-form-item label="订单金额">
+          <el-form-item :label="$t('mall_aftersale.form.amount')">
             <el-tag>{{ aftersaleDetail.amount }}</el-tag>
           </el-form-item>
-          <el-form-item label="订单状态">
+          <el-form-item :label="$t('mall_aftersale.form.status')">
             <el-tag v-if="aftersaleDetail.status === 1">已申请,待审核</el-tag>
             <el-tag v-if="aftersaleDetail.status === 2">审核通过,待退款</el-tag>
             <el-tag v-if="aftersaleDetail.status === 3">退款成功</el-tag>
             <el-tag v-if="aftersaleDetail.status === 4">审核不通过,已拒绝</el-tag>
           </el-form-item>
-          <el-form-item label="订单用户id">
+          <el-form-item :label="$t('mall_aftersale.form.user_id')">
             <el-tag>{{ aftersaleDetail.userId }}</el-tag>
           </el-form-item>
-          <el-form-item label="售后类型">
+          <el-form-item :label="$t('mall_aftersale.form.type')">
             <el-tag v-if="aftersaleDetail.type === 0">未收货退款</el-tag>
             <el-tag v-if="aftersaleDetail.type === 1">不退货退款</el-tag>
             <el-tag v-if="aftersaleDetail.type === 2">退货退款</el-tag>
           </el-form-item>
-          <el-form-item label="退款原因">
+          <el-form-item :label="$t('mall_aftersale.form.reason')">
             <span>{{ aftersaleDetail.reason }}</span>
           </el-form-item>
-          <el-form-item label="申请时间">
+          <el-form-item :label="$t('mall_aftersale.form.add_time')">
             <span>{{ aftersaleDetail.addTime }}</span>
           </el-form-item>
-          <el-form-item label="更新时间">
+          <el-form-item :label="$t('mall_aftersale.form.update_time')">
             <span>{{ aftersaleDetail.updateTime }}</span>
           </el-form-item>
-          <el-form-item label="处理时间">
+          <el-form-item :label="$t('mall_aftersale.form.handle_time')">
             <span>{{ aftersaleDetail.handleTime }}</span>
           </el-form-item>
-          <el-form-item label="售后图片">
+          <el-form-item :label="$t('mall_aftersale.form.pictures')">
             <el-table :data="aftersaleDetail.pictures" border fit highlight-current-row>
-              <el-table-column align="center" label="售后图片">
+              <el-table-column align="center" :label="$t('mall_aftersale.table.detail_pictures')">
                 <template slot-scope="scope">
                   <a :href="scope.row" target="_blank">
                     <img :src="scope.row" width="40">

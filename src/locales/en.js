@@ -381,7 +381,25 @@ export default {
       reason: 'Reason',
       amount: 'Amount',
       add_time: 'Time added',
-      actions: 'Actions'
+      actions: 'Actions',
+      detail_pictures: 'Pictures'
+    },
+    dialog: {
+      detail: 'Details'
+    },
+    form: {
+      id: 'ID',
+      aftersale_sn: 'Aftersale SN',
+      order_id: 'Order ID',
+      amount: 'Order amount',
+      status: 'Order status',
+      user_id: 'User ID',
+      type: 'Aftersale type',
+      reason: 'Reason for refund',
+      add_time: 'Time added',
+      update_time: 'Time updated',
+      handle_time: 'Time processed',
+      pictures: 'Pictures'
     },
     placeholder: {
       filter_aftersale_sn: 'Aftersale SN',

@@ -381,7 +381,25 @@ export default {
       reason: '退款原因',
       amount: '退款价格',
       add_time: '申请时间',
-      actions: '操作'
+      actions: '操作',
+      detail_pictures: '售后图片'
+    },
+    dialog: {
+      detail: '售后详情'
+    },
+    form: {
+      id: '售后id',
+      aftersale_sn: '售后编号',
+      order_id: '订单号',
+      amount: '订单金额',
+      status: '订单状态',
+      user_id: '订单用户id',
+      type: '售后类型',
+      reason: '退款原因',
+      add_time: '申请时间',
+      update_time: '更新时间',
+      handle_time: '处理时间',
+      pictures: '售后图片'
     },
     placeholder: {
       filter_aftersale_sn: '请输入售后编号',
