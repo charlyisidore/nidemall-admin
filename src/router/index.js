@@ -592,13 +592,13 @@ export const asyncRoutes = [
         path: 'password',
         component: () => import('@/views/profile/password'),
         name: 'password',
-        meta: { title: '修改密码', noCache: true }
+        meta: { title: 'app.menu.profile_password', noCache: true }
       },
       {
         path: 'notice',
         component: () => import('@/views/profile/notice'),
         name: 'notice',
-        meta: { title: '通知中心', noCache: true }
+        meta: { title: 'app.menu.profile_notice', noCache: true }
       }
     ],
     hidden: true

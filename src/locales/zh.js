@@ -58,7 +58,9 @@ export default {
       external_link_weixin_mpkf: '小程序客服',
       external_link_alibaba_oss: '阿里云存储',
       external_link_qiniu_kodo: '七牛云存储',
-      external_link_kdniao_api: '快递鸟'
+      external_link_kdniao_api: '快递鸟',
+      profile_password: '修改密码',
+      profile_notice: '通知中心'
     },
     button: {
       add: '+ 增加',

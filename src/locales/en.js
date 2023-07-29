@@ -58,7 +58,9 @@ export default {
       external_link_weixin_mpkf: 'WeChat mini-program',
       external_link_alibaba_oss: 'Ali cloud storage',
       external_link_qiniu_kodo: 'Qiniu cloud storage',
-      external_link_kdniao_api: 'Kdniao API'
+      external_link_kdniao_api: 'Kdniao API',
+      profile_password: 'Change password',
+      profile_notice: 'Notifications'
     },
     button: {
       add: '+ Add',
