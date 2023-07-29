@@ -832,5 +832,12 @@ export default {
       batch_read: '批量已读',
       read: '阅读'
     }
+  },
+  profile_password: {
+    form: {
+      old_password: '原密码',
+      new_password: '新密码',
+      new_password_2: '确认密码'
+    }
   }
 }

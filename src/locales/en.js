@@ -832,5 +832,12 @@ export default {
       batch_read: 'Batch read',
       read: 'Read'
     }
+  },
+  profile_password: {
+    form: {
+      old_password: 'Old password',
+      new_password: 'New password',
+      new_password_2: 'Confirm password'
+    }
   }
 }
