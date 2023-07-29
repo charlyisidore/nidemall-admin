@@ -31,7 +31,7 @@
 
       <el-table-column align="center" :label="$t('promotion_ad.table.enabled')" prop="enabled">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.enabled ? 'success' : 'error' ">{{ scope.row.enabled ? '启用' : '不启用' }}</el-tag>
+          <el-tag :type="scope.row.enabled ? 'success' : 'error' ">{{ $t(scope.row.enabled ? 'promotion_ad.value.enabled_true' : 'promotion_ad.value.enabled_false') }}</el-tag>
         </template>
       </el-table-column>
 
