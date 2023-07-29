@@ -3,11 +3,11 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.nickname" clearable class="filter-item" style="width: 160px;" placeholder="请输入用户昵称" />
-      <el-input v-model="listQuery.consignee" clearable class="filter-item" style="width: 160px;" placeholder="请输入收货人名称" />
-      <el-input v-model="listQuery.orderSn" clearable class="filter-item" style="width: 160px;" placeholder="请输入订单编号" />
-      <el-date-picker v-model="listQuery.timeArray" type="datetimerange" value-format="yyyy-MM-dd HH:mm:ss" class="filter-item" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions" />
-      <el-select v-model="listQuery.orderStatusArray" multiple style="width: 200px" class="filter-item" placeholder="请选择订单状态">
+      <el-input v-model="listQuery.nickname" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_nickname')" />
+      <el-input v-model="listQuery.consignee" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_consignee')" />
+      <el-input v-model="listQuery.orderSn" clearable class="filter-item" style="width: 160px;" :placeholder="$t('mall_order.placeholder.filter_order_sn')" />
+      <el-date-picker v-model="listQuery.timeArray" type="datetimerange" value-format="yyyy-MM-dd HH:mm:ss" class="filter-item" range-separator="至" :start-placeholder="$t('mall_order.placeholder.filter_time_start')" :end-placeholder="$t('mall_order.placeholder.filter_time_end')" :picker-options="pickerOptions" />
+      <el-select v-model="listQuery.orderStatusArray" multiple style="width: 200px" class="filter-item" :placeholder="$t('mall_order.placeholder.filter_order_status')">
         <el-option v-for="(key, value) in statusMap" :key="key" :label="key" :value="value" />
       </el-select>
       <el-button v-permission="['GET /admin/order/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
@@ -209,7 +209,7 @@
     <el-dialog :visible.sync="shipDialogVisible" title="发货">
       <el-form ref="shipForm" :model="shipForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item label="快递公司" prop="shipChannel">
-          <el-select v-model="shipForm.shipChannel" placeholder="请选择">
+          <el-select v-model="shipForm.shipChannel" :placeholder="$t('mall_order.placeholder.ship_channel')">
             <el-option v-for="item in channels" :key="item.code" :label="item.name" :value="item.code" />
           </el-select>
         </el-form-item>

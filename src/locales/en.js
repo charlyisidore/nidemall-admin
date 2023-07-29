@@ -257,6 +257,15 @@ export default {
       ship_sn: 'Ship SN',
       ship_channel: 'Ship channel',
       actions: 'Actions'
+    },
+    placeholder: {
+      filter_nickname: 'Nickname',
+      filter_consignee: 'Consignee',
+      filter_order_sn: 'Order SN',
+      filter_time_start: 'From date',
+      filter_time_end: 'To date',
+      filter_order_status: 'Status',
+      ship_channel: 'Please choose'
     }
   },
   mall_aftersale: {

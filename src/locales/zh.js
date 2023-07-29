@@ -257,6 +257,15 @@ export default {
       ship_sn: '物流单号',
       ship_channel: '物流渠道',
       actions: '操作'
+    },
+    placeholder: {
+      filter_nickname: '请输入用户昵称',
+      filter_consignee: '请输入收货人名称',
+      filter_order_sn: '请输入订单编号',
+      filter_time_start: '开始日期',
+      filter_time_end: '结束日期',
+      filter_order_status: '请选择订单状态',
+      ship_channel: '请选择'
     }
   },
   mall_aftersale: {
