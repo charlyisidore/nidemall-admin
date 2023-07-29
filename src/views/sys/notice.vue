@@ -22,7 +22,7 @@
 
       <el-table-column align="center" :label="$t('sys_notice.table.content')" prop="content">
         <template slot-scope="scope">
-          <el-dialog :visible.sync="contentDialogVisible" title="通知详情">
+          <el-dialog :visible.sync="contentDialogVisible" :title="$t('sys_notice.dialog.content_detail')">
             <div v-html="contentDetail" />
           </el-dialog>
           <el-button type="primary" size="mini" @click="showContent(scope.row.content)">{{ $t('app.button.view') }}</el-button>

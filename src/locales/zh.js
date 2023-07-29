@@ -708,6 +708,9 @@ export default {
       admin_id: '管理员ID',
       actions: '操作'
     },
+    dialog: {
+      content_detail: '通知详情'
+    },
     form: {
       title: '通知标题',
       content: '通知内容'
@@ -737,6 +740,9 @@ export default {
       name: '角色名称',
       desc: '说明',
       actions: '操作'
+    },
+    dialog: {
+      permission: '权限配置'
     },
     form: {
       name: '角色名称',

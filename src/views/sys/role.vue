@@ -43,7 +43,7 @@
     </el-dialog>
 
     <!-- 权限配置对话框 -->
-    <el-dialog :visible.sync="permissionDialogFormVisible" title="权限配置">
+    <el-dialog :visible.sync="permissionDialogFormVisible" :title="$t('sys_role.dialog.permission')">
       <el-tree
         ref="tree"
         :data="systemPermissions"

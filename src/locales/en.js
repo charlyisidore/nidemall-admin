@@ -708,6 +708,9 @@ export default {
       admin_id: 'Admin ID',
       actions: 'Actions'
     },
+    dialog: {
+      content_detail: 'Content detail'
+    },
     form: {
       title: 'Title',
       content: 'Content'
@@ -737,6 +740,9 @@ export default {
       name: 'Name',
       desc: 'Description',
       actions: 'Actions'
+    },
+    dialog: {
+      permission: 'Permissions'
     },
     form: {
       name: 'Name',
