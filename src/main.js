@@ -26,20 +26,32 @@ import Print from '@/utils/print' // 打印
 
 Vue.use(VueI18n)
 
-import en from './locales/en.js'
-import zh_Hans from './locales/zh-Hans.js'
+// Load all locales and remember context
+// https://kazupon.github.io/vue-i18n/guide/hot-reload.html
+function loadMessages() {
+  const context = require.context('./locales', false, /[a-z0-9-_]+\.js$/i)
+
+  const messages = context
+    .keys()
+    .sort()
+    .map((key) => ({ key, locale: key.match(/[a-z0-9-_]+/i)[0] }))
+    .reduce(
+      (messages, { key, locale }) => ({
+        ...messages,
+        [locale]: context(key).default
+      }),
+      {}
+    )
+
+  return { context, messages }
+}
+
+const { context, messages } = loadMessages()
 
 // VueI18n instance
 const i18n = new VueI18n({
   locale: 'zh-Hans',
-  fallbackLocale: {
-    'en': ['zh-Hans'],
-    'zh-Hans': ['en']
-  },
-  messages: {
-    'en': en,
-    'zh-Hans': zh_Hans
-  }
+  messages
 })
 
 // Update Element UI locale when Vue locale is changed
@@ -70,10 +82,16 @@ new Vue({
 })
 
 // Hot updates
-// https://kazupon.github.io/vue-i18n/guide/hot-reload.html#basic-example
+// https://kazupon.github.io/vue-i18n/guide/hot-reload.html
 if (module.hot) {
-  module.hot.accept(['./locales/en.js', './locales/zh-Hans.js'], function() {
-    i18n.setLocaleMessage('en', require('./locales/en.js').default)
-    i18n.setLocaleMessage('zh-Hans', require('./locales/zh-Hans.js').default)
+  module.hot.accept(context.id, () => {
+    const { messages: newMessages } = loadMessages()
+
+    Object.keys(newMessages)
+      .filter((locale) => messages[locale] !== newMessages[locale])
+      .forEach((locale) => {
+        messages[locale] = newMessages[locale]
+        i18n.setLocaleMessage(locale, messages[locale])
+      })
   })
 }
