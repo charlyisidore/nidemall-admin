@@ -677,6 +677,10 @@ export default {
     form: {
       title: '通知标题',
       content: '通知内容'
+    },
+    placeholder: {
+      filter_title: '请输入标题关键字',
+      filter_content: '请输入内容关键字'
     }
   },
   sys_log: {
@@ -717,6 +721,10 @@ export default {
     },
     form: {
       name: '对象名称'
+    },
+    placeholder: {
+      filter_key: '请输入对象KEY',
+      filter_name: '请输入对象名称'
     },
     button: {
       upload: '点击上传'

@@ -3,8 +3,8 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.title" clearable class="filter-item" style="width: 200px;" placeholder="请输入标题关键字" />
-      <el-input v-model="listQuery.content" clearable class="filter-item" style="width: 200px;" placeholder="请输入内容关键字" />
+      <el-input v-model="listQuery.title" clearable class="filter-item" style="width: 200px;" :placeholder="$t('sys_notice.placeholder.filter_title')" />
+      <el-input v-model="listQuery.content" clearable class="filter-item" style="width: 200px;" :placeholder="$t('sys_notice.placeholder.filter_content')" />
       <el-button v-permission="['GET /admin/notice/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>

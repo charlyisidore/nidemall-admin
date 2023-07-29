@@ -677,6 +677,10 @@ export default {
     form: {
       title: 'Title',
       content: 'Content'
+    },
+    placeholder: {
+      filter_title: 'Title',
+      filter_content: 'Content'
     }
   },
   sys_log: {
@@ -717,6 +721,10 @@ export default {
     },
     form: {
       name: 'Name'
+    },
+    placeholder: {
+      filter_key: 'Key',
+      filter_name: 'Name'
     },
     button: {
       upload: 'Upload'
