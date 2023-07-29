@@ -27,16 +27,19 @@ import Print from '@/utils/print' // 打印
 Vue.use(VueI18n)
 
 import en from './locales/en.js'
-import zh from './locales/zh.js'
+import zh_Hans from './locales/zh-Hans.js'
 
 // VueI18n instance
 const i18n = new VueI18n({
-  locale: 'zh',
+  locale: 'zh-Hans',
   fallbackLocale: {
-    'en': ['zh'],
-    'zh': ['en']
+    'en': ['zh-Hans'],
+    'zh-Hans': ['en']
   },
-  messages: { en, zh }
+  messages: {
+    'en': en,
+    'zh-Hans': zh_Hans
+  }
 })
 
 // Update Element UI locale when Vue locale is changed
@@ -69,8 +72,8 @@ new Vue({
 // Hot updates
 // https://kazupon.github.io/vue-i18n/guide/hot-reload.html#basic-example
 if (module.hot) {
-  module.hot.accept(['./locales/en.js', './locales/zh.js'], function() {
+  module.hot.accept(['./locales/en.js', './locales/zh-Hans.js'], function() {
     i18n.setLocaleMessage('en', require('./locales/en.js').default)
-    i18n.setLocaleMessage('zh', require('./locales/zh.js').default)
+    i18n.setLocaleMessage('zh-Hans', require('./locales/zh-Hans.js').default)
   })
 }
