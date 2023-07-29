@@ -593,7 +593,10 @@ export default {
     text: {
       days: '天',
       to_time: '至',
-      units: '张'
+      units: '张',
+      coupon_min: '满{min}元可用',
+      coupon_discount: '减免{discount}元',
+      unlimited: '不限'
     },
     table: {
       id: '优惠券ID',

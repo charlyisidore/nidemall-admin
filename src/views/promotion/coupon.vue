@@ -27,15 +27,15 @@
       <el-table-column align="center" :label="$t('promotion_coupon.table.tag')" prop="tag" />
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.min')" prop="min">
-        <template slot-scope="scope">满{{ scope.row.min }}元可用</template>
+        <template slot-scope="scope">{{ $t('promotion_coupon.text.coupon_min', { min: scope.row.min }) }}</template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.discount')" prop="discount">
-        <template slot-scope="scope">减免{{ scope.row.discount }}元</template>
+        <template slot-scope="scope">{{ $t('promotion_coupon.text.coupon_discount', { discount: scope.row.discount }) }}</template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.limit')" prop="limit">
-        <template slot-scope="scope">{{ scope.row.limit != 0 ? scope.row.limit : "不限" }}</template>
+        <template slot-scope="scope">{{ scope.row.limit != 0 ? scope.row.limit : $t('promotion_coupon.text.unlimited') }}</template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.goods_type')" prop="goodsType">
@@ -47,7 +47,7 @@
       </el-table-column>
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.total')" prop="total">
-        <template slot-scope="scope">{{ scope.row.total != 0 ? scope.row.total : "不限" }}</template>
+        <template slot-scope="scope">{{ scope.row.total != 0 ? scope.row.total : $t('promotion_coupon.text.unlimited') }}</template>
       </el-table-column>
 
       <el-table-column align="center" :label="$t('promotion_coupon.table.status')" prop="status">

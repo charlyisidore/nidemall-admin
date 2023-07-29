@@ -593,7 +593,10 @@ export default {
     text: {
       days: 'days',
       to_time: 'to',
-      units: 'units'
+      units: 'units',
+      coupon_min: 'Available for {min}元 spent',
+      coupon_discount: 'Reduced by {discount}元',
+      unlimited: 'Unlimited'
     },
     table: {
       id: 'ID',
