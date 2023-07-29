@@ -139,11 +139,13 @@
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_price_info')">
             <span>
-              (实际费用){{ orderDetail.order.actualPrice }}元 =
-              (商品总价){{ orderDetail.order.goodsPrice }}元 +
-              (快递费用){{ orderDetail.order.freightPrice }}元 -
-              (优惠减免){{ orderDetail.order.couponPrice }}元 -
-              (积分减免){{ orderDetail.order.integralPrice }}元
+              {{ $t('mall_order.text.detail_price_info', {
+                actual_price: orderDetail.order.actualPrice,
+                goods_price: orderDetail.order.goodsPrice,
+                freight_price: orderDetail.order.freightPrice,
+                coupon_price: orderDetail.order.couponPrice,
+                integral_price: orderDetail.order.integralPrice
+              }) }}
             </span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_pay_info')">

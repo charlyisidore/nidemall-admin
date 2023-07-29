@@ -285,7 +285,8 @@ export default {
       expand_subtotal_price: '小计：{price} 元',
       detail_consigne: '（收货人）{consignee}',
       detail_mobile: '（手机号）{mobile}',
-      detail_address: '（地址）{address}'
+      detail_address: '（地址）{address}',
+      detail_price_info: '(实际费用){actual_price}元 = (商品总价){goods_price}元 + (快递费用){freight_price}元 - (优惠减免){coupon_price}元 - (积分减免){integral_price}元'
     },
     table: {
       order_sn: '订单编号',

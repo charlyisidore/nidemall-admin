@@ -285,7 +285,8 @@ export default {
       expand_subtotal_price: 'Subtotal: {price} 元',
       detail_consigne: '(consignee) {consignee} ',
       detail_mobile: '(mobile) {mobile} ',
-      detail_address: '(address) {address} '
+      detail_address: '(address) {address} ',
+      detail_price_info: '(actual){actual_price}元 = (goods){goods_price}元 + (freight){freight_price}元 - (coupon){coupon_price}元 - (integral){integral_price}元'
     },
     table: {
       order_sn: 'Order SN',
