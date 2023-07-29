@@ -155,6 +155,10 @@ export default {
       address_region: 'Region',
       address_detail: 'Detail',
       is_default: 'Default'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_name: 'Name'
     }
   },
   user_collect: {
@@ -163,6 +167,10 @@ export default {
       user_id: 'User ID',
       value_id: 'Item ID',
       add_time: 'Time added'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_value_id: 'Item ID'
     }
   },
   user_footprint: {

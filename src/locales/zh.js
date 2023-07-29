@@ -155,6 +155,10 @@ export default {
       address_region: '区域地址',
       address_detail: '区域地址',
       is_default: '默认'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_name: '请输入收货人名称'
     }
   },
   user_collect: {
@@ -163,6 +167,10 @@ export default {
       user_id: '用户ID',
       value_id: '商品ID',
       add_time: '添加时间'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_value_id: '请输入商品ID'
     }
   },
   user_footprint: {
