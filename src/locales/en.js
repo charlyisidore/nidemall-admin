@@ -282,7 +282,10 @@ export default {
       expand_specifications: 'Specifications: {specifications}',
       expand_unit_price: 'Unit price: {price} 元',
       expand_number: 'Quantity: {number}',
-      expand_subtotal_price: 'Subtotal: {price} 元'
+      expand_subtotal_price: 'Subtotal: {price} 元',
+      detail_consigne: '(consignee) {consignee} ',
+      detail_mobile: '(mobile) {mobile} ',
+      detail_address: '(address) {address} '
     },
     table: {
       order_sn: 'Order SN',

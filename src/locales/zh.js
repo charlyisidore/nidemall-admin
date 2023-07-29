@@ -282,7 +282,10 @@ export default {
       expand_specifications: '规格：{specifications}',
       expand_unit_price: '单价：{price} 元',
       expand_number: '数量：{number} 件',
-      expand_subtotal_price: '小计：{price} 元'
+      expand_subtotal_price: '小计：{price} 元',
+      detail_consigne: '（收货人）{consignee}',
+      detail_mobile: '（手机号）{mobile}',
+      detail_address: '（地址）{address}'
     },
     table: {
       order_sn: '订单编号',

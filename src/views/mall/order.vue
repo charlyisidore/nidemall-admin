@@ -119,9 +119,9 @@
             <span>{{ orderDetail.order.message }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_receiving_info')">
-            <span>（收货人）{{ orderDetail.order.consignee }}</span>
-            <span>（手机号）{{ orderDetail.order.mobile }}</span>
-            <span>（地址）{{ orderDetail.order.address }}</span>
+            <span>{{ $t('mall_order.text.detail_consigne', { consignee: orderDetail.order.consignee }) }}</span>
+            <span>{{ $t('mall_order.text.detail_mobile', { mobile: orderDetail.order.mobile }) }}</span>
+            <span>{{ $t('mall_order.text.detail_address', { address: orderDetail.order.address }) }}</span>
           </el-form-item>
           <el-form-item :label="$t('mall_order.form.detail_goods')">
             <el-table :data="orderDetail.orderGoods" border fit highlight-current-row>
