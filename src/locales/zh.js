@@ -469,6 +469,15 @@ export default {
       position_1: '首页',
       enabled_true: '启用',
       enabled_false: '不启用'
+    },
+    placeholder: {
+      filter_name: '请输入广告标题',
+      filter_content: '请输入广告内容',
+      position: '请选择',
+      enabled: '请选择'
+    },
+    help: {
+      url: '只能上传jpg/png文件，且不超过1024kb'
     }
   },
   promotion_coupon: {

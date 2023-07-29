@@ -3,8 +3,8 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" placeholder="请输入广告标题" />
-      <el-input v-model="listQuery.content" clearable class="filter-item" style="width: 200px;" placeholder="请输入广告内容" />
+      <el-input v-model="listQuery.name" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_ad.placeholder.filter_name')" />
+      <el-input v-model="listQuery.content" clearable class="filter-item" style="width: 200px;" :placeholder="$t('promotion_ad.placeholder.filter_content')" />
       <el-button v-permission="['GET /admin/ad/list']" class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button v-permission="['POST /admin/ad/create']" class="filter-item" type="primary" icon="el-icon-edit" @click="handleCreate">{{ $t('app.button.create') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
@@ -66,11 +66,11 @@
           >
             <img v-if="dataForm.url" :src="dataForm.url" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon" />
-            <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过1024kb</div>
+            <div slot="tip" class="el-upload__tip">{{ $t('promotion_ad.help.url') }}</div>
           </el-upload>
         </el-form-item>
         <el-form-item :label="$t('promotion_ad.form.position')" prop="position">
-          <el-select v-model="dataForm.position" placeholder="请选择">
+          <el-select v-model="dataForm.position" :placeholder="$t('promotion_ad.placeholder.position')">
             <el-option :value="1" :label="$t('promotion_ad.value.position_1')" />
           </el-select>
         </el-form-item>
@@ -78,7 +78,7 @@
           <el-input v-model="dataForm.link" />
         </el-form-item>
         <el-form-item :label="$t('promotion_ad.form.enabled')" prop="enabled">
-          <el-select v-model="dataForm.enabled" placeholder="请选择">
+          <el-select v-model="dataForm.enabled" :placeholder="$t('promotion_ad.placeholder.enabled')">
             <el-option :value="true" :label="$t('promotion_ad.value.enabled_true')" />
             <el-option :value="false" :label="$t('promotion_ad.value.enabled_false')" />
           </el-select>

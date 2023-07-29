@@ -469,6 +469,15 @@ export default {
       position_1: 'Home',
       enabled_true: 'On',
       enabled_false: 'Off'
+    },
+    placeholder: {
+      filter_name: 'Name',
+      filter_content: 'Content',
+      position: 'Please choose',
+      enabled: 'Please choose'
+    },
+    help: {
+      url: 'Only jpg/png files can be uploaded and do not exceed 1024kb'
     }
   },
   promotion_coupon: {
