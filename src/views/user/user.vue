@@ -3,9 +3,9 @@
 
     <!-- 查询和其他操作 -->
     <div class="filter-container">
-      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" placeholder="请输入用户名"/>
-      <el-input v-model="listQuery.userId" clearable class="filter-item" style="width: 200px;" placeholder="请输入用户Id"/>
-      <el-input v-model="listQuery.mobile" clearable class="filter-item" style="width: 200px;" placeholder="请输入手机号"/>
+      <el-input v-model="listQuery.username" clearable class="filter-item" style="width: 200px;" :placeholder="$t('user_user.placeholder.filter_username')"/>
+      <el-input v-model="listQuery.userId" clearable class="filter-item" style="width: 200px;" :placeholder="$t('user_user.placeholder.filter_user_id')"/>
+      <el-input v-model="listQuery.mobile" clearable class="filter-item" style="width: 200px;" :placeholder="$t('user_user.placeholder.filter_mobile')"/>
       <el-button class="filter-item" type="primary" icon="el-icon-search" @click="handleFilter">{{ $t('app.button.search') }}</el-button>
       <el-button :loading="downloadLoading" class="filter-item" type="primary" icon="el-icon-download" @click="handleDownload">{{ $t('app.button.download') }}</el-button>
     </div>
@@ -64,13 +64,13 @@
           <el-input v-model="userDetail.mobile" />
         </el-form-item>
         <el-form-item :label="$t('user_user.form.gender')" prop="gender">
-          <el-select v-model="userDetail.gender" placeholder="请选择"><el-option v-for="(item, index) in genderDic" :key="index" :label="item" :value="index" /></el-select>
+          <el-select v-model="userDetail.gender" :placeholder="$t('user_user.placeholder.gender')"><el-option v-for="(item, index) in genderDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
         <el-form-item :label="$t('user_user.form.user_level')" prop="userLevel">
-          <el-select v-model="userDetail.userLevel" placeholder="请选择"><el-option v-for="(item, index) in levelDic" :key="index" :label="item" :value="index" /></el-select>
+          <el-select v-model="userDetail.userLevel" :placeholder="$t('user_user.placeholder.user_level')"><el-option v-for="(item, index) in levelDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
         <el-form-item :label="$t('user_user.form.status')" prop="status">
-          <el-select v-model="userDetail.status" placeholder="请选择"><el-option v-for="(item, index) in statusDic" :key="index" :label="item" :value="index" /></el-select>
+          <el-select v-model="userDetail.status" :placeholder="$t('user_user.placeholder.status')"><el-option v-for="(item, index) in statusDic" :key="index" :label="item" :value="index" /></el-select>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">

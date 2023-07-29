@@ -144,6 +144,14 @@ export default {
       gender: '用户性别',
       user_level: '用户等级',
       status: '状态'
+    },
+    placeholder: {
+      filter_username: '请输入用户名',
+      filter_user_id: '请输入用户Id',
+      filter_mobile: '请输入手机号',
+      gender: '请选择',
+      user_level: '请选择',
+      status: '请选择'
     }
   },
   user_address: {
@@ -191,6 +199,10 @@ export default {
       user_id: '用户ID',
       keyword: '关键字',
       add_time: '添加时间'
+    },
+    placeholder: {
+      filter_user_id: '请输入用户ID',
+      filter_keyword: '请输入搜索历史关键字'
     }
   },
   user_feedback: {

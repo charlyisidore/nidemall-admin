@@ -8,7 +8,7 @@ export default {
     menu: {
       dashboard: 'Dashboard',
       user: 'Users',
-      user_user: 'Customers',
+      user_user: 'Users',
       user_address: 'Addresses',
       user_collect: 'Favorites',
       user_footprint: 'Footprints',
@@ -144,6 +144,14 @@ export default {
       gender: 'Gender',
       user_level: 'Level',
       status: 'Status'
+    },
+    placeholder: {
+      filter_username: 'Username',
+      filter_user_id: 'User ID',
+      filter_mobile: 'Mobile',
+      gender: 'Please choose',
+      user_level: 'Please choose',
+      status: 'Please choose'
     }
   },
   user_address: {
@@ -191,6 +199,10 @@ export default {
       user_id: 'User ID',
       keyword: 'Keyword',
       add_time: 'Time added'
+    },
+    placeholder: {
+      filter_user_id: 'User ID',
+      filter_keyword: 'Keyword'
     }
   },
   user_feedback: {
