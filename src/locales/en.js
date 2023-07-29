@@ -900,7 +900,9 @@ export default {
   },
   profile_notice: {
     text: {
-      admin_time: '{admin} 于 {time} 通知如下内容：'
+      read: '已读',
+      unread: '未读',
+      admin_time: 'Notified by {admin} at {time}:'
     },
     section: {
       unread: 'Unread',

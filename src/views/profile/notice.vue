@@ -28,7 +28,7 @@
 
       <el-table-column align="center" :label="$t('profile_notice.table.read_time')" prop="readTime" width="120">
         <template slot-scope="scope">
-          <el-tag :type="scope.row.readTime ? 'success' : 'error' ">{{ scope.row.readTime ? '已读' : '未读' }}</el-tag>
+          <el-tag :type="scope.row.readTime ? 'success' : 'error' ">{{ $t(scope.row.readTime ? 'profile_notice.text.read' : 'profile_notice.text.unread') }}</el-tag>
         </template>
       </el-table-column>
 
