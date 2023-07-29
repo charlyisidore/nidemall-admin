@@ -64,6 +64,7 @@ export default {
     },
     button: {
       add: '+ 增加',
+      back_to_top: '回到顶部',
       batch_delete: '批量删除',
       cancel: '取消',
       confirm: '确定',
@@ -77,6 +78,9 @@ export default {
       search: '查找',
       settings: '设置',
       view: '查看'
+    },
+    tooltip: {
+      back_to_top: '返回顶部'
     },
     message: {
       list_loading: '正在查询中。。。'

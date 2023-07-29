@@ -64,6 +64,7 @@ export default {
     },
     button: {
       add: '+ Add',
+      back_to_top: 'Back to top',
       batch_delete: 'Batch delete',
       cancel: 'Cancel',
       confirm: 'Confirm',
@@ -77,6 +78,9 @@ export default {
       search: 'Search',
       settings: 'Settings',
       view: 'View'
+    },
+    tooltip: {
+      back_to_top: 'Back to top'
     },
     message: {
       list_loading: 'Loading...'
