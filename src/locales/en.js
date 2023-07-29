@@ -22,10 +22,10 @@ export default {
       mall_aftersale: 'After-sales',
       mall_issue: 'Issues',
       mall_keyword: 'Keywords',
-      goods: 'Products',
-      goods_list: 'List products',
-      goods_create: 'Add product',
-      goods_edit: 'Edit product',
+      goods: 'Goods',
+      goods_list: 'List goods',
+      goods_create: 'Add goods',
+      goods_edit: 'Edit goods',
       goods_comment: 'Comments',
       promotion: 'Promotions',
       promotion_ad: 'Ads',
@@ -50,7 +50,7 @@ export default {
       stat: 'Statistics',
       stat_user: 'User stats',
       stat_order: 'Order stats',
-      stat_goods: 'Product stats',
+      stat_goods: 'Goods stats',
       external_link: 'External links',
       external_link_tencent_cos: 'Tencent cloud storage',
       external_link_tencent_sms: 'Tencent cloud SMS',
@@ -169,7 +169,7 @@ export default {
     table: {
       id: 'ID',
       user_id: 'User ID',
-      goods_id: 'Product ID',
+      goods_id: 'Goods ID',
       add_time: 'Time added'
     }
   },
@@ -364,9 +364,9 @@ export default {
   },
   goods_edit: {
     section: {
-      goods: 'Product',
+      goods: 'Goods',
       specifications: 'Specifications',
-      products: 'Product variants',
+      products: 'Products',
       attributes: 'Attributes'
     },
     table: {
@@ -524,7 +524,7 @@ export default {
       time_type_1: 'Absolute time',
       goods_type_0: 'All',
       goods_type_1: 'By category',
-      goods_type_2: 'By product'
+      goods_type_2: 'By goods'
     },
     placeholder: {
       filter_name: 'Name',
@@ -772,12 +772,12 @@ export default {
       other: 'Other'
     },
     form: {
-      index_new: 'Number of new products shown',
-      index_hot: 'Number of hot products shown',
+      index_new: 'Number of new goods shown',
+      index_hot: 'Number of hot goods shown',
       index_brand: 'Number of brands shown',
       index_topic: 'Number of topics shown',
       catlog_list: 'Number of categories shown',
-      catlog_goods: 'Number of products shown',
+      catlog_goods: 'Number of goods shown',
       share: 'Product sharing function'
     }
   },
