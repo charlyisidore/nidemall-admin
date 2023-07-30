@@ -94,11 +94,6 @@ export default {
       username: 'Admin account',
       password: 'Admin password'
     },
-    message: {
-      username_required: 'Username is required',
-      password_required: 'Password is required',
-      password_min_length: 'Password must contain at least 6 characters'
-    },
     button: {
       login: 'Login'
     }

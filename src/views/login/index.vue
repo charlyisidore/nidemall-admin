@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <div class="login-header">
+    <div class="locale-changer">
       <locale-changer />
     </div>
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
@@ -61,29 +61,17 @@ import LocaleChanger from '@/components/LocaleChanger'
 
 const isDev = (process.env.NODE_ENV === 'development')
 
-// Returns i18n localized rules
-const loginRules = function() {
-  const validatePassword = (rule, value, callback) => {
-    if (value.length < 6) {
-      callback(new Error(this.$t('login.message.password_min_length')))
-    } else {
-      callback()
-    }
-  }
-
-  return {
-    username: [{ required: true, message: this.$t('login.message.username_required'), trigger: 'blur' }],
-    password: [
-      { required: true, message: this.$t('login.message.password_required'), trigger: 'blur' },
-      { validator: validatePassword, trigger: 'blur' }
-    ]
-  }
-}
-
 export default {
   name: 'Login',
   components: { LocaleChanger },
   data() {
+    const validatePassword = (rule, value, callback) => {
+      if (value.length < 6) {
+        callback(new Error('管理员密码长度应大于6'))
+      } else {
+        callback()
+      }
+    }
     return {
       loginForm: {
         username: isDev ? 'admin123' : '',
@@ -91,17 +79,19 @@ export default {
         code: ''
       },
       codeImg: '',
-      loginRules: loginRules.call(this),
+      loginRules: {
+        username: [{ required: true, message: '管理员账户不允许为空', trigger: 'blur' }],
+        password: [
+          { required: true, message: '管理员密码不允许为空', trigger: 'blur' },
+          { validator: validatePassword, trigger: 'blur' }
+        ]
+      },
       passwordType: 'password',
       loading: false,
       isDev
     }
   },
   watch: {
-    '$i18n.locale': function() {
-      // Recomputes rules when i18n locale is changed
-      this.loginRules = loginRules.call(this)
-    },
     $route: {
       handler: function(route) {
         this.redirect = route.query && route.query.redirect
@@ -207,18 +197,17 @@ $light_gray:#eee;
   background-color: $bg;
   overflow: hidden;
 
-  .login-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px;
-    gap: 16px;
+  .locale-changer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
   }
 
   .login-form {
     position: relative;
     width: 520px;
     max-width: 100%;
-    padding: 100px 35px 0;
+    padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
   }
